@@ -452,6 +452,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isReviewMode) {
             StorageManager.clearSavedProgress();
             const results = ScoringManager.calculateScore(answers, testData);
+            results.testId = testData.test_id || 'unknown';
             StorageManager.saveTestResult(results);
             displayResults(results);
 
@@ -459,7 +460,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.supabaseClient && currentStudentName) {
                 const cloudResult = {
                     student_name: currentStudentName,
-                    test_id: results.testId,
+                    test_id: testData.test_id || 'unknown',
                     total_score: results.total,
                     rw_score: results.rw,
                     math_score: results.math
