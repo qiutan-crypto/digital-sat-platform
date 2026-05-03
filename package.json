@@ -1,0 +1,10 @@
+{
+  "name": "sat-practice-test-4",
+  "version": "1.0.0",
+  "description": "SAT Practice Test System",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {}
+}
