@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Update footer and headers
         footer.qNum.textContent = `Question ${currentQuestionIndex + 1} of ${module.questions.length}`;
-        examUI.qNumBadge.textContent = q.number;
+        examUI.qNumBadge.textContent = currentQuestionIndex + 1;
         
         // Buttons state
         footer.prevBtn.disabled = currentQuestionIndex === 0;
@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', () => {
         module.questions.forEach((q, idx) => {
             const item = document.createElement('div');
             item.className = 'nav-grid-item';
-            item.textContent = q.number;
+            item.textContent = idx + 1;
             item.addEventListener('click', () => navigateTo(idx));
             footer.navGrid.appendChild(item);
         });
