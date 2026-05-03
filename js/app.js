@@ -104,11 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function initDashboard() {
-        fetchAvailableTests();
-        switchView('dashboard');
-        checkSavedProgress();
-    }
+    // Initialize app
+    initDashboard();
+    checkSavedProgress();
 
     function checkSavedProgress() {
         const saved = StorageManager.getSavedProgress();
