@@ -244,6 +244,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('history-back-btn').addEventListener('click', () => switchView('dashboard'));
         if(document.getElementById('back-to-dashboard-btn')) document.getElementById('back-to-dashboard-btn').addEventListener('click', () => switchView('dashboard'));
         
+        document.getElementById('clear-history-btn').addEventListener('click', () => {
+            if (confirm("Are you sure you want to delete all your local history?")) {
+                StorageManager.clearHistory();
+                showHistory(); // Refresh view
+            }
+        });
+
         document.getElementById('save-exit-btn').addEventListener('click', saveProgressAndExit);
         document.getElementById('resume-saved-test-btn').addEventListener('click', resumeSavedTest);
         document.getElementById('discard-saved-test-btn').addEventListener('click', discardSavedTest);

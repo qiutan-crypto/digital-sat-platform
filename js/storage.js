@@ -21,6 +21,10 @@ class StorageManager {
         return history.find(r => r.id === id);
     }
 
+    static clearHistory() {
+        localStorage.removeItem(this.STORAGE_KEY);
+    }
+
     // --- Saved Progress Management ---
     static PROGRESS_KEY = 'sat_saved_progress';
 
