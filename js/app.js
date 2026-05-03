@@ -193,6 +193,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('save-exit-btn').classList.remove('hidden');
     }
 
+    function discardSavedTest() {
+        if (confirm("Are you sure you want to discard your saved progress? This cannot be undone.")) {
+            StorageManager.clearSavedProgress();
+            checkSavedProgress();
+        }
+    }
+
     function switchView(viewName) {
         Object.values(views).forEach(v => v.classList.remove('active'));
         views[viewName].classList.add('active');
@@ -239,6 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         document.getElementById('save-exit-btn').addEventListener('click', saveProgressAndExit);
         document.getElementById('resume-saved-test-btn').addEventListener('click', resumeSavedTest);
+        document.getElementById('discard-saved-test-btn').addEventListener('click', discardSavedTest);
         
         document.getElementById('resume-test-btn').addEventListener('click', () => {
             if (breakTimer) clearInterval(breakTimer);
