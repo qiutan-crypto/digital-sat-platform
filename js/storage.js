@@ -20,4 +20,20 @@ class StorageManager {
         const history = this.getHistory();
         return history.find(r => r.id === id);
     }
+
+    // --- Saved Progress Management ---
+    static PROGRESS_KEY = 'sat_saved_progress';
+
+    static saveProgress(state) {
+        localStorage.setItem(this.PROGRESS_KEY, JSON.stringify(state));
+    }
+
+    static getSavedProgress() {
+        const data = localStorage.getItem(this.PROGRESS_KEY);
+        return data ? JSON.parse(data) : null;
+    }
+
+    static clearSavedProgress() {
+        localStorage.removeItem(this.PROGRESS_KEY);
+    }
 }

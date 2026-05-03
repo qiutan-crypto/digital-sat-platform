@@ -104,7 +104,96 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    initDashboard();
+    function initDashboard() {
+        fetchAvailableTests();
+        switchView('dashboard');
+        checkSavedProgress();
+    }
+
+    function checkSavedProgress() {
+        const saved = StorageManager.getSavedProgress();
+        const container = document.getElementById('resume-test-container');
+        if (saved) {
+            container.classList.remove('hidden');
+            const modName = saved.testData.modules[saved.currentModuleIndex].name;
+            document.getElementById('resume-test-info').textContent = `${saved.testData.title || 'SAT Practice Test'} - ${modName}`;
+        } else {
+            container.classList.add('hidden');
+        }
+    }
+
+    function saveProgressAndExit() {
+        if (!timer) return;
+        
+        const stateToSave = {
+            currentStudentName,
+            testData,
+            currentModuleIndex,
+            currentQuestionIndex,
+            answers,
+            markedQuestions: Array.from(markedQuestions),
+            remainingSeconds: timer.remainingSeconds
+        };
+        
+        StorageManager.saveProgress(stateToSave);
+        
+        if (timer) timer.stop();
+        if (breakTimer) clearInterval(breakTimer);
+        
+        // Anti-Cheat: Exit Fullscreen when exiting
+        try {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else if (document.webkitFullscreenElement) {
+                document.webkitExitFullscreen();
+            }
+        } catch (e) {}
+        
+        switchView('dashboard');
+        checkSavedProgress();
+    }
+
+    function resumeSavedTest() {
+        const saved = StorageManager.getSavedProgress();
+        if (!saved) return;
+        
+        currentStudentName = saved.currentStudentName;
+        testData = saved.testData;
+        currentModuleIndex = saved.currentModuleIndex;
+        currentQuestionIndex = saved.currentQuestionIndex;
+        answers = saved.answers || {};
+        markedQuestions = new Set(saved.markedQuestions || []);
+        isReviewMode = false;
+        
+        document.getElementById('test-title').textContent = testData.title || "SAT Practice Test";
+        
+        // Switch to exam
+        switchView('exam');
+        header.moduleName.textContent = testData.modules[currentModuleIndex].name;
+        
+        // Re-initialize timer
+        if (timer) timer.stop();
+        timer = new Timer(header.timeDisplay, () => finishCurrentModule(true));
+        
+        // Timer takes minutes, so convert seconds back to minutes for start()
+        timer.start(Math.ceil(saved.remainingSeconds / 60)); // start loosely
+        timer.remainingSeconds = saved.remainingSeconds; // override with precise seconds
+        timer.updateDisplay();
+        
+        // Anti-Cheat: Request Fullscreen
+        try {
+            const el = document.documentElement;
+            if (el.requestFullscreen) {
+                el.requestFullscreen().catch(err => {});
+            }
+        } catch(e) {}
+        
+        renderQuestion();
+        updateNavGrid();
+        
+        // Show Save & Exit button
+        document.getElementById('save-exit-btn').classList.remove('hidden');
+    }
 
     function switchView(viewName) {
         Object.values(views).forEach(v => v.classList.remove('active'));
@@ -114,11 +203,13 @@ document.addEventListener('DOMContentLoaded', () => {
             header.timerContainer.classList.remove('hidden');
             header.finishBtn.classList.remove('hidden');
             footer.main.classList.remove('hidden');
+            // document.getElementById('save-exit-btn').classList.remove('hidden'); // handled in startModule/resume
         } else {
             header.timerContainer.classList.add('hidden');
             header.finishBtn.classList.add('hidden');
             footer.main.classList.add('hidden');
             header.moduleName.textContent = '';
+            document.getElementById('save-exit-btn').classList.add('hidden');
         }
     }
 
@@ -147,6 +238,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if(document.getElementById('dashboard-view-history-btn')) document.getElementById('dashboard-view-history-btn').addEventListener('click', showHistory);
         document.getElementById('history-back-btn').addEventListener('click', () => switchView('dashboard'));
         if(document.getElementById('back-to-dashboard-btn')) document.getElementById('back-to-dashboard-btn').addEventListener('click', () => switchView('dashboard'));
+        
+        document.getElementById('save-exit-btn').addEventListener('click', saveProgressAndExit);
+        document.getElementById('resume-saved-test-btn').addEventListener('click', resumeSavedTest);
+        
         document.getElementById('resume-test-btn').addEventListener('click', () => {
             if (breakTimer) clearInterval(breakTimer);
             startModule(2); // Start Math 1 (index 2)
@@ -280,6 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
         header.finishBtn.textContent = isReviewMode ? "Next Module" : "Next Module (Finish)";
 
         switchView('exam');
+        document.getElementById('save-exit-btn').classList.remove('hidden');
         buildNavGrid();
         renderQuestion();
 
@@ -338,7 +434,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (e) {}
 
+        document.getElementById('save-exit-btn').classList.add('hidden');
+
         if (!isReviewMode) {
+            StorageManager.clearSavedProgress();
             const results = ScoringManager.calculateScore(answers, testData);
             StorageManager.saveTestResult(results);
             displayResults(results);

@@ -34,6 +34,7 @@
             </div>
         </div>
         <div class="header-right">
+            <button type="button" id="save-exit-btn" class="hidden" style="margin-right: 10px;">Save & Exit</button>
             <button type="button" id="finish-module-btn" class="hidden">Next</button>
         </div>
     </header>
@@ -45,6 +46,12 @@
             <div class="intro-container">
                 <h2>Welcome to Digital SAT Practice</h2>
                 <p>Select a practice test below to begin or review your previous scores.</p>
+                
+                <div id="resume-test-container" class="hidden" style="margin-top: 20px; padding: 20px; background-color: rgba(59, 130, 246, 0.1); border: 2px solid var(--primary); border-radius: 8px; text-align: center;">
+                    <h3 style="color: var(--primary); margin-bottom: 10px;">You have a saved test in progress!</h3>
+                    <p id="resume-test-info" style="margin-bottom: 15px;">Test 4 - Reading and Writing Module 1</p>
+                    <button type="button" id="resume-saved-test-btn" class="btn-primary">Resume Saved Test</button>
+                </div>
                 
                 <div class="test-grid" id="test-grid">
                     <!-- Test cards will be dynamically injected here -->
