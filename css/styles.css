@@ -2,6 +2,7 @@
     /* Color Palette - Bluebook inspired */
     --bg-dark: #121826;
     --bg-panel: #1e293b;
+    --surface: #1e293b;
     --bg-panel-light: #334155;
     --text-main: #f8fafc;
     --text-muted: #cbd5e1;
@@ -644,7 +645,7 @@ tr:hover {
     display: none;
 }
 .modal-content {
-    background-color: var(--surface);
+    background-color: var(--bg-panel);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
