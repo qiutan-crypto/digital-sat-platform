@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isReviewMode = false;
     let timer = null;
     let breakTimer = null;
+    let currentStudentName = "";
 
     // DOM Elements
     const views = {
@@ -122,7 +123,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function initEventHandlers() {
-        document.getElementById('start-test-btn').addEventListener('click', startTest);
+        document.getElementById('start-test-btn').addEventListener('click', () => {
+            document.getElementById('student-name-input').value = "";
+            document.getElementById('student-name-modal').classList.remove('hidden');
+        });
+
+        document.getElementById('cancel-name-btn').addEventListener('click', () => {
+            document.getElementById('student-name-modal').classList.add('hidden');
+        });
+
+        document.getElementById('confirm-name-btn').addEventListener('click', () => {
+            const nameInput = document.getElementById('student-name-input').value.trim();
+            if (!nameInput) {
+                alert("Please enter your name to begin.");
+                return;
+            }
+            currentStudentName = nameInput;
+            document.getElementById('student-name-modal').classList.add('hidden');
+            startTest();
+        });
+
         if(document.getElementById('view-history-btn')) document.getElementById('view-history-btn').addEventListener('click', showHistory);
         if(document.getElementById('dashboard-view-history-btn')) document.getElementById('dashboard-view-history-btn').addEventListener('click', showHistory);
         document.getElementById('history-back-btn').addEventListener('click', () => switchView('dashboard'));
@@ -322,6 +342,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const results = ScoringManager.calculateScore(answers, testData);
             StorageManager.saveTestResult(results);
             displayResults(results);
+
+            // Upload to Supabase Cloud Score Tracking
+            if (window.supabaseClient && currentStudentName) {
+                const cloudResult = {
+                    student_name: currentStudentName,
+                    test_id: results.testId,
+                    total_score: results.total,
+                    rw_score: results.rw,
+                    math_score: results.math
+                };
+                window.supabaseClient.from('student_results').insert([cloudResult])
+                    .then(({ error }) => {
+                        if (error) console.error("Error saving score to cloud:", error);
+                        else console.log("Score successfully saved to cloud.");
+                    });
+            }
         } else {
             switchView('result');
         }

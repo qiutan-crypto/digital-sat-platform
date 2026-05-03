@@ -8,6 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- STUDENT NAME MODAL -->
+    <div id="student-name-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Enter Your Name</h3>
+            <p>Please enter your name or student ID to begin the exam. This will be recorded with your score.</p>
+            <input type="text" id="student-name-input" placeholder="Your Name" style="width: 100%; padding: 10px; margin: 15px 0; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-dark); color: var(--text-main); font-size: 1rem;" autocomplete="off" spellcheck="false" required>
+            <div class="modal-actions" style="justify-content: flex-end;">
+                <button type="button" id="cancel-name-btn" class="btn-secondary">Cancel</button>
+                <button type="button" id="confirm-name-btn" class="btn-primary">Begin Exam</button>
+            </div>
+        </div>
+    </div>
+
     <!-- HEADER -->
     <header id="app-header">
         <div class="header-left">
