@@ -61,6 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.supabaseClient) {
                 const { data, error } = await window.supabaseClient.from('sat_tests').select('id, title').order('id');
                 if (error) throw error;
+                // Sort by numeric portion of test id (e.g. test4 → 4, test11 → 11)
+                data.sort((a, b) => {
+                    const numA = parseInt(a.id.replace(/\D/g, '')) || 0;
+                    const numB = parseInt(b.id.replace(/\D/g, '')) || 0;
+                    return numA - numB;
+                });
                 renderTestGrid(data);
             } else {
                 // Fallback to local
