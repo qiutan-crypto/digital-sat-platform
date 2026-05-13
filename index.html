@@ -106,6 +106,13 @@
                         </button>
                     </div>
                     <div class="question-content" id="question-text"></div>
+                    <div class="translation-actions">
+                        <button type="button" id="translate-question-btn" class="btn-icon translate-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg>
+                            AI 翻译
+                        </button>
+                    </div>
+                    <div id="question-translation" class="translation-content hidden"></div>
                     <div class="choices-container" id="choices-container">
                         <!-- Choices will be injected here -->
                     </div>
@@ -117,6 +124,13 @@
                     <div id="explanation-container" class="explanation-container hidden">
                         <h4>Explanation</h4>
                         <p id="explanation-text"></p>
+                        <div class="translation-actions" style="margin-top: 10px;">
+                            <button type="button" id="translate-explanation-btn" class="btn-icon translate-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg>
+                                AI 翻译
+                            </button>
+                        </div>
+                        <div id="explanation-translation" class="translation-content hidden"></div>
                     </div>
                 </div>
             </div>

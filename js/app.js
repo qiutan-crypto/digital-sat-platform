@@ -49,7 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
         gridInContainer: document.getElementById('grid-in-container'),
         gridInInput: document.getElementById('grid-in-input'),
         explanationContainer: document.getElementById('explanation-container'),
-        explanationText: document.getElementById('explanation-text')
+        explanationText: document.getElementById('explanation-text'),
+        translateQuestionBtn: document.getElementById('translate-question-btn'),
+        questionTranslation: document.getElementById('question-translation'),
+        translateExplanationBtn: document.getElementById('translate-explanation-btn'),
+        explanationTranslation: document.getElementById('explanation-translation')
     };
 
     // Initialize
@@ -336,6 +340,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+
+        // AI Translation Logic
+        examUI.translateQuestionBtn.addEventListener('click', () => handleTranslation(getCurrentQuestion().question, examUI.questionTranslation, examUI.translateQuestionBtn));
+        examUI.translateExplanationBtn.addEventListener('click', () => handleTranslation(getCurrentQuestion().explanation, examUI.explanationTranslation, examUI.translateExplanationBtn));
+    }
+
+    async function handleTranslation(textToTranslate, outputContainer, button) {
+        if (!textToTranslate) return;
+        
+        button.disabled = true;
+        button.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg> Translating...';
+        outputContainer.classList.remove('hidden');
+        outputContainer.textContent = 'Translating using AI...';
+
+        try {
+            const response = await fetch('/api/translate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: textToTranslate })
+            });
+
+            if (!response.ok) {
+                throw new Error('Translation failed');
+            }
+
+            const data = await response.json();
+            outputContainer.innerHTML = marked.parse(data.translation);
+        } catch (error) {
+            console.error('Translation error:', error);
+            outputContainer.textContent = 'Failed to translate. Please check API configuration or try again later.';
+        } finally {
+            button.disabled = false;
+            button.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg> AI 翻译';
+        }
     }
 
     function handleFocusLoss() {
@@ -526,6 +564,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Question
         examUI.questionText.innerHTML = marked.parse(q.question || '');
+
+        // Hide translation boxes on new question
+        examUI.questionTranslation.classList.add('hidden');
+        examUI.questionTranslation.textContent = '';
+        examUI.explanationTranslation.classList.add('hidden');
+        examUI.explanationTranslation.textContent = '';
 
         // Input type
         if (q.type === 'multiple-choice') {

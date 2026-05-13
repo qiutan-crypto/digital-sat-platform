@@ -405,6 +405,43 @@ main {
     color: var(--primary);
 }
 
+/* Translation Styles */
+.translation-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.translate-btn {
+    color: var(--primary);
+    background: rgba(59, 130, 246, 0.1);
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: all 0.2s;
+}
+
+.translate-btn:hover {
+    background: rgba(59, 130, 246, 0.2);
+    color: white;
+}
+
+.translate-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.translation-content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(16, 185, 129, 0.05); /* subtle green background */
+    border-left: 3px solid var(--success);
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
 /* Review Mode Overrides */
 .choice-label.correct {
     border-color: var(--success);
