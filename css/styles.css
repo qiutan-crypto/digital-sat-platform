@@ -939,3 +939,178 @@ tr:hover {
     color: var(--error);
 }
 
+/* ==========================================
+   THEME TRANSITIONS & LIGHT THEME
+   ========================================== */
+body {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+header, main, footer, aside, .card, .panel, .modal-content, .choice-label, table, th, td, input, select {
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, border-style 0.25s ease;
+}
+
+body.light-theme {
+    --bg-dark: #f1f5f9;         /* Light slate bg */
+    --bg-panel: #ffffff;        /* White panels */
+    --surface: #ffffff;
+    --bg-panel-light: #e2e8f0;  /* Cool gray elements */
+    --text-main: #0f172a;       /* Slate 900 text */
+    --text-muted: #475569;      /* Slate 600 text */
+    --primary: #2563eb;         /* Strong Blue */
+    --primary-hover: #1d4ed8;   /* Darker Blue */
+    --border: #cbd5e1;          /* Cool gray borders */
+    --nav-bg: #ffffff;          /* White headers */
+}
+
+/* Specific Light Theme Overrides */
+body.light-theme .choice-label:hover {
+    background-color: rgba(37, 99, 235, 0.05);
+}
+body.light-theme .nav-grid-item {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
+body.light-theme .nav-grid-item.current {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+body.light-theme tr:hover {
+    background-color: rgba(15, 23, 42, 0.03);
+}
+body.light-theme .passage-content, body.light-theme .question-panel {
+    background-color: #ffffff;
+}
+
+/* ==========================================
+   DASHBOARD PARALLEL MODES REDESIGN
+   ========================================== */
+.dashboard-modes {
+    display: flex;
+    gap: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .dashboard-modes {
+        flex-direction: column;
+    }
+}
+
+.mode-card {
+    flex: 1;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.25s ease, border-color 0.25s ease;
+    box-sizing: border-box;
+}
+
+.mode-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.mode-header {
+    margin-bottom: 20px;
+}
+
+.mode-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--bg-panel-light);
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.mode-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+.mode-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.mode-features {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.mode-features li {
+    margin: 12px 0;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mode-features li::before {
+    content: "✓";
+    color: var(--success);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.mode-select-wrapper {
+    margin-bottom: 20px;
+}
+
+.mode-select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    font-size: 0.95rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.mode-select:focus {
+    border-color: var(--primary);
+}
+
+.mode-actions {
+    margin-top: auto;
+}
+
+.mode-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.mode-btn:hover {
+    opacity: 0.9;
+}
+
+

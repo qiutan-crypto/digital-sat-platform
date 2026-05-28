@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize
     async function initDashboard() {
         initEventHandlers();
+        initTheme(); // Initial theme setup
         
         try {
-            const grid = document.getElementById('test-grid');
             if (window.supabaseClient) {
                 const { data, error } = await window.supabaseClient.from('sat_tests').select('id, title').order('id');
                 if (error) throw error;
@@ -71,18 +71,54 @@ document.addEventListener('DOMContentLoaded', () => {
                     const numB = parseInt(b.id.replace(/\D/g, '')) || 0;
                     return numA - numB;
                 });
-                renderTestGrid(data);
+                populateTestDropdown(data);
             } else {
                 // Fallback to local
-                renderTestGrid([{id: 'test4', title: 'SAT Practice Test 4'}]);
+                populateTestDropdown([
+                    {id: 'test4', title: 'SAT Practice Test 4'},
+                    {id: 'test8', title: 'SAT Practice Test 8'},
+                    {id: 'test9', title: 'SAT Practice Test 9'},
+                    {id: 'test10', title: 'SAT Practice Test 10'},
+                    {id: 'test11', title: 'SAT Practice Test 11'}
+                ]);
             }
             
             // Load practice history on dashboard
             loadPracticeHistory();
         } catch (err) {
             console.error("Error loading tests from Supabase:", err);
-            renderTestGrid([{id: 'test4', title: 'SAT Practice Test 4'}]);
+            populateTestDropdown([
+                {id: 'test4', title: 'SAT Practice Test 4'},
+                {id: 'test8', title: 'SAT Practice Test 8'},
+                {id: 'test9', title: 'SAT Practice Test 9'},
+                {id: 'test10', title: 'SAT Practice Test 10'},
+                {id: 'test11', title: 'SAT Practice Test 11'}
+            ]);
         }
+    }
+
+    function initTheme() {
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        if (!themeToggleBtn) return;
+        
+        // Check saved theme
+        const savedTheme = localStorage.getItem('sat_theme') || 'dark';
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-theme');
+            themeToggleBtn.textContent = '🌙';
+            themeToggleBtn.title = 'Switch to Dark Mode';
+        } else {
+            document.body.classList.remove('light-theme');
+            themeToggleBtn.textContent = '☀️';
+            themeToggleBtn.title = 'Switch to Light Mode';
+        }
+        
+        themeToggleBtn.onclick = () => {
+            const isLight = document.body.classList.toggle('light-theme');
+            localStorage.setItem('sat_theme', isLight ? 'light' : 'dark');
+            themeToggleBtn.textContent = isLight ? '🌙' : '☀️';
+            themeToggleBtn.title = isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode';
+        };
     }
 
     async function loadPracticeHistory() {
@@ -179,15 +215,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    function renderTestGrid(tests) {
-        const grid = document.getElementById('test-grid');
-        grid.innerHTML = '';
+    function populateTestDropdown(tests) {
+        const select = document.getElementById('dashboard-test-select');
+        if (!select) return;
+        select.innerHTML = '';
+        
+        // Add placeholder option
+        const placeholder = document.createElement('option');
+        placeholder.value = "";
+        placeholder.disabled = true;
+        placeholder.selected = true;
+        placeholder.textContent = "Choose an SAT Test Paper...";
+        select.appendChild(placeholder);
+        
         tests.forEach(t => {
-            const card = document.createElement('div');
-            card.className = 'test-card';
-            card.innerHTML = `<h3>${t.title}</h3><span>Full-length digital practice test</span>`;
-            card.addEventListener('click', () => loadAndStartTest(t.id));
-            grid.appendChild(card);
+            const opt = document.createElement('option');
+            opt.value = t.id;
+            opt.textContent = t.title;
+            select.appendChild(opt);
         });
     }
 
@@ -352,6 +397,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (startPracticeBtn) {
             startPracticeBtn.addEventListener('click', () => {
                 window.location.href = 'practice.html';
+            });
+        }
+
+        const startExamBtn = document.getElementById('dashboard-start-exam-btn');
+        if (startExamBtn) {
+            startExamBtn.addEventListener('click', () => {
+                const select = document.getElementById('dashboard-test-select');
+                const testId = select.value;
+                if (!testId) {
+                    alert("Please select a test paper first.");
+                    return;
+                }
+                loadAndStartTest(testId);
             });
         }
 

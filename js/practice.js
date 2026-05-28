@@ -61,7 +61,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize
     async function init() {
         initEventHandlers();
+        initTheme(); // Initial theme setup
         checkStudentName();
+    }
+
+    function initTheme() {
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        if (!themeToggleBtn) return;
+        
+        // Check saved theme
+        const savedTheme = localStorage.getItem('sat_theme') || 'dark';
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-theme');
+            themeToggleBtn.textContent = '🌙';
+            themeToggleBtn.title = 'Switch to Dark Mode';
+        } else {
+            document.body.classList.remove('light-theme');
+            themeToggleBtn.textContent = '☀️';
+            themeToggleBtn.title = 'Switch to Light Mode';
+        }
+        
+        themeToggleBtn.onclick = () => {
+            const isLight = document.body.classList.toggle('light-theme');
+            localStorage.setItem('sat_theme', isLight ? 'light' : 'dark');
+            themeToggleBtn.textContent = isLight ? '🌙' : '☀️';
+            themeToggleBtn.title = isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode';
+        };
     }
 
     // Student Name Check & Modal

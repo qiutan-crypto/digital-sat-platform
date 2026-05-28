@@ -34,6 +34,7 @@
             </div>
         </div>
         <div class="header-right">
+            <button type="button" id="theme-toggle-btn" style="margin-right: 10px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; padding: 0; font-size: 1.1rem; cursor: pointer; border: 1px solid var(--border); background-color: var(--bg-panel); color: var(--text-main);" title="Toggle Theme">☀️</button>
             <button type="button" id="save-exit-btn" class="hidden" style="margin-right: 10px;">Save & Exit</button>
             <button type="button" id="finish-module-btn" class="hidden">Next</button>
         </div>
@@ -45,7 +46,7 @@
         <section id="dashboard-view" class="view active">
             <div class="intro-container">
                 <h2 id="dashboard-welcome-heading">Welcome to Digital SAT Practice</h2>
-                <p>Select a practice test below to begin or review your previous scores.</p>
+                <p>Choose your study mode below to start practice drills or simulate a full exam.</p>
                 
                 <div id="resume-test-container" class="hidden" style="margin-top: 20px; padding: 20px; background-color: rgba(59, 130, 246, 0.1); border: 2px solid var(--primary); border-radius: 8px; text-align: center;">
                     <h3 style="color: var(--primary); margin-bottom: 10px;">You have a saved test in progress!</h3>
@@ -54,14 +55,51 @@
                     <button type="button" id="discard-saved-test-btn" style="margin-left: 10px; background-color: #ef4444; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.375rem; cursor: pointer; font-weight: 500;">Discard Progress</button>
                 </div>
                 
-                <div class="test-grid" id="test-grid">
-                    <!-- Test cards will be dynamically injected here -->
-                    <div style="text-align:center; padding: 2rem;">Loading available tests...</div>
+                <!-- Parallel study options -->
+                <div class="dashboard-modes">
+                    <!-- Full Exam Card -->
+                    <div class="mode-card">
+                        <div class="mode-header">
+                            <span class="mode-icon">📝</span>
+                            <h3 class="mode-title">Full-Length Exam</h3>
+                            <p class="mode-subtitle">Complete simulation of the official SAT test</p>
+                        </div>
+                        <ul class="mode-features">
+                            <li>Timed sections and strict testing module constraints</li>
+                            <li>Bluebook-like anti-cheat exam layout</li>
+                            <li>Final scores calculated on the 1600 scale</li>
+                        </ul>
+                        <div class="mode-select-wrapper">
+                            <label for="dashboard-test-select" style="display:block; font-size:0.85rem; color:var(--text-muted); margin-bottom:6px; font-weight:500;">Select Test Paper</label>
+                            <select id="dashboard-test-select" class="mode-select">
+                                <option value="" disabled selected>Loading available tests...</option>
+                            </select>
+                        </div>
+                        <div class="mode-actions">
+                            <button type="button" id="dashboard-start-exam-btn" class="mode-btn btn-primary" style="background-color: var(--primary);">Start Full Exam</button>
+                        </div>
+                    </div>
+
+                    <!-- Focused Practice Card -->
+                    <div class="mode-card">
+                        <div class="mode-header">
+                            <span class="mode-icon">🎯</span>
+                            <h3 class="mode-title">Practice Drills</h3>
+                            <p class="mode-subtitle">Bite-sized practice (5-question drills)</p>
+                        </div>
+                        <ul class="mode-features">
+                            <li>Immediate right/wrong feedback per question</li>
+                            <li>Detailed textual explanations shown instantly</li>
+                            <li>Interactive Tree sidebar structure for selection</li>
+                        </ul>
+                        <div class="mode-actions" style="margin-top: auto;">
+                            <button type="button" id="dashboard-start-practice-btn" class="mode-btn btn-primary" style="background-color: var(--success);">Start Practice Drills</button>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="intro-actions" style="margin-top: 2rem; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                    <button type="button" id="dashboard-start-practice-btn" class="btn-primary" style="background-color: var(--success); border-color: var(--success);">Start Practice Drills</button>
-                    <button type="button" id="dashboard-view-history-btn" class="btn-secondary">View History</button>
+                <div class="intro-actions" style="margin-top: 1rem; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <button type="button" id="dashboard-view-history-btn" class="btn-secondary">View Full History</button>
                 </div>
 
                 <!-- Recent Practice Drills on Dashboard -->
