@@ -418,10 +418,40 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('history-back-btn').addEventListener('click', () => switchView('dashboard'));
         if(document.getElementById('back-to-dashboard-btn')) document.getElementById('back-to-dashboard-btn').addEventListener('click', () => switchView('dashboard'));
         
+        // History Tabs click listeners
+        const tabExams = document.getElementById('history-tab-exams');
+        const tabDrills = document.getElementById('history-tab-drills');
+        const examsContainer = document.getElementById('history-exams-container');
+        const drillsContainer = document.getElementById('history-drills-container');
+
+        if (tabExams && tabDrills) {
+            tabExams.addEventListener('click', () => {
+                tabExams.className = 'btn-primary';
+                tabDrills.className = 'btn-secondary';
+                examsContainer.classList.remove('hidden');
+                drillsContainer.classList.add('hidden');
+            });
+
+            tabDrills.addEventListener('click', () => {
+                tabExams.className = 'btn-secondary';
+                tabDrills.className = 'btn-primary';
+                examsContainer.classList.add('hidden');
+                drillsContainer.classList.remove('hidden');
+            });
+        }
+
         document.getElementById('clear-history-btn').addEventListener('click', () => {
-            if (confirm("Are you sure you want to delete all your local history?")) {
-                StorageManager.clearHistory();
-                showHistory(); // Refresh view
+            const isExamsActive = document.getElementById('history-tab-exams').classList.contains('btn-primary');
+            if (isExamsActive) {
+                if (confirm("Are you sure you want to delete all your local full exam history?")) {
+                    StorageManager.clearHistory();
+                    showHistory(); // Refresh view
+                }
+            } else {
+                if (confirm("Are you sure you want to delete all your local practice drills history?")) {
+                    localStorage.removeItem('sat_drill_history');
+                    showHistory(); // Refresh view
+                }
             }
         });
 
@@ -891,13 +921,16 @@ document.addEventListener('DOMContentLoaded', () => {
         startModule(0);
     }
 
-    function showHistory() {
+    async function showHistory() {
+        const savedName = localStorage.getItem('sat_student_name');
+        
+        // 1. Load full exams history
+        const examsTbody = document.getElementById('history-tbody');
+        examsTbody.innerHTML = '';
         const history = StorageManager.getHistory();
-        const tbody = document.getElementById('history-tbody');
-        tbody.innerHTML = '';
 
         if (history.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="5" style="text-align:center">No tests taken yet.</td></tr>';
+            examsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center">No exams taken yet.</td></tr>';
         } else {
             history.forEach(h => {
                 const tr = document.createElement('tr');
@@ -909,9 +942,97 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${h.math}</td>
                     <td><button class="view-btn" onclick="appLoadHistoryResult('${h.id}')">View</button></td>
                 `;
-                tbody.appendChild(tr);
+                examsTbody.appendChild(tr);
             });
         }
+
+        // Reset tabs to show Full Exams first
+        const tabExams = document.getElementById('history-tab-exams');
+        const tabDrills = document.getElementById('history-tab-drills');
+        const examsContainer = document.getElementById('history-exams-container');
+        const drillsContainer = document.getElementById('history-drills-container');
+        if (tabExams && tabDrills) {
+            tabExams.className = 'btn-primary';
+            tabDrills.className = 'btn-secondary';
+            examsContainer.classList.remove('hidden');
+            drillsContainer.classList.add('hidden');
+        }
+
+        // 2. Load practice drills history
+        const drillsTbody = document.getElementById('history-drills-tbody');
+        drillsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center">Loading drills...</td></tr>';
+        
+        try {
+            let drillRecords = [];
+            
+            if (window.supabaseClient && savedName) {
+                const { data, error } = await window.supabaseClient
+                    .from('student_results')
+                    .select('created_at, test_id, total_score, raw_details')
+                    .eq('student_name', savedName)
+                    .order('created_at', { ascending: false });
+
+                if (!error && data) {
+                    data.forEach(row => {
+                        if (row.raw_details && row.raw_details.type === 'drill') {
+                            drillRecords.push({
+                                date: row.created_at,
+                                drill_name: row.raw_details.drill_name || row.test_id,
+                                test_title: row.raw_details.test_title || 'SAT Drill',
+                                module_name: row.raw_details.module_name || '',
+                                correct: row.total_score,
+                                total: row.raw_details.questions_count || 5
+                            });
+                        }
+                    });
+                }
+            } else {
+                const localDrills = localStorage.getItem('sat_drill_history');
+                if (localDrills) {
+                    const parsed = JSON.parse(localDrills);
+                    const studentDrills = parsed.filter(d => d.student_name === savedName);
+                    studentDrills.sort((a, b) => new Date(b.date) - new Date(a.date));
+                    studentDrills.forEach(d => {
+                        drillRecords.push({
+                            date: d.date,
+                            drill_name: `${d.module_name} - Drill ${parseInt(d.drill_key.split('drill')[1]) + 1}`,
+                            test_title: d.test_title,
+                            correct: d.correct,
+                            total: d.total
+                        });
+                    });
+                }
+            }
+
+            drillsTbody.innerHTML = '';
+            if (drillRecords.length === 0) {
+                drillsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center">No drills completed yet.</td></tr>';
+            } else {
+                drillRecords.forEach(d => {
+                    const tr = document.createElement('tr');
+                    const dateObj = new Date(d.date);
+                    const dateStr = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    
+                    const percent = Math.round((d.correct / d.total) * 100);
+                    let scoreBadgeClass = 'low';
+                    if (percent >= 80) scoreBadgeClass = 'high';
+                    else if (percent >= 50) scoreBadgeClass = 'med';
+
+                    tr.innerHTML = `
+                        <td>${dateStr}</td>
+                        <td>${d.test_title}</td>
+                        <td>${d.drill_name}</td>
+                        <td><span class="score-badge-drill ${scoreBadgeClass}">${d.correct} / ${d.total}</span></td>
+                        <td><strong>${percent}%</strong></td>
+                    `;
+                    drillsTbody.appendChild(tr);
+                });
+            }
+        } catch (err) {
+            console.error("Error loading drills history:", err);
+            drillsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:var(--error);">Failed to load drills.</td></tr>';
+        }
+
         switchView('history');
     }
 

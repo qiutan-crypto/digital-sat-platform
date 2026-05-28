@@ -236,23 +236,52 @@
 
         <!-- History View -->
         <section id="history-view" class="view">
-            <div class="card history-card">
-                <h2>Test History</h2>
-                <table id="history-table">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Total Score</th>
-                            <th>R&W</th>
-                            <th>Math</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody id="history-tbody">
-                        <!-- History injected here -->
-                    </tbody>
-                </table>
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+            <div class="card history-card" style="max-width: 900px; width: 100%;">
+                <h2>Practice History</h2>
+                
+                <!-- Toggle Tabs -->
+                <div class="history-tabs" style="display: flex; gap: 15px; margin-top: 15px; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px;">
+                    <button type="button" id="history-tab-exams" class="btn-primary" style="padding: 6px 16px; font-size: 0.9rem;">Full Exams</button>
+                    <button type="button" id="history-tab-drills" class="btn-secondary" style="padding: 6px 16px; font-size: 0.9rem;">Practice Drills</button>
+                </div>
+
+                <!-- Full Exams Table -->
+                <div id="history-exams-container">
+                    <table id="history-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Total Score</th>
+                                <th>R&W</th>
+                                <th>Math</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-tbody">
+                            <!-- History injected here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Practice Drills Table -->
+                <div id="history-drills-container" class="hidden">
+                    <table id="history-drills-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Test Paper</th>
+                                <th>Drill</th>
+                                <th>Score</th>
+                                <th>Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-drills-tbody">
+                            <!-- Drills injected here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 25px;">
                     <button type="button" id="history-back-btn" class="btn-secondary">Back</button>
                     <button type="button" id="clear-history-btn" style="background-color: #ef4444; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.375rem; cursor: pointer; font-weight: 500;">Clear History</button>
                 </div>
