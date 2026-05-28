@@ -20,9 +20,9 @@ CREATE POLICY "Allow anonymous insert to student_results"
     TO anon 
     WITH CHECK (true);
 
--- Deny anonymous users from reading other students' scores
-CREATE POLICY "Deny anonymous read on student_results" 
+-- Allow anonymous users to read students' scores (required for Teacher Dashboard)
+CREATE POLICY "Allow anonymous read on student_results" 
     ON public.student_results 
     FOR SELECT 
     TO anon 
-    USING (false);
+    USING (true);

@@ -44,7 +44,7 @@
         <!-- Dashboard View -->
         <section id="dashboard-view" class="view active">
             <div class="intro-container">
-                <h2>Welcome to Digital SAT Practice</h2>
+                <h2 id="dashboard-welcome-heading">Welcome to Digital SAT Practice</h2>
                 <p>Select a practice test below to begin or review your previous scores.</p>
                 
                 <div id="resume-test-container" class="hidden" style="margin-top: 20px; padding: 20px; background-color: rgba(59, 130, 246, 0.1); border: 2px solid var(--primary); border-radius: 8px; text-align: center;">
@@ -59,8 +59,30 @@
                     <div style="text-align:center; padding: 2rem;">Loading available tests...</div>
                 </div>
 
-                <div class="intro-actions" style="margin-top: 2rem;">
+                <div class="intro-actions" style="margin-top: 2rem; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <button type="button" id="dashboard-start-practice-btn" class="btn-primary" style="background-color: var(--success); border-color: var(--success);">Start Practice Drills</button>
                     <button type="button" id="dashboard-view-history-btn" class="btn-secondary">View History</button>
+                </div>
+
+                <!-- Recent Practice Drills on Dashboard -->
+                <div id="dashboard-practice-history" class="hidden" style="margin-top: 40px; text-align: left; width: 100%; max-width: 900px; margin-left: auto; margin-right: auto; padding: 0 15px;">
+                    <h3 class="history-section-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 6px;"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Recent Practice Drills
+                    </h3>
+                    <table class="practice-history-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Drill</th>
+                                <th>Score</th>
+                                <th>Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dashboard-practice-tbody">
+                            <!-- Injected dynamically -->
+                        </tbody>
+                    </table>
                 </div>
                 
                 <div style="margin-top: 30px; text-align: center;">

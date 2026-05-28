@@ -695,3 +695,247 @@ tr:hover {
     justify-content: center;
     gap: 1rem;
 }
+
+/* ==========================================
+   PRACTICE MODE LAYOUT & SIDEBAR TREE
+   ========================================== */
+.practice-container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 60px); /* Subtract header */
+    overflow: hidden;
+}
+
+.practice-sidebar {
+    width: 320px;
+    background-color: var(--nav-bg);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.sidebar-header-box {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-student-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar-student-name svg {
+    color: var(--primary);
+}
+
+.sidebar-tree-container {
+    flex: 1;
+    padding: 15px 10px;
+}
+
+.tree-list {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.tree-list:first-child {
+    padding-left: 0;
+}
+
+.tree-item {
+    margin: 4px 0;
+}
+
+.tree-node {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.tree-node:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+}
+
+.tree-node.active-drill {
+    background-color: rgba(59, 130, 246, 0.15);
+    border: 1px solid var(--primary);
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.tree-toggle-icon {
+    font-size: 0.75rem;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    transition: transform 0.2s ease;
+    color: var(--text-muted);
+}
+
+.tree-toggle-icon.open {
+    transform: rotate(90deg);
+}
+
+.tree-node-icon {
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.tree-node-title {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.drill-status-badge {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    background-color: rgba(16, 185, 129, 0.15);
+    color: var(--success);
+    margin-left: 6px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.drill-status-badge.in-progress {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: var(--accent);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.practice-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Practice immediate feedback styling overrides */
+.choice-label.correct {
+    background-color: rgba(16, 185, 129, 0.15) !important;
+    border-color: var(--success) !important;
+    color: var(--text-main) !important;
+}
+
+.choice-label.incorrect {
+    background-color: rgba(239, 68, 68, 0.15) !important;
+    border-color: var(--error) !important;
+    color: var(--text-main) !important;
+}
+
+.choice-label.correct-missed {
+    border-color: var(--success) !important;
+    border-style: dashed !important;
+}
+
+.choice-label.locked {
+    pointer-events: none !important;
+    opacity: 0.85;
+}
+
+.choice-label.locked input[type="radio"] {
+    cursor: not-allowed;
+}
+
+/* Grid-in answer status feedback */
+.grid-in-feedback {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.grid-in-feedback.correct {
+    background-color: rgba(16, 185, 129, 0.15);
+    border: 1px solid var(--success);
+    color: var(--success);
+}
+
+.grid-in-feedback.incorrect {
+    background-color: rgba(239, 68, 68, 0.15);
+    border: 1px solid var(--error);
+    color: var(--error);
+}
+
+.check-answer-btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.practice-header-info {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    display: inline-block;
+}
+
+/* Custom Practice History List styling */
+.history-section-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+}
+
+.practice-history-table {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.score-badge-drill {
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.score-badge-drill.high {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: var(--success);
+}
+
+.score-badge-drill.med {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: var(--accent);
+}
+
+.score-badge-drill.low {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: var(--error);
+}
+

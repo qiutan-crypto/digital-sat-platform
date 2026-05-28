@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital SAT Practice Mode</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- STUDENT NAME MODAL (Only shown if name not set in local storage) -->
+    <div id="student-name-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Enter Your Name</h3>
+            <p>Please enter your name or student ID to start practice drills. This will be recorded with your scores.</p>
+            <input type="text" id="student-name-input" placeholder="Your Name" style="width: 100%; padding: 10px; margin: 15px 0; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-dark); color: var(--text-main); font-size: 1rem;" autocomplete="off" spellcheck="false" required>
+            <div class="modal-actions" style="justify-content: flex-end;">
+                <button type="button" id="cancel-name-btn" class="btn-secondary">Cancel</button>
+                <button type="button" id="confirm-name-btn" class="btn-primary">Save Name</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DRILL COMPLETED SUMMARY MODAL -->
+    <div id="drill-summary-modal" class="modal hidden">
+        <div class="modal-content" style="max-width: 450px;">
+            <h3 style="color: var(--success); font-size: 1.5rem; margin-bottom: 10px;">🎉 Drill Completed!</h3>
+            <p style="margin-bottom: 20px;">You have completed this practice drill.</p>
+            
+            <div style="background-color: var(--bg-dark); border-radius: 8px; padding: 20px; margin-bottom: 20px; border: 1px solid var(--border);">
+                <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Your Score</div>
+                <div id="drill-score-display" style="font-size: 3.5rem; font-weight: 700; color: var(--primary); margin: 10px 0;">4 / 5</div>
+                <div id="drill-percent-display" style="font-size: 1.1rem; font-weight: 600; color: var(--success);">80% Correct</div>
+            </div>
+
+            <div class="modal-actions" style="flex-direction: column; gap: 10px;">
+                <button type="button" id="summary-review-btn" class="btn-primary" style="width: 100%;">Review Answers</button>
+                <button type="button" id="summary-dashboard-btn" class="btn-secondary" style="width: 100%;">Return to Dashboard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header id="app-header">
+        <div class="header-left">
+            <h1 id="test-title">Digital SAT Practice Drills</h1>
+            <span id="current-drill-badge" class="practice-header-info hidden">Test 4 - Module 1 - Drill 1</span>
+        </div>
+        <div class="header-right">
+            <button type="button" id="back-dashboard-btn" class="btn-secondary">Back to Dashboard</button>
+        </div>
+    </header>
+
+    <!-- PRACTICE CONTAINER -->
+    <div class="practice-container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="practice-sidebar">
+            <div class="sidebar-header-box">
+                <div class="sidebar-student-name">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span id="sidebar-student-name-val">Loading Student...</span>
+                </div>
+                <button type="button" id="change-name-btn" class="btn-secondary" style="padding: 4px 10px; font-size: 0.8rem; align-self: flex-start;">Change Name</button>
+            </div>
+            
+            <div class="sidebar-tree-container">
+                <h4 style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em; margin-bottom: 10px; padding-left: 5px;">Question List</h4>
+                <div id="sidebar-tree">
+                    <!-- Tree items injected here -->
+                    <div style="padding: 10px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">Loading folders...</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN PRACTICE VIEW -->
+        <main class="practice-main">
+            <!-- Questions panel (identical split layout) -->
+            <section id="exam-view" class="view active" style="flex: 1; display: flex; flex-direction: column; overflow: hidden;">
+                <div class="split-layout" style="flex: 1; overflow: hidden;">
+                    <!-- Left Panel: Passage -->
+                    <div id="passage-panel" class="panel left-panel hidden">
+                        <div class="passage-content" id="passage-text"></div>
+                    </div>
+                    
+                    <!-- Right Panel: Question & Answers -->
+                    <div id="question-panel" class="panel right-panel" style="overflow-y: auto;">
+                        <div class="question-header">
+                            <span class="question-number-badge" id="q-num-badge">1</span>
+                        </div>
+                        
+                        <div class="question-content" id="question-text"></div>
+                        
+                        <!-- AI Translation of Question -->
+                        <div class="translation-actions">
+                            <button type="button" id="translate-question-btn" class="btn-icon translate-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg>
+                                AI 翻译
+                            </button>
+                        </div>
+                        <div id="question-translation" class="translation-content hidden"></div>
+                        
+                        <!-- Choices (Multiple Choice) -->
+                        <div class="choices-container" id="choices-container">
+                            <!-- Radio options injected here -->
+                        </div>
+                        
+                        <!-- Grid-in (Student Produced) -->
+                        <div class="grid-in-container hidden" id="grid-in-container">
+                            <input type="text" id="grid-in-input" placeholder="Enter your answer" maxlength="8" style="margin-bottom: 10px;">
+                            <button type="button" id="check-answer-btn" class="btn-primary check-answer-btn">Submit Answer</button>
+                            <div id="grid-in-feedback" class="grid-in-feedback hidden"></div>
+                        </div>
+                        
+                        <!-- Explanation Panel (Revealed immediately on answer) -->
+                        <div id="explanation-container" class="explanation-container hidden" style="margin-top: 25px; border-top: 1px solid var(--border); padding-top: 20px;">
+                            <h4 style="color: var(--primary); margin-bottom: 8px;">Explanation</h4>
+                            <p id="explanation-text" style="font-size: 0.95rem; line-height: 1.6;"></p>
+                            
+                            <!-- AI Translation of Explanation -->
+                            <div class="translation-actions" style="margin-top: 15px;">
+                                <button type="button" id="translate-explanation-btn" class="btn-icon translate-btn">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg>
+                                    AI 翻译
+                                </button>
+                            </div>
+                            <div id="explanation-translation" class="translation-content hidden"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Navigation -->
+                <footer id="app-footer" style="position: relative; border-top: 1px solid var(--border); background-color: var(--nav-bg); padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; z-index: 10;">
+                    <div class="footer-left">
+                        <span id="footer-q-num">Question 1 of 5</span>
+                    </div>
+                    <div class="footer-center" style="display: flex; gap: 8px;" id="drill-pagination">
+                        <!-- Tiny round indicator buttons for the 5 questions -->
+                        <button class="nav-grid-item current">1</button>
+                        <button class="nav-grid-item">2</button>
+                        <button class="nav-grid-item">3</button>
+                        <button class="nav-grid-item">4</button>
+                        <button class="nav-grid-item">5</button>
+                    </div>
+                    <div class="footer-right" style="display: flex; gap: 10px;">
+                        <button type="button" id="prev-btn" class="btn-nav" disabled>Back</button>
+                        <button type="button" id="next-btn" class="btn-nav btn-primary">Next</button>
+                        <button type="button" id="finish-drill-btn" class="btn-primary hidden" style="background-color: var(--success);">Finish Drill</button>
+                    </div>
+                </footer>
+            </section>
+        </main>
+    </div>
+
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- App Scripts -->
+    <script src="js/supabase-config.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/practice.js"></script>
+</body>
+</html>

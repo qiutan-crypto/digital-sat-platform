@@ -76,9 +76,106 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Fallback to local
                 renderTestGrid([{id: 'test4', title: 'SAT Practice Test 4'}]);
             }
+            
+            // Load practice history on dashboard
+            loadPracticeHistory();
         } catch (err) {
             console.error("Error loading tests from Supabase:", err);
             renderTestGrid([{id: 'test4', title: 'SAT Practice Test 4'}]);
+        }
+    }
+
+    async function loadPracticeHistory() {
+        const savedName = localStorage.getItem('sat_student_name');
+        if (!savedName) return;
+
+        // Update welcome heading
+        const welcomeHeading = document.getElementById('dashboard-welcome-heading');
+        if (welcomeHeading) {
+            welcomeHeading.textContent = `Welcome back, ${savedName}!`;
+        }
+
+        const practiceHistorySection = document.getElementById('dashboard-practice-history');
+        const practiceTbody = document.getElementById('dashboard-practice-tbody');
+        if (!practiceHistorySection || !practiceTbody) return;
+
+        try {
+            let drillRecords = [];
+
+            if (window.supabaseClient) {
+                // Fetch from Supabase
+                const { data, error } = await window.supabaseClient
+                    .from('student_results')
+                    .select('created_at, test_id, total_score, raw_details')
+                    .eq('student_name', savedName)
+                    .order('created_at', { ascending: false });
+
+                if (!error && data) {
+                    data.forEach(row => {
+                        if (row.raw_details && row.raw_details.type === 'drill') {
+                            drillRecords.push({
+                                date: row.created_at,
+                                drill_name: row.raw_details.drill_name || row.test_id,
+                                test_title: row.raw_details.test_title || 'SAT Drill',
+                                module_name: row.raw_details.module_name || '',
+                                correct: row.total_score,
+                                total: row.raw_details.questions_count || 5
+                            });
+                        }
+                    });
+                }
+            } else {
+                // Fetch from localStorage fallback
+                const localDrills = localStorage.getItem('sat_drill_history');
+                if (localDrills) {
+                    const parsed = JSON.parse(localDrills);
+                    // Filter for current student
+                    const studentDrills = parsed.filter(d => d.student_name === savedName);
+                    // Sort descending by date
+                    studentDrills.sort((a, b) => new Date(b.date) - new Date(a.date));
+                    studentDrills.forEach(d => {
+                        drillRecords.push({
+                            date: d.date,
+                            drill_name: `${d.module_name} - Drill ${parseInt(d.drill_key.split('drill')[1]) + 1}`,
+                            test_title: d.test_title,
+                            correct: d.correct,
+                            total: d.total
+                        });
+                    });
+                }
+            }
+
+            if (drillRecords.length > 0) {
+                practiceHistorySection.classList.remove('hidden');
+                practiceTbody.innerHTML = '';
+                
+                // Show maximum of 10 recent drills on dashboard
+                const recentDrills = drillRecords.slice(0, 10);
+                
+                recentDrills.forEach(d => {
+                    const tr = document.createElement('tr');
+                    
+                    const dateObj = new Date(d.date);
+                    const dateStr = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    
+                    const percent = Math.round((d.correct / d.total) * 100);
+                    let scoreBadgeClass = 'low';
+                    if (percent >= 80) scoreBadgeClass = 'high';
+                    else if (percent >= 50) scoreBadgeClass = 'med';
+                    
+                    tr.innerHTML = `
+                        <td>${dateStr}</td>
+                        <td><strong>${d.test_title}</strong> - ${d.drill_name || d.module_name}</td>
+                        <td><span class="score-badge-drill ${scoreBadgeClass}">${d.correct} / ${d.total}</span></td>
+                        <td>${percent}%</td>
+                    `;
+                    practiceTbody.appendChild(tr);
+                });
+            } else {
+                practiceHistorySection.classList.add('hidden');
+            }
+        } catch (err) {
+            console.error("Error loading practice history:", err);
         }
     }
     
@@ -230,7 +327,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function initEventHandlers() {
         document.getElementById('start-test-btn').addEventListener('click', () => {
-            document.getElementById('student-name-input').value = "";
+            const savedName = localStorage.getItem('sat_student_name');
+            document.getElementById('student-name-input').value = savedName || "";
             document.getElementById('student-name-modal').classList.remove('hidden');
         });
 
@@ -245,9 +343,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
             currentStudentName = nameInput;
+            localStorage.setItem('sat_student_name', nameInput); // Persist name for next visits
             document.getElementById('student-name-modal').classList.add('hidden');
             startTest();
         });
+
+        const startPracticeBtn = document.getElementById('dashboard-start-practice-btn');
+        if (startPracticeBtn) {
+            startPracticeBtn.addEventListener('click', () => {
+                window.location.href = 'practice.html';
+            });
+        }
 
         if(document.getElementById('view-history-btn')) document.getElementById('view-history-btn').addEventListener('click', showHistory);
         if(document.getElementById('dashboard-view-history-btn')) document.getElementById('dashboard-view-history-btn').addEventListener('click', showHistory);
