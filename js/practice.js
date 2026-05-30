@@ -452,7 +452,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Explanation
         if (isAnswered) {
             elements.explanationContainer.classList.remove('hidden');
-            elements.explanationText.textContent = q.explanation || '';
+            const explanationHtml = q.explanation ? marked.parse(q.explanation) : '';
+            elements.explanationText.innerHTML = `<strong>Correct Answer: ${q.correctAnswer}</strong><br><br>${explanationHtml}`;
         } else {
             elements.explanationContainer.classList.add('hidden');
         }
