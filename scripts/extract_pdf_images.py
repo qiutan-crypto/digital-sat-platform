@@ -62,6 +62,9 @@ def get_sorted_groups(page, threshold=40):
         r = d['rect']
         # Exclude header/footer: top header is at y0=115, so we exclude y0 <= 130!
         if r.y0 > 130 and r.y1 < page_rect.height - 50:
+            # Exclude question header banner bars (which act as horizontal bridges)
+            if r.height < 15 and r.width > 200:
+                continue
             # Exclude page-border lines or column layout separators
             if r.width > 500 or r.height > 500:
                 continue
@@ -99,15 +102,18 @@ def get_sorted_groups(page, threshold=40):
             if changed:
                 break
                 
-    # Union rects
+    # Union rects using custom union to include empty rects (e.g. 0-height grid lines)
     group_rects = []
     for g in groups:
-        union = g[0]
-        for r in g[1:]:
-            union = union | r
-        # Filter out tiny noise elements
+        x0 = min(r.x0 for r in g)
+        y0 = min(r.y0 for r in g)
+        x1 = max(r.x1 for r in g)
+        y1 = max(r.y1 for r in g)
+        union = fitz.Rect(x0, y0, x1, y1)
+        # Filter out tiny noise elements and large page dividers/borders
         if union.width > 15 and union.height > 15:
-            group_rects.append(union)
+            if union.width < 450 and union.height < 450:
+                group_rects.append(union)
             
     return group_rects
 
@@ -269,6 +275,69 @@ def extract_images_from_test(test_num):
         # Keep only the top len(imgs) largest groups
         groups = sorted(groups, key=lambda g: g.width * g.height, reverse=True)[:len(imgs)]
         
+        # Get text blocks of the page to expand crops for titles, axis labels, legends, etc.
+        text_blocks = []
+        for block in page.get_text("blocks"):
+            x0, y0, x1, y1, text, block_no, block_type = block
+            if text.strip():
+                text_blocks.append((fitz.Rect(x0, y0, x1, y1), text.strip()))
+                
+        expanded_groups = []
+        for gr in groups:
+            curr_rect = fitz.Rect(gr)
+            merged_any = True
+            merged_texts = []
+            while merged_any:
+                merged_any = False
+                for tb_rect, tb_text in text_blocks:
+                    if tb_text in merged_texts:
+                        continue
+                    text_clean = tb_text.replace("\n", " ").strip()
+                    # Skip wide layout separator blocks or page banners
+                    if tb_rect.width > 280:
+                        continue
+                    if tb_rect.height > 150:
+                        continue
+                    # Skip noise/layout lines containing mostly separator symbols
+                    clean_symbols = re.sub(r'[\s\-\._~\|\+=\*#\(\):]+', '', tb_text)
+                    if len(clean_symbols) <= 1:
+                        continue
+                    # Skip pure digits only if they are in the header area (likely question numbers)
+                    if text_clean.isdigit() and tb_rect.y0 < 130:
+                        continue
+                    # Skip large paragraphs (question text / choices)
+                    if len(tb_text) >= 120 or len(tb_text.split()) >= 20:
+                        continue
+                    # Skip choice identifiers
+                    if re.match(r'^[A-D]\)', text_clean):
+                        continue
+                    # Skip start of question sentences
+                    if text_clean.startswith("Which ") or text_clean.startswith("What is") or text_clean.startswith("If the "):
+                        continue
+                    # Skip directions/banners
+                    if "Unauthorized copying" in text_clean or "CONTINUE" in text_clean or "STOP" in text_clean:
+                        continue
+                        
+                    dx = max(0, tb_rect.x0 - curr_rect.x1, curr_rect.x0 - tb_rect.x1)
+                    dy = max(0, tb_rect.y0 - curr_rect.y1, curr_rect.y0 - tb_rect.y1)
+                    dist = max(dx, dy)
+                    
+                    if dist < 45:
+                        overlaps_x = (tb_rect.x0 < curr_rect.x1) and (tb_rect.x1 > curr_rect.x0)
+                        overlaps_y = (tb_rect.y0 < curr_rect.y1) and (tb_rect.y1 > curr_rect.y0)
+                        
+                        if overlaps_x or (overlaps_y and dx < 15) or (dx < 15 and dy < 15):
+                            curr_rect = fitz.Rect(
+                                min(curr_rect.x0, tb_rect.x0),
+                                min(curr_rect.y0, tb_rect.y0),
+                                max(curr_rect.x1, tb_rect.x1),
+                                max(curr_rect.y1, tb_rect.y1)
+                            )
+                            merged_texts.append(tb_text)
+                            merged_any = True
+            expanded_groups.append(curr_rect)
+        groups = expanded_groups
+        
         # Row-major sort the final matched groups
         rows = []
         for gr in groups:
@@ -345,5 +414,5 @@ def extract_images_from_test(test_num):
         print(response.text)
 
 if __name__ == '__main__':
-    for t_num in range(6, 12):
+    for t_num in range(4, 12):
         extract_images_from_test(t_num)
