@@ -640,9 +640,20 @@ document.addEventListener('DOMContentLoaded', () => {
             // Cache score immediately
             drillResults[drillKey] = `${correctCount}/${totalQ}`;
             
-            // Update sidebar UI with score
-            const activeUl = document.querySelector('.active-drill').parentElement.parentElement;
-            renderModulesAndDrills(activeTestId, activeUl);
+            // Update sidebar UI with score directly to avoid layout corruption or collapse
+            const activeDrillNode = document.querySelector('.active-drill');
+            if (activeDrillNode) {
+                let badge = activeDrillNode.querySelector('.drill-status-badge');
+                const scoreStr = `${correctCount}/${totalQ}`;
+                if (badge) {
+                    badge.textContent = scoreStr;
+                } else {
+                    badge = document.createElement('span');
+                    badge.className = 'drill-status-badge';
+                    badge.textContent = scoreStr;
+                    activeDrillNode.appendChild(badge);
+                }
+            }
             
             // Show score modal
             elements.scoreDisplay.textContent = `${correctCount} / ${totalQ}`;

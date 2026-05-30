@@ -136,50 +136,79 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!practiceHistorySection || !practiceTbody) return;
 
         try {
-            let drillRecords = [];
+            let cloudDrills = [];
+            let localDrills = [];
 
+            // 1. Fetch from Supabase if client exists
             if (window.supabaseClient) {
-                // Fetch from Supabase
-                const { data, error } = await window.supabaseClient
-                    .from('student_results')
-                    .select('created_at, test_id, total_score, raw_details')
-                    .eq('student_name', savedName)
-                    .order('created_at', { ascending: false });
+                try {
+                    const { data, error } = await window.supabaseClient
+                        .from('student_results')
+                        .select('created_at, test_id, total_score, raw_details')
+                        .eq('student_name', savedName)
+                        .order('created_at', { ascending: false });
 
-                if (!error && data) {
-                    data.forEach(row => {
-                        if (row.raw_details && row.raw_details.type === 'drill') {
-                            drillRecords.push({
-                                date: row.created_at,
-                                drill_name: row.raw_details.drill_name || row.test_id,
-                                test_title: row.raw_details.test_title || 'SAT Drill',
-                                module_name: row.raw_details.module_name || '',
-                                correct: row.total_score,
-                                total: row.raw_details.questions_count || 5
-                            });
-                        }
-                    });
-                }
-            } else {
-                // Fetch from localStorage fallback
-                const localDrills = localStorage.getItem('sat_drill_history');
-                if (localDrills) {
-                    const parsed = JSON.parse(localDrills);
-                    // Filter for current student
-                    const studentDrills = parsed.filter(d => d.student_name === savedName);
-                    // Sort descending by date
-                    studentDrills.sort((a, b) => new Date(b.date) - new Date(a.date));
-                    studentDrills.forEach(d => {
-                        drillRecords.push({
-                            date: d.date,
-                            drill_name: `${d.module_name} - Drill ${parseInt(d.drill_key.split('drill')[1]) + 1}`,
-                            test_title: d.test_title,
-                            correct: d.correct,
-                            total: d.total
+                    if (!error && data) {
+                        data.forEach(row => {
+                            if (row.raw_details && row.raw_details.type === 'drill') {
+                                cloudDrills.push({
+                                    date: row.created_at,
+                                    drill_key: row.test_id,
+                                    drill_name: row.raw_details.drill_name || row.test_id,
+                                    test_title: row.raw_details.test_title || 'SAT Drill',
+                                    module_name: row.raw_details.module_name || '',
+                                    correct: row.total_score,
+                                    total: row.raw_details.questions_count || 5
+                                });
+                            }
                         });
-                    });
+                    }
+                } catch (e) {
+                    console.error("Error fetching drills from Supabase:", e);
                 }
             }
+
+            // 2. Fetch from localStorage fallback/backup
+            const localDrillsRaw = localStorage.getItem('sat_drill_history');
+            if (localDrillsRaw) {
+                try {
+                    const parsed = JSON.parse(localDrillsRaw);
+                    // Filter for current student
+                    const studentDrills = parsed.filter(d => d.student_name === savedName);
+                    studentDrills.forEach(d => {
+                        const drillIdxPart = d.drill_key.split('drill')[1];
+                        const drillIdx = drillIdxPart ? parseInt(drillIdxPart) + 1 : 1;
+                        localDrills.push({
+                            date: d.date,
+                            drill_key: d.drill_key,
+                            drill_name: `${d.module_name || 'Module'} - Drill ${drillIdx}`,
+                            test_title: d.test_title || 'SAT Drill',
+                            module_name: d.module_name || '',
+                            correct: d.correct,
+                            total: d.total || 5
+                        });
+                    });
+                } catch (e) {
+                    console.error("Error parsing local drills:", e);
+                }
+            }
+
+            // 3. Merge and deduplicate (same drill key, same score, and time within 1 minute)
+            let drillRecords = [...cloudDrills];
+            localDrills.forEach(local => {
+                const isDuplicate = cloudDrills.some(cloud => {
+                    const sameKey = (cloud.drill_key === local.drill_key);
+                    const sameScore = (cloud.correct === local.correct);
+                    const timeDiff = Math.abs(new Date(cloud.date) - new Date(local.date));
+                    return sameKey && sameScore && (timeDiff < 60000);
+                });
+                if (!isDuplicate) {
+                    drillRecords.push(local);
+                }
+            });
+
+            // Sort descending by date
+            drillRecords.sort((a, b) => new Date(b.date) - new Date(a.date));
 
             if (drillRecords.length > 0) {
                 practiceHistorySection.classList.remove('hidden');
@@ -963,46 +992,76 @@ document.addEventListener('DOMContentLoaded', () => {
         drillsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center">Loading drills...</td></tr>';
         
         try {
-            let drillRecords = [];
+            let cloudDrills = [];
+            let localDrills = [];
             
             if (window.supabaseClient && savedName) {
-                const { data, error } = await window.supabaseClient
-                    .from('student_results')
-                    .select('created_at, test_id, total_score, raw_details')
-                    .eq('student_name', savedName)
-                    .order('created_at', { ascending: false });
+                try {
+                    const { data, error } = await window.supabaseClient
+                        .from('student_results')
+                        .select('created_at, test_id, total_score, raw_details')
+                        .eq('student_name', savedName)
+                        .order('created_at', { ascending: false });
 
-                if (!error && data) {
-                    data.forEach(row => {
-                        if (row.raw_details && row.raw_details.type === 'drill') {
-                            drillRecords.push({
-                                date: row.created_at,
-                                drill_name: row.raw_details.drill_name || row.test_id,
-                                test_title: row.raw_details.test_title || 'SAT Drill',
-                                module_name: row.raw_details.module_name || '',
-                                correct: row.total_score,
-                                total: row.raw_details.questions_count || 5
-                            });
-                        }
-                    });
-                }
-            } else {
-                const localDrills = localStorage.getItem('sat_drill_history');
-                if (localDrills) {
-                    const parsed = JSON.parse(localDrills);
-                    const studentDrills = parsed.filter(d => d.student_name === savedName);
-                    studentDrills.sort((a, b) => new Date(b.date) - new Date(a.date));
-                    studentDrills.forEach(d => {
-                        drillRecords.push({
-                            date: d.date,
-                            drill_name: `${d.module_name} - Drill ${parseInt(d.drill_key.split('drill')[1]) + 1}`,
-                            test_title: d.test_title,
-                            correct: d.correct,
-                            total: d.total
+                    if (!error && data) {
+                        data.forEach(row => {
+                            if (row.raw_details && row.raw_details.type === 'drill') {
+                                cloudDrills.push({
+                                    date: row.created_at,
+                                    drill_key: row.test_id,
+                                    drill_name: row.raw_details.drill_name || row.test_id,
+                                    test_title: row.raw_details.test_title || 'SAT Drill',
+                                    module_name: row.raw_details.module_name || '',
+                                    correct: row.total_score,
+                                    total: row.raw_details.questions_count || 5
+                                });
+                            }
                         });
-                    });
+                    }
+                } catch (e) {
+                    console.error("Error fetching drills from Supabase:", e);
                 }
             }
+
+            const localDrillsRaw = localStorage.getItem('sat_drill_history');
+            if (localDrillsRaw && savedName) {
+                try {
+                    const parsed = JSON.parse(localDrillsRaw);
+                    const studentDrills = parsed.filter(d => d.student_name === savedName);
+                    studentDrills.forEach(d => {
+                        const drillIdxPart = d.drill_key.split('drill')[1];
+                        const drillIdx = drillIdxPart ? parseInt(drillIdxPart) + 1 : 1;
+                        localDrills.push({
+                            date: d.date,
+                            drill_key: d.drill_key,
+                            drill_name: `${d.module_name || 'Module'} - Drill ${drillIdx}`,
+                            test_title: d.test_title || 'SAT Drill',
+                            module_name: d.module_name || '',
+                            correct: d.correct,
+                            total: d.total || 5
+                        });
+                    });
+                } catch (e) {
+                    console.error("Error parsing local drills:", e);
+                }
+            }
+
+            // Merge and deduplicate
+            let drillRecords = [...cloudDrills];
+            localDrills.forEach(local => {
+                const isDuplicate = cloudDrills.some(cloud => {
+                    const sameKey = (cloud.drill_key === local.drill_key);
+                    const sameScore = (cloud.correct === local.correct);
+                    const timeDiff = Math.abs(new Date(cloud.date) - new Date(local.date));
+                    return sameKey && sameScore && (timeDiff < 60000);
+                });
+                if (!isDuplicate) {
+                    drillRecords.push(local);
+                }
+            });
+
+            // Sort descending by date
+            drillRecords.sort((a, b) => new Date(b.date) - new Date(a.date));
 
             drillsTbody.innerHTML = '';
             if (drillRecords.length === 0) {
