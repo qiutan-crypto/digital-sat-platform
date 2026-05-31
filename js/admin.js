@@ -23,9 +23,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
+            // Filter out duplicate submissions at the exact same time/score/test_id (e.g. from student name migrations)
+            const filteredData = [];
+            data.forEach(row => {
+                const isDuplicate = filteredData.some(existing => {
+                    const sameTest = (existing.test_id === row.test_id);
+                    const sameScore = (existing.total_score === row.total_score);
+                    const timeDiff = Math.abs(new Date(existing.created_at) - new Date(row.created_at));
+                    return sameTest && sameScore && (timeDiff < 5000); // within 5 seconds
+                });
+                
+                if (isDuplicate) {
+                    // Prefer keeping the record with the name "Xiaosheng Liu"
+                    if (row.student_name === 'Xiaosheng Liu') {
+                        const index = filteredData.findIndex(existing => {
+                            const sameTest = (existing.test_id === row.test_id);
+                            const sameScore = (existing.total_score === row.total_score);
+                            const timeDiff = Math.abs(new Date(existing.created_at) - new Date(row.created_at));
+                            return sameTest && sameScore && (timeDiff < 5000);
+                        });
+                        if (index !== -1) {
+                            filteredData[index] = row;
+                        }
+                    }
+                } else {
+                    filteredData.push(row);
+                }
+            });
+
             tbody.innerHTML = '';
             
-            data.forEach(row => {
+            filteredData.forEach(row => {
                 const tr = document.createElement('tr');
                 
                 // Format date nicely
