@@ -953,24 +953,99 @@ document.addEventListener('DOMContentLoaded', () => {
     async function showHistory() {
         const savedName = localStorage.getItem('sat_student_name');
         
-        // 1. Load full exams history
-        const examsTbody = document.getElementById('history-tbody');
-        examsTbody.innerHTML = '';
-        const history = StorageManager.getHistory();
+        let cloudExams = [];
+        let cloudDrills = [];
+        
+        // 1. Fetch from Supabase (all results for this student)
+        if (window.supabaseClient && savedName) {
+            try {
+                const { data, error } = await window.supabaseClient
+                    .from('student_results')
+                    .select('id, created_at, test_id, total_score, rw_score, math_score, raw_details')
+                    .eq('student_name', savedName)
+                    .order('created_at', { ascending: false });
 
-        if (history.length === 0) {
-            examsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center">No exams taken yet.</td></tr>';
+                if (!error && data) {
+                    data.forEach(row => {
+                        if (row.raw_details && row.raw_details.type === 'drill') {
+                            cloudDrills.push({
+                                date: row.created_at,
+                                drill_key: row.test_id,
+                                drill_name: row.raw_details.drill_name || row.test_id,
+                                test_title: row.raw_details.test_title || 'SAT Drill',
+                                module_name: row.raw_details.module_name || '',
+                                correct: row.total_score,
+                                total: row.raw_details.questions_count || 5
+                            });
+                        } else {
+                            // Full Exam
+                            cloudExams.push({
+                                id: row.id,
+                                date: row.created_at,
+                                total: row.total_score,
+                                rw: row.rw_score,
+                                math: row.math_score,
+                                testId: row.test_id
+                            });
+                        }
+                    });
+                }
+            } catch (e) {
+                console.error("Error fetching student results from Supabase:", e);
+            }
+        }
+
+        // 2. Load and merge full exams
+        const examsTbody = document.getElementById('history-tbody');
+        examsTbody.innerHTML = '<tr><td colspan="6" style="text-align:center">Loading exams...</td></tr>';
+        
+        const localHistory = StorageManager.getHistory();
+        let mergedExams = [...cloudExams];
+        
+        localHistory.forEach(local => {
+            const isDuplicate = cloudExams.some(cloud => {
+                const sameTest = (cloud.testId === local.testId);
+                const sameTotal = (cloud.total === local.total);
+                const sameRW = (cloud.rw === local.rw);
+                const sameMath = (cloud.math === local.math);
+                const timeDiff = Math.abs(new Date(cloud.date) - new Date(local.date));
+                return sameTest && sameTotal && sameRW && sameMath && (timeDiff < 300000); // 5 minutes window
+            });
+            if (!isDuplicate) {
+                mergedExams.push(local);
+            }
+        });
+        
+        // Sort descending by date
+        mergedExams.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        examsTbody.innerHTML = '';
+        if (mergedExams.length === 0) {
+            examsTbody.innerHTML = '<tr><td colspan="6" style="text-align:center">No exams taken yet.</td></tr>';
         } else {
-            history.forEach(h => {
+            mergedExams.forEach(h => {
                 const tr = document.createElement('tr');
-                const date = new Date(h.date).toLocaleDateString();
+                const dateObj = new Date(h.date);
+                const dateStr = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                
+                let formattedTestId = h.testId || 'unknown';
+                if (formattedTestId.startsWith('test')) {
+                    formattedTestId = 'Test ' + formattedTestId.replace('test', '');
+                }
+
                 tr.innerHTML = `
-                    <td>${date}</td>
+                    <td>${dateStr}</td>
+                    <td><strong>${formattedTestId}</strong></td>
                     <td><strong>${h.total}</strong></td>
                     <td>${h.rw}</td>
                     <td>${h.math}</td>
-                    <td><button class="view-btn" onclick="appLoadHistoryResult('${h.id}')">View</button></td>
+                    <td><button class="view-btn">View</button></td>
                 `;
+                
+                const viewBtn = tr.querySelector('.view-btn');
+                if (viewBtn) {
+                    viewBtn.addEventListener('click', () => displayResults(h));
+                }
                 examsTbody.appendChild(tr);
             });
         }
@@ -987,109 +1062,75 @@ document.addEventListener('DOMContentLoaded', () => {
             drillsContainer.classList.add('hidden');
         }
 
-        // 2. Load practice drills history
+        // 3. Load practice drills history
         const drillsTbody = document.getElementById('history-drills-tbody');
         drillsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center">Loading drills...</td></tr>';
-        
-        try {
-            let cloudDrills = [];
-            let localDrills = [];
-            
-            if (window.supabaseClient && savedName) {
-                try {
-                    const { data, error } = await window.supabaseClient
-                        .from('student_results')
-                        .select('created_at, test_id, total_score, raw_details')
-                        .eq('student_name', savedName)
-                        .order('created_at', { ascending: false });
 
-                    if (!error && data) {
-                        data.forEach(row => {
-                            if (row.raw_details && row.raw_details.type === 'drill') {
-                                cloudDrills.push({
-                                    date: row.created_at,
-                                    drill_key: row.test_id,
-                                    drill_name: row.raw_details.drill_name || row.test_id,
-                                    test_title: row.raw_details.test_title || 'SAT Drill',
-                                    module_name: row.raw_details.module_name || '',
-                                    correct: row.total_score,
-                                    total: row.raw_details.questions_count || 5
-                                });
-                            }
-                        });
-                    }
-                } catch (e) {
-                    console.error("Error fetching drills from Supabase:", e);
-                }
-            }
-
-            const localDrillsRaw = localStorage.getItem('sat_drill_history');
-            if (localDrillsRaw && savedName) {
-                try {
-                    const parsed = JSON.parse(localDrillsRaw);
-                    const studentDrills = parsed.filter(d => d.student_name === savedName);
-                    studentDrills.forEach(d => {
-                        const drillIdxPart = d.drill_key.split('drill')[1];
-                        const drillIdx = drillIdxPart ? parseInt(drillIdxPart) + 1 : 1;
-                        localDrills.push({
-                            date: d.date,
-                            drill_key: d.drill_key,
-                            drill_name: `${d.module_name || 'Module'} - Drill ${drillIdx}`,
-                            test_title: d.test_title || 'SAT Drill',
-                            module_name: d.module_name || '',
-                            correct: d.correct,
-                            total: d.total || 5
-                        });
+        // Load local drills
+        let localDrills = [];
+        const localDrillsRaw = localStorage.getItem('sat_drill_history');
+        if (localDrillsRaw && savedName) {
+            try {
+                const parsed = JSON.parse(localDrillsRaw);
+                const studentDrills = parsed.filter(d => d.student_name === savedName);
+                studentDrills.forEach(d => {
+                    const drillIdxPart = d.drill_key.split('drill')[1];
+                    const drillIdx = drillIdxPart ? parseInt(drillIdxPart) + 1 : 1;
+                    localDrills.push({
+                        date: d.date,
+                        drill_key: d.drill_key,
+                        drill_name: `${d.module_name || 'Module'} - Drill ${drillIdx}`,
+                        test_title: d.test_title || 'SAT Drill',
+                        module_name: d.module_name || '',
+                        correct: d.correct,
+                        total: d.total || 5
                     });
-                } catch (e) {
-                    console.error("Error parsing local drills:", e);
-                }
-            }
-
-            // Merge and deduplicate
-            let drillRecords = [...cloudDrills];
-            localDrills.forEach(local => {
-                const isDuplicate = cloudDrills.some(cloud => {
-                    const sameKey = (cloud.drill_key === local.drill_key);
-                    const sameScore = (cloud.correct === local.correct);
-                    const timeDiff = Math.abs(new Date(cloud.date) - new Date(local.date));
-                    return sameKey && sameScore && (timeDiff < 60000);
                 });
-                if (!isDuplicate) {
-                    drillRecords.push(local);
-                }
+            } catch (e) {
+                console.error("Error parsing local drills:", e);
+            }
+        }
+
+        // Merge and deduplicate drills
+        let drillRecords = [...cloudDrills];
+        localDrills.forEach(local => {
+            const isDuplicate = cloudDrills.some(cloud => {
+                const sameKey = (cloud.drill_key === local.drill_key);
+                const sameScore = (cloud.correct === local.correct);
+                const timeDiff = Math.abs(new Date(cloud.date) - new Date(local.date));
+                return sameKey && sameScore && (timeDiff < 60000);
             });
-
-            // Sort descending by date
-            drillRecords.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-            drillsTbody.innerHTML = '';
-            if (drillRecords.length === 0) {
-                drillsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center">No drills completed yet.</td></tr>';
-            } else {
-                drillRecords.forEach(d => {
-                    const tr = document.createElement('tr');
-                    const dateObj = new Date(d.date);
-                    const dateStr = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-                    
-                    const percent = Math.round((d.correct / d.total) * 100);
-                    let scoreBadgeClass = 'low';
-                    if (percent >= 80) scoreBadgeClass = 'high';
-                    else if (percent >= 50) scoreBadgeClass = 'med';
-
-                    tr.innerHTML = `
-                        <td>${dateStr}</td>
-                        <td>${d.test_title}</td>
-                        <td>${d.drill_name}</td>
-                        <td><span class="score-badge-drill ${scoreBadgeClass}">${d.correct} / ${d.total}</span></td>
-                        <td><strong>${percent}%</strong></td>
-                    `;
-                    drillsTbody.appendChild(tr);
-                });
+            if (!isDuplicate) {
+                drillRecords.push(local);
             }
-        } catch (err) {
-            console.error("Error loading drills history:", err);
-            drillsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:var(--error);">Failed to load drills.</td></tr>';
+        });
+
+        // Sort descending by date
+        drillRecords.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        drillsTbody.innerHTML = '';
+        if (drillRecords.length === 0) {
+            drillsTbody.innerHTML = '<tr><td colspan="5" style="text-align:center">No drills completed yet.</td></tr>';
+        } else {
+            drillRecords.forEach(d => {
+                const tr = document.createElement('tr');
+                const dateObj = new Date(d.date);
+                const dateStr = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                
+                const percent = Math.round((d.correct / d.total) * 100);
+                let scoreBadgeClass = 'low';
+                if (percent >= 80) scoreBadgeClass = 'high';
+                else if (percent >= 50) scoreBadgeClass = 'med';
+
+                tr.innerHTML = `
+                    <td>${dateStr}</td>
+                    <td>${d.test_title}</td>
+                    <td>${d.drill_name}</td>
+                    <td><span class="score-badge-drill ${scoreBadgeClass}">${d.correct} / ${d.total}</span></td>
+                    <td><strong>${percent}%</strong></td>
+                `;
+                drillsTbody.appendChild(tr);
+            });
         }
 
         switchView('history');
