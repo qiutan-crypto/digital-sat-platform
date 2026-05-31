@@ -23,13 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
+            function safeParseDate(dateStr) {
+                if (!dateStr) return new Date(0);
+                // Strip microseconds to make it standard ISO 8601 (milliseconds) for reliable parsing on Safari/iOS WebViews
+                const cleaned = dateStr.replace(/\.(\d{3})\d+/, '.$1');
+                const parsed = new Date(cleaned);
+                return isNaN(parsed.getTime()) ? new Date(dateStr) : parsed;
+            }
+
             // Filter out duplicate submissions at the exact same time/score/test_id (e.g. from student name migrations)
             const filteredData = [];
             data.forEach(row => {
                 const isDuplicate = filteredData.some(existing => {
                     const sameTest = (existing.test_id === row.test_id);
                     const sameScore = (existing.total_score === row.total_score);
-                    const timeDiff = Math.abs(new Date(existing.created_at) - new Date(row.created_at));
+                    const timeDiff = Math.abs(safeParseDate(existing.created_at) - safeParseDate(row.created_at));
                     return sameTest && sameScore && (timeDiff < 5000); // within 5 seconds
                 });
                 
@@ -39,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const index = filteredData.findIndex(existing => {
                             const sameTest = (existing.test_id === row.test_id);
                             const sameScore = (existing.total_score === row.total_score);
-                            const timeDiff = Math.abs(new Date(existing.created_at) - new Date(row.created_at));
+                            const timeDiff = Math.abs(safeParseDate(existing.created_at) - safeParseDate(row.created_at));
                             return sameTest && sameScore && (timeDiff < 5000);
                         });
                         if (index !== -1) {
@@ -57,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const tr = document.createElement('tr');
                 
                 // Format date nicely
-                const dateObj = new Date(row.created_at);
+                const dateObj = safeParseDate(row.created_at);
                 const dateStr = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
                 
                 // Format test ID nicely (e.g. test4 -> Test 4)
