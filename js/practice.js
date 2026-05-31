@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeQuestions = [];
     let activeAnswers = {};
     let currentQuestionIndex = 0;
+    let isSavingDrill = false;
     
     // DOM Elements
     const elements = {
@@ -563,7 +564,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        if (allAnswered) {
+        const drillKey = `${activeTestId}_${activeModuleId}_drill${activeDrillIndex}`;
+        if (allAnswered && !drillResults[drillKey]) {
             elements.finishDrillBtn.classList.remove('hidden');
         } else {
             elements.finishDrillBtn.classList.add('hidden');
@@ -572,6 +574,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Finish current drill and submit results
     async function finishDrill() {
+        if (isSavingDrill) return;
+
+        const drillKey = `${activeTestId}_${activeModuleId}_drill${activeDrillIndex}`;
+        if (drillResults[drillKey]) {
+            alert("This drill has already been completed and submitted.");
+            return;
+        }
+
+        isSavingDrill = true;
         let correctCount = 0;
         activeQuestions.forEach(q => {
             const isCorrect = activeAnswers[q.id].toLowerCase().trim() === q.correctAnswer.toLowerCase().trim();
@@ -579,7 +590,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         const totalQ = activeQuestions.length;
-        const drillKey = `${activeTestId}_${activeModuleId}_drill${activeDrillIndex}`;
         const isRW = activeModuleName.toLowerCase().includes('reading') || activeModuleName.toLowerCase().includes('writing');
         
         const resultRecord = {
@@ -640,6 +650,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Cache score immediately
             drillResults[drillKey] = `${correctCount}/${totalQ}`;
             
+            // Hide the finish button since it's now completed
+            elements.finishDrillBtn.classList.add('hidden');
+            
             // Update sidebar UI with score directly to avoid layout corruption or collapse
             const activeDrillNode = document.querySelector('.active-drill');
             if (activeDrillNode) {
@@ -664,6 +677,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Error saving drill. Proceeding anyway.");
             elements.summaryModal.classList.remove('hidden');
         } finally {
+            isSavingDrill = false;
             elements.finishDrillBtn.disabled = false;
             elements.finishDrillBtn.textContent = 'Finish Drill';
         }
