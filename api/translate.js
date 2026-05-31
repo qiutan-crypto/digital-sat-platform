@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   }
 
   // Define the strict prompt
-  const systemPrompt = "Translate the following text into Chinese. Return ONLY the translation, without any additional conversational text, comments, or explanations.";
+  const systemPrompt = "Translate the following text into Chinese. Keep all LaTeX formulas (such as \\( ... \\) or $$ ... $$) and Markdown formatting completely intact. Return ONLY the translation, without any additional conversational text, comments, or explanations.";
   
   try {
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {

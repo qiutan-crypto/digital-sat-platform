@@ -565,7 +565,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // AI Translation Logic
-        examUI.translateQuestionBtn.addEventListener('click', () => handleTranslation(getCurrentQuestion().question, examUI.questionTranslation, examUI.translateQuestionBtn));
+        examUI.translateQuestionBtn.addEventListener('click', () => {
+            const q = getCurrentQuestion();
+            let textToTranslate = q.question;
+            if (q.choices && q.choices.length > 0) {
+                textToTranslate += "\n\n**Options:**\n" + q.choices.join("\n");
+            }
+            handleTranslation(textToTranslate, examUI.questionTranslation, examUI.translateQuestionBtn);
+        });
         examUI.translateExplanationBtn.addEventListener('click', () => handleTranslation(getCurrentQuestion().explanation, examUI.explanationTranslation, examUI.translateExplanationBtn));
     }
 

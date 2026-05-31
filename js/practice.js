@@ -733,8 +733,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Translate Events
         elements.translateQuestionBtn.addEventListener('click', () => {
             if (activeQuestions[currentQuestionIndex]) {
+                const q = activeQuestions[currentQuestionIndex];
+                let textToTranslate = q.question;
+                if (q.choices && q.choices.length > 0) {
+                    textToTranslate += "\n\n**Options:**\n" + q.choices.join("\n");
+                }
                 handleTranslation(
-                    activeQuestions[currentQuestionIndex].question,
+                    textToTranslate,
                     elements.questionTranslation,
                     elements.translateQuestionBtn
                 );
