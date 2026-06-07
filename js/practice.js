@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeAnswers = {};
     let currentQuestionIndex = 0;
     let isSavingDrill = false;
+    let isCurrentAttemptSubmitted = false;
     
     // DOM Elements
     const elements = {
@@ -361,6 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Reset answers & UI state
         activeAnswers = {};
         currentQuestionIndex = 0;
+        isCurrentAttemptSubmitted = false;
         
         // Update header & badges
         elements.testTitle.textContent = testTitle;
@@ -491,6 +493,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 radio.addEventListener('change', () => {
                     activeAnswers[q.id] = letter;
+                    isCurrentAttemptSubmitted = false;
                     // Trigger immediate feedback
                     renderQuestion();
                 });
@@ -542,6 +545,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
                 activeAnswers[q.id] = val;
+                isCurrentAttemptSubmitted = false;
                 renderQuestion();
             });
         }
@@ -564,8 +568,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        const drillKey = `${activeTestId}_${activeModuleId}_drill${activeDrillIndex}`;
-        if (allAnswered && !drillResults[drillKey]) {
+        if (allAnswered && !isCurrentAttemptSubmitted) {
             elements.finishDrillBtn.classList.remove('hidden');
         } else {
             elements.finishDrillBtn.classList.add('hidden');
@@ -576,9 +579,8 @@ document.addEventListener('DOMContentLoaded', () => {
     async function finishDrill() {
         if (isSavingDrill) return;
 
-        const drillKey = `${activeTestId}_${activeModuleId}_drill${activeDrillIndex}`;
-        if (drillResults[drillKey]) {
-            alert("This drill has already been completed and submitted.");
+        if (isCurrentAttemptSubmitted) {
+            alert("This attempt has already been submitted.");
             return;
         }
 
@@ -649,6 +651,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Cache score immediately
             drillResults[drillKey] = `${correctCount}/${totalQ}`;
+            
+            // Mark current attempt as submitted
+            isCurrentAttemptSubmitted = true;
             
             // Hide the finish button since it's now completed
             elements.finishDrillBtn.classList.add('hidden');
