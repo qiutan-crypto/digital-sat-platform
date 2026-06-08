@@ -585,46 +585,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         isSavingDrill = true;
-        let correctCount = 0;
-        activeQuestions.forEach(q => {
-            const isCorrect = activeAnswers[q.id].toLowerCase().trim() === q.correctAnswer.toLowerCase().trim();
-            if (isCorrect) correctCount++;
-        });
-        
-        const totalQ = activeQuestions.length;
-        const isRW = activeModuleName.toLowerCase().includes('reading') || activeModuleName.toLowerCase().includes('writing');
-        
-        const resultRecord = {
-            student_name: currentStudentName,
-            test_id: drillKey,
-            total_score: correctCount,
-            rw_score: isRW ? correctCount : 0,
-            math_score: !isRW ? correctCount : 0,
-            raw_details: {
-                type: 'drill',
-                test_id: activeTestId,
-                test_title: activeTestTitle,
-                module_id: activeModuleId,
-                module_name: activeModuleName,
-                drill_index: activeDrillIndex,
-                drill_name: `Drill ${activeDrillIndex + 1} (Q${activeDrillIndex * 5 + 1} - Q${activeDrillIndex * 5 + totalQ})`,
-                questions_count: totalQ,
-                correct_count: correctCount,
-                answers: activeAnswers,
-                question_details: activeQuestions.map(q => ({
-                    id: q.id,
-                    number: q.number,
-                    selected: activeAnswers[q.id],
-                    correct: q.correctAnswer,
-                    is_correct: activeAnswers[q.id].toLowerCase().trim() === q.correctAnswer.toLowerCase().trim()
-                }))
-            }
-        };
-
         elements.finishDrillBtn.disabled = true;
         elements.finishDrillBtn.textContent = 'Saving Drill...';
 
         try {
+            const drillKey = `${activeTestId}_${activeModuleId}_drill${activeDrillIndex}`;
+            let correctCount = 0;
+            activeQuestions.forEach(q => {
+                const ans = activeAnswers[q.id] != null ? String(activeAnswers[q.id]) : '';
+                const corr = q.correctAnswer != null ? String(q.correctAnswer) : '';
+                const isCorrect = ans.toLowerCase().trim() === corr.toLowerCase().trim();
+                if (isCorrect) correctCount++;
+            });
+            
+            const totalQ = activeQuestions.length;
+            const isRW = activeModuleName.toLowerCase().includes('reading') || activeModuleName.toLowerCase().includes('writing');
+            
+            const resultRecord = {
+                student_name: currentStudentName,
+                test_id: drillKey,
+                total_score: correctCount,
+                rw_score: isRW ? correctCount : 0,
+                math_score: !isRW ? correctCount : 0,
+                raw_details: {
+                    type: 'drill',
+                    test_id: activeTestId,
+                    test_title: activeTestTitle,
+                    module_id: activeModuleId,
+                    module_name: activeModuleName,
+                    drill_index: activeDrillIndex,
+                    drill_name: `Drill ${activeDrillIndex + 1} (Q${activeDrillIndex * 5 + 1} - Q${activeDrillIndex * 5 + totalQ})`,
+                    questions_count: totalQ,
+                    correct_count: correctCount,
+                    answers: activeAnswers,
+                    question_details: activeQuestions.map(q => {
+                        const ans = activeAnswers[q.id] != null ? String(activeAnswers[q.id]) : '';
+                        const corr = q.correctAnswer != null ? String(q.correctAnswer) : '';
+                        return {
+                            id: q.id,
+                            number: q.number,
+                            selected: activeAnswers[q.id],
+                            correct: q.correctAnswer,
+                            is_correct: ans.toLowerCase().trim() === corr.toLowerCase().trim()
+                        };
+                    })
+                }
+            };
+
             // Save to Supabase
             if (window.supabaseClient) {
                 const { error } = await window.supabaseClient
@@ -679,7 +686,7 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.summaryModal.classList.remove('hidden');
         } catch (err) {
             console.error("Error saving drill result:", err);
-            alert("Error saving drill. Proceeding anyway.");
+            alert("Error saving drill: " + err.message);
             elements.summaryModal.classList.remove('hidden');
         } finally {
             isSavingDrill = false;
