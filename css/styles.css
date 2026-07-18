@@ -34,6 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 
@@ -43,14 +44,23 @@ body {
 
 /* Header */
 header {
-    height: 60px;
+    min-height: 60px;
     background-color: var(--nav-bg);
     border-bottom: 1px solid var(--border);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
+    row-gap: 8px;
     flex-shrink: 0;
+}
+
+.header-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 0;
 }
 
 .header-left h1 {
@@ -69,6 +79,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    row-gap: 8px;
+}
+
+.header-right button {
+    margin-right: 0 !important;
 }
 
 #timer-container {
@@ -460,13 +483,15 @@ main {
 
 /* Footer Navigation */
 footer {
-    height: 70px;
+    min-height: 70px;
     background-color: var(--nav-bg);
     border-top: 1px solid var(--border);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
+    row-gap: 8px;
     flex-shrink: 0;
     position: relative;
     z-index: 20;
@@ -557,7 +582,10 @@ footer {
 
 .footer-right {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 15px;
+    row-gap: 8px;
 }
 
 .btn-nav {
