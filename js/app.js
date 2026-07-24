@@ -289,6 +289,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initDashboard();
     checkSavedProgress();
 
+    // Auto-save while an exam is running: every 10s (keeps the timer fresh),
+    // plus immediately whenever the page is hidden, backgrounded, or closed.
+    setInterval(persistProgress, 10000);
+    window.addEventListener('pagehide', persistProgress);
+    window.addEventListener('beforeunload', persistProgress);
+
     function checkSavedProgress() {
         const saved = StorageManager.getSavedProgress();
         const container = document.getElementById('resume-test-container');
@@ -301,21 +307,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function saveProgressAndExit() {
-        if (!timer) return;
-        
-        const stateToSave = {
+    // Test data may store a module's timeLimit in minutes (39) or seconds (2340).
+    // No SAT module exceeds 120 minutes, so larger values must be seconds.
+    function getModuleSeconds(module) {
+        const t = module.timeLimit || 0;
+        return t > 120 ? t : t * 60;
+    }
+
+    // Auto-save: persists the in-progress exam so a sudden browser close loses nothing.
+    // Safe to call anytime — it no-ops unless a real (non-review) exam or break is active.
+    function persistProgress() {
+        if (isReviewMode || !testData) return;
+        const examActive = views.exam.classList.contains('active');
+        const breakActive = views.break.classList.contains('active');
+        if (!examActive && !breakActive) return;
+
+        let remainingSeconds;
+        if (breakActive) {
+            // Closing during the break resumes Math Module 1 with its full time
+            remainingSeconds = getModuleSeconds(testData.modules[currentModuleIndex]);
+        } else if (timer && timer.remainingSeconds > 0) {
+            remainingSeconds = timer.remainingSeconds;
+        } else {
+            return;
+        }
+
+        StorageManager.saveProgress({
             currentStudentName,
             testData,
             currentModuleIndex,
             currentQuestionIndex,
             answers,
             markedQuestions: Array.from(markedQuestions),
-            remainingSeconds: timer.remainingSeconds
-        };
-        
-        StorageManager.saveProgress(stateToSave);
-        
+            remainingSeconds
+        });
+    }
+
+    function saveProgressAndExit() {
+        if (!timer) return;
+        persistProgress();
+
         if (timer) timer.stop();
         if (breakTimer) clearInterval(breakTimer);
         
@@ -339,7 +370,8 @@ document.addEventListener('DOMContentLoaded', () => {
         currentStudentName = saved.currentStudentName;
         testData = saved.testData;
         currentModuleIndex = saved.currentModuleIndex;
-        currentQuestionIndex = saved.currentQuestionIndex;
+        const moduleQuestions = testData.modules[currentModuleIndex].questions || [];
+        currentQuestionIndex = Math.min(saved.currentQuestionIndex || 0, Math.max(0, moduleQuestions.length - 1));
         answers = saved.answers || {};
         markedQuestions = new Set(saved.markedQuestions || []);
         isReviewMode = false;
@@ -524,6 +556,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const q = getCurrentQuestion();
             answers[q.id] = e.target.value.trim();
             updateNavGrid();
+            persistProgress();
         });
 
         // Anti-Cheat: Overlay Dismissal
@@ -541,6 +574,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('blur', handleFocusLoss);
         document.addEventListener('visibilitychange', () => {
             if (document.visibilityState === 'hidden') {
+                persistProgress();
                 handleFocusLoss();
             }
         });
@@ -631,7 +665,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (fsPromise !== undefined && fsPromise !== null) {
                 fsPromise.catch(err => {
                     console.error("Fullscreen request failed:", err);
-                    alert("Please enable Fullscreen manually (F11 or View -> Enter Full Screen) for the best exam experience.");
+                    // Phones/tablets often don't support the Fullscreen API — don't nag there
+                    if (!window.matchMedia('(pointer: coarse)').matches) {
+                        alert("Please enable Fullscreen manually (F11 or View -> Enter Full Screen) for the best exam experience.");
+                    }
                 });
             }
         } catch (err) {
@@ -651,6 +688,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (moduleIndex === 2 && currentModuleIndex === 1 && !isReviewMode) {
             startBreak();
             currentModuleIndex = moduleIndex;
+            currentQuestionIndex = 0;
+            persistProgress();
             return;
         }
 
@@ -669,7 +708,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isReviewMode) {
             if (timer) timer.stop();
             timer = new Timer(header.timeDisplay, () => finishCurrentModule(true));
-            timer.start(module.timeLimit);
+            timer.start(getModuleSeconds(module) / 60);
+            persistProgress();
         }
     }
 
@@ -876,6 +916,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelectorAll('.choice-label').forEach(l => l.classList.remove('selected'));
                     label.classList.add('selected');
                     updateNavGrid();
+                    persistProgress();
                 }
             });
 
@@ -899,6 +940,7 @@ document.addEventListener('DOMContentLoaded', () => {
             examUI.markBtn.classList.add('marked');
         }
         updateNavGrid();
+        persistProgress();
     }
 
     function navigateTo(index) {
@@ -908,6 +950,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (index >= 0 && index < module.questions.length) {
             currentQuestionIndex = index;
             renderQuestion();
+            persistProgress();
         }
     }
 

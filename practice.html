@@ -7,7 +7,7 @@
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital SAT Practice Mode</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=2">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -46,6 +46,7 @@
     <!-- HEADER -->
     <header id="app-header">
         <div class="header-left">
+            <button type="button" id="sidebar-toggle-btn" class="sidebar-toggle-btn" title="Question List">☰</button>
             <h1 id="test-title">Digital SAT Practice Drills</h1>
             <span id="current-drill-badge" class="practice-header-info hidden">Test 4 - Module 1 - Drill 1</span>
         </div>
@@ -54,6 +55,9 @@
             <button type="button" id="back-dashboard-btn" class="btn-secondary">Back to Dashboard</button>
         </div>
     </header>
+
+    <!-- Mobile sidebar backdrop -->
+    <div id="sidebar-backdrop" class="sidebar-backdrop hidden"></div>
 
     <!-- PRACTICE CONTAINER -->
     <div class="practice-container">
@@ -173,6 +177,6 @@
     <!-- App Scripts -->
     <script src="js/supabase-config.js"></script>
     <script src="js/storage.js"></script>
-    <script src="js/practice.js?v=7"></script>
+    <script src="js/practice.js?v=8"></script>
 </body>
 </html>

@@ -15,6 +15,84 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentQuestionIndex = 0;
     let isSavingDrill = false;
     let isCurrentAttemptSubmitted = false;
+
+    // Auto-save: keeps the in-progress drill in localStorage so a sudden
+    // browser close doesn't lose the student's answers.
+    const PRACTICE_STATE_KEY = 'sat_practice_active_state';
+
+    function persistDrillState() {
+        if (!activeTestId || activeQuestions.length === 0 || isCurrentAttemptSubmitted) return;
+        localStorage.setItem(PRACTICE_STATE_KEY, JSON.stringify({
+            studentName: currentStudentName,
+            testId: activeTestId,
+            testTitle: activeTestTitle,
+            moduleId: activeModuleId,
+            moduleName: activeModuleName,
+            drillIndex: activeDrillIndex,
+            answers: activeAnswers,
+            currentQuestionIndex,
+            savedAt: new Date().toISOString()
+        }));
+    }
+
+    function clearDrillState() {
+        localStorage.removeItem(PRACTICE_STATE_KEY);
+    }
+
+    // Mobile sidebar drawer helpers
+    function closeMobileSidebar() {
+        const sidebar = document.querySelector('.practice-sidebar');
+        const backdrop = document.getElementById('sidebar-backdrop');
+        if (sidebar) sidebar.classList.remove('open');
+        if (backdrop) backdrop.classList.add('hidden');
+    }
+
+    function toggleMobileSidebar() {
+        const sidebar = document.querySelector('.practice-sidebar');
+        const backdrop = document.getElementById('sidebar-backdrop');
+        if (!sidebar) return;
+        const isOpen = sidebar.classList.toggle('open');
+        if (backdrop) backdrop.classList.toggle('hidden', !isOpen);
+    }
+
+    // Restore an unfinished drill (answers + position) after a reload/crash
+    async function restoreSavedDrill() {
+        const raw = localStorage.getItem(PRACTICE_STATE_KEY);
+        if (!raw) return;
+
+        let saved;
+        try {
+            saved = JSON.parse(raw);
+        } catch (e) {
+            clearDrillState();
+            return;
+        }
+        if (!saved || !saved.testId || saved.studentName !== currentStudentName) return;
+
+        try {
+            if (!loadedTests[saved.testId]) {
+                if (window.supabaseClient) {
+                    const { data, error } = await window.supabaseClient
+                        .from('sat_tests')
+                        .select('content')
+                        .eq('id', saved.testId)
+                        .single();
+                    if (error) throw error;
+                    loadedTests[saved.testId] = data.content;
+                } else {
+                    const res = await fetch(`data/${saved.testId}_parsed.json`);
+                    loadedTests[saved.testId] = await res.json();
+                }
+            }
+
+            startDrill(saved.testId, saved.testTitle, saved.moduleId, saved.moduleName, saved.drillIndex);
+            activeAnswers = saved.answers || {};
+            const targetIdx = Math.min(saved.currentQuestionIndex || 0, Math.max(0, activeQuestions.length - 1));
+            navigateTo(targetIdx);
+        } catch (err) {
+            console.error("Error restoring saved drill:", err);
+        }
+    }
     
     // DOM Elements
     const elements = {
@@ -178,6 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             renderTreeSidebar();
+            await restoreSavedDrill();
         } catch (err) {
             console.error("Error initializing practice data:", err);
             elements.sidebarTree.innerHTML = '<div style="padding: 10px; text-align: center; color: var(--error); font-size: 0.9rem;">Error loading tests. Check configuration.</div>';
@@ -380,7 +459,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         elements.finishDrillBtn.classList.add('hidden');
-        
+
+        // On phones the sidebar is a drawer — close it once a drill is picked
+        closeMobileSidebar();
+
         navigateTo(0);
     }
 
@@ -494,6 +576,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 radio.addEventListener('change', () => {
                     activeAnswers[q.id] = letter;
                     isCurrentAttemptSubmitted = false;
+                    persistDrillState();
                     // Trigger immediate feedback
                     renderQuestion();
                 });
@@ -546,6 +629,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 activeAnswers[q.id] = val;
                 isCurrentAttemptSubmitted = false;
+                persistDrillState();
                 renderQuestion();
             });
         }
@@ -556,6 +640,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index >= 0 && index < activeQuestions.length) {
             currentQuestionIndex = index;
             renderQuestion();
+            persistDrillState();
         }
     }
 
@@ -661,6 +746,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Mark current attempt as submitted
             isCurrentAttemptSubmitted = true;
+            clearDrillState();
             
             // Hide the finish button since it's now completed
             elements.finishDrillBtn.classList.add('hidden');
@@ -756,6 +842,12 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'index.html';
         });
 
+        // Mobile sidebar drawer toggle
+        const sidebarToggleBtn = document.getElementById('sidebar-toggle-btn');
+        if (sidebarToggleBtn) sidebarToggleBtn.addEventListener('click', toggleMobileSidebar);
+        const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+        if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeMobileSidebar);
+
         // Translate Events
         elements.translateQuestionBtn.addEventListener('click', () => {
             if (activeQuestions[currentQuestionIndex]) {
@@ -800,6 +892,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         elements.summaryDashboardBtn.addEventListener('click', () => {
             window.location.href = 'index.html';
+        });
+
+        // Auto-save when the page is hidden, backgrounded, or closed
+        window.addEventListener('pagehide', persistDrillState);
+        window.addEventListener('beforeunload', persistDrillState);
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'hidden') persistDrillState();
         });
     }
 
