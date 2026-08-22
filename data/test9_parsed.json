@@ -52,8 +52,8 @@
           "type": "multiple-choice",
           "number": 4,
           "choices": [
-            "B) recognized in",
             "A) derived from",
+            "B) recognized in",
             "C) confined to",
             "D) repressed by"
           ],
@@ -68,7 +68,8 @@
           "choices": [
             "A) legitimate",
             "B) impenetrable",
-            "C) compelling"
+            "C) compelling",
+            "D) indecipherable"
           ],
           "question": "Although science fiction was dominated mostly by white male authors when Octavia Butler, a Black woman, began writing, she did not view the genre as ___: Butler broke into the field with the publication of several short stories and her 1976 novel Patternmaster, and she later became the first science fiction writer to win a prestigious MacArthur Fellowship.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
           "explanation": "Choice B is the best answer because it most logically completes the discussion of Octavia Butler's career. In this context, \"impenetrable\" means impossible to enter. The text indicates that the field of science fiction was dominated by white males when Butler, a Black woman, started writing, but she published several science fiction short stories and a novel and later won a prestigious award; that is, Butler pursued science fiction writing and had success. This context suggests that Butler didn't view the genre as impossible to enter.\n\nChoice A is incorrect. In this context, \"legitimate\" would mean genuinely good or valid. Nothing in the text suggests that Butler didn't think the science fiction genre was good or valid; in fact, it indicates that she pursued and made a successful career of publishing work in that field. Choice C is incorrect. In this context, \"compelling\" would mean attracting or demanding attention. The text indicates that Butler chose to write science fiction, so it wouldn't make sense to say that she didn't see the field as drawing her attention. Choice D is incorrect. To say that Butler didn't consider science fiction \"indecipherable,\" or impossible to understand, would suggest that Butler did understand it. However, the text doesn't address Butler's ability to interpret works in the genre; rather, it focuses on Butler's successful pursuit of writing science fiction.",
@@ -84,7 +85,7 @@
             "C) It contrasts Uncle Katsuhisa with the narrator's father.",
             "D) It describes a conversation between the narrator and the narrator's father."
           ],
-          "question": "D) indecipherable\n\nThe following text is adapted from Cynthia Kadohata's 2004 novel Kira-Kira.\n\n[Uncle Katsuhisa] was as loud as my father was quiet. Even when he wasn't talking, he made a lot of noise, clearing his throat and sniffing and tapping his fingers.\n\n$ \\textcircled{2} 0 0 4 $ by Cynthia Kadohata\n\nWhich choice best describes the function of the underlined sentence?",
+          "question": "The following text is adapted from Cynthia Kadohata's 2004 novel Kira-Kira.\n\n[Uncle Katsuhisa] was as loud as my father was quiet. Even when he wasn't talking, he made a lot of noise, clearing his throat and sniffing and tapping his fingers.\n\n$ \\textcircled{2} 0 0 4 $ by Cynthia Kadohata\n\nWhich choice best describes the function of the underlined sentence?",
           "explanation": "Choice C is the best answer because it most accurately describes how the underlined sentence functions in the text as a whole. The underlined sentence establishes a difference between Uncle Katsuhisa and the narrator's father by describing Uncle Katsuhisa as \"loud\" and the narrator's father as \"quiet.\" The text then elaborates on that contrast, describing some ways Uncle Katsuhisa is very noisy even when he isn't speaking.\n\nChoice A is incorrect because the text doesn't indicate what kinds of topics Uncle Katsuhisa enjoys discussing, only that he is loud even when he isn't speaking. Choice B is incorrect because the text never indicates how Uncle Katsuhisa feels about meeting new people, only how loud he is. Choice D is incorrect because the text never describes a conversation occurring between any people; it refers to talking only when stating that Uncle Katsuhisa is loud even when he isn't speaking.",
           "correctAnswer": "C"
         },
@@ -460,10 +461,10 @@
             "A) Before she published the books Precario/Precarious (1983) and Instan (2002), Cecilia Vicuña exhibited visual art at the Museo Nacional de Bellas Artes in Santiago, Chile.",
             "B) Cecilia Vicuña is a true multidisciplinary artist whose works include numerous poetry collections and visual art exhibitions.",
             "C) Published in 1983 by Tanam Press, Precario/Precarious is a collection of poetry by the multidisciplinary artist Cecilia Vicuña.",
-            "D) In 1971, Cecilia Vicuña exhibited her first solo art exhibition, Pinturas, poems y explicaciones in Chile, her country of birth.\n\n## STOP\n\nIf you finish before time is called, you may check your work on this module only. Do not turn to any other module in the test.\n\nNo Test Material On This Page\n\n\n\n<div align=\"center\">"
+            "D) In 1971, Cecilia Vicuña exhibited her first solo art exhibition, Pinturas, poems y explicaciones in Chile, her country of birth."
           ],
           "question": "While researching a topic, a student has taken the following notes:\n\n- Cecilia Vicuña is a multidisciplinary artist.\n\n- In 1971, her first solo art exhibition, Pinturas, poemas y explicaciones, was shown at the Museo Nacional de Bellas Artes in Santiago, Chile.\n\n- Her poetry collection Precario/Precarious was published in 1983 by Tanam Press.\n\n- Her poetry collection Instan was published in 2002 by Kelsey St. Press.\n\n- She lives part time in Chile, where she was born, and part time in New York.\n\nThe student wants to introduce the artist's 1983 poetry collection. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-          "explanation": "Choice C is the best answer. The sentence effectively introduces the poetry collection Precario/Precarious, noting that it is a collection by Vicuña that was published in 1983 by Tanam Press.\n\nChoice A is incorrect. While the sentence mentions the 1983 poetry collection Precario/Precarious, it focuses mainly on Vicuña's visual art. Choice B is incorrect. The sentence doesn't introduce the 1983 poetry collection Precario/Precarious; instead, it introduces Vicuña. Choice D is incorrect. The sentence emphasizes the location of Vicuña's 1971 exhibition Pinturas, poemas y explicaciones; it doesn't introduce the 1983 poetry collection Precario/Precarious.\n\n<div align=\"center\">\n\n# Reading and Writing\n\n</div>",
+          "explanation": "Choice C is the best answer. The sentence effectively introduces the poetry collection Precario/Precarious, noting that it is a collection by Vicuña that was published in 1983 by Tanam Press.\n\nChoice A is incorrect. While the sentence mentions the 1983 poetry collection Precario/Precarious, it focuses mainly on Vicuña's visual art. Choice B is incorrect. The sentence doesn't introduce the 1983 poetry collection Precario/Precarious; instead, it introduces Vicuña. Choice D is incorrect. The sentence emphasizes the location of Vicuña's 1971 exhibition Pinturas, poemas y explicaciones; it doesn't introduce the 1983 poetry collection Precario/Precarious.",
           "correctAnswer": "C"
         }
       ],
@@ -567,7 +568,7 @@
             "C) To warn a child that he will face many challenges throughout his life",
             "D) To encourage a child to embrace the experiences life will offer"
           ],
-          "question": "The following text is from Georgia Douglas Johnson's 1922 poem \"Benediction.\"\n\nthe following text is from Georgia Do nson's 1922 poem \"Benediction.\"\n\nGo forth, my son,\n\nWinged by my heart's desire!\n\nGreat reaches, yet unknown,\n\nAwait\n\nFor your possession.\n\nI may not, if I would,\n\nRetrace the way with you,\n\nMy pilgrimage is through,\n\nBut life is calling you!\n\nWhich choice best states the main purpose of the text?",
+          "question": "The following text is from Georgia Douglas Johnson's 1922 poem \"Benediction.\"\n\nGo forth, my son,\n\nWinged by my heart's desire!\n\nGreat reaches, yet unknown,\n\nAwait\n\nFor your possession.\n\nI may not, if I would,\n\nRetrace the way with you,\n\nMy pilgrimage is through,\n\nBut life is calling you!\n\nWhich choice best states the main purpose of the text?",
           "explanation": "Choice D is the best answer because it accurately states the text's main purpose. The poem begins with the speaker urging a child to \"go forth\" with her encouragement (\"my heart's desire\"). The speaker goes on to suggest that new experiences (\"Great reaches, yet unknown\") lie ahead for the son that \"life is calling\" him to seek out. Thus, the main purpose is to encourage a child to embrace the experiences available to him in his life.\n\nChoice A is incorrect because the speaker encourages the child to pursue new experiences (\"Great reaches\") without knowing exactly what those experiences will be (\"yet unknown\") or suggesting that they should match the speaker's own accomplishments. Choice B is incorrect because the speaker focuses on positive possibilities for her son (\"Great reaches, yet unknown\") and her enthusiastic encouragement to embrace those possibilities (\"life is calling you!\") while there is no mention of raising a child or associated struggles. Choice C is incorrect because the speaker frames the possibilities for her son in a positive light when she says that \"great reaches, yet unknown\" are waiting for him, and this positive outlook for the son is consistent throughout the text.",
           "correctAnswer": "D"
         },
@@ -842,8 +843,8 @@
           "type": "multiple-choice",
           "number": 27,
           "choices": [
-            "B) To conclude,",
             "A) For example,",
+            "B) To conclude,",
             "C) Similarly,",
             "D) In other words,"
           ],
@@ -858,7 +859,8 @@
           "choices": [
             "A) Specifically,",
             "B) Similarly,",
-            "C) Nevertheless,"
+            "C) Nevertheless,",
+            "D) Hence,"
           ],
           "question": "Earth's auroras—colorful displays of light seen above the northern and southern poles—result, broadly speaking, from the Sun's activity. ___ the Sun releases charged particles that are captured by Earth's magnetic field and channeled toward the poles. These particles then collide with atoms in the atmosphere, causing the atoms to emit auroral light.\n\nWhich choice completes the text with the most logical transition?",
           "explanation": "Choice A is the best answer. \"Specifically\" logically signals that the information in this sentence—that the Sun releases charged particles that later collide with atoms, resulting in auroral light—provides specific, precise details about how auroras result from the Sun's activity.\n\nChoice B is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the general information about auroras in the previous sentence. Instead, this sentence provides specific, precise details about how auroras form. Choice C is incorrect because \"nevertheless\" illogically signals that the information in this sentence is despite the general information about auroras in the previous sentence. Instead, this sentence provides specific, precise details about how auroras form. Choice D is incorrect because \"hence\" illogically signals that the information in this sentence is a result of the general information about auroras in the previous sentence. Instead, this sentence provides specific, precise details about how auroras form.",
@@ -874,7 +876,7 @@
             "C) The Seikan Tunnel, which is roughly 33 miles long, connects the Japanese islands of Honshu and Hokkaido.",
             "D) Both the Seikan Tunnel, which is located in Japan, and the Channel Tunnel, which is located in Europe, are examples of rail tunnels."
           ],
-          "question": "D) Hence,\n\nWhile researching a topic, a student has taken the following notes:\n\n- The Seikan Tunnel is a rail tunnel in Japan.\n\n- It connects the island of Honshu to the island of Hokkaido.\n\n- It is roughly 33 miles long.\n\n- The Channel Tunnel is a rail tunnel in Europe.\n\n- It connects Folkestone, England, to Coquelles France.\n\n- It is about 31 miles long.\n\nThe student wants to compare the lengths of the two rail tunnels. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "question": "While researching a topic, a student has taken the following notes:\n\n- The Seikan Tunnel is a rail tunnel in Japan.\n\n- It connects the island of Honshu to the island of Hokkaido.\n\n- It is roughly 33 miles long.\n\n- The Channel Tunnel is a rail tunnel in Europe.\n\n- It connects Folkestone, England, to Coquelles France.\n\n- It is about 31 miles long.\n\nThe student wants to compare the lengths of the two rail tunnels. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
           "explanation": "Choice B is the best answer. The sentence compares the lengths of the two rail tunnels, noting that the Channel Tunnel (about 31 miles long) is slightly shorter than the Seikan Tunnel (roughly 33 miles long).\n\nChoice A is incorrect. The sentence makes a generalization about the length of some rail tunnels; it doesn't compare the lengths of the two rail tunnels. Choice C is incorrect. The sentence describes a single rail tunnel; it doesn't compare the lengths of the two rail tunnels. Choice D is incorrect. While the sentence mentions the two rail tunnels, it doesn't compare their lengths.",
           "correctAnswer": "B"
         },
@@ -913,7 +915,8 @@
           "choices": [
             "A) \"Women and the Vote\" featured a drawing of a Victorian-style house with several rooms, each containing suffrage artifacts.",
             "B) To access video clips, songs, artwork, and texts, audiences had to first click on an artifact.",
-            "C) The \"Women and the Vote\" format appealed to audiences because it allowed them to control the experience."
+            "C) The \"Women and the Vote\" format appealed to audiences because it allowed them to control the experience.",
+            "D) Using an interactive format, theater students at Radford and Virginia Tech created \"Women and the Vote,\" a play about woman suffrage activists."
           ],
           "question": "While researching a topic, a student has taken the following notes:\n\n- In 2020, theater students at Radford and Virginia Tech chose an interactive, online format to present a play about woman suffrage activists.\n\n- Their \"Women and the Vote\" website featured an interactive digital drawing of a Victorian-style house.\n\n- Audiences were asked to focus on a room of their choice and select from that room an artifact related to the suffrage movement.\n\n- One click took them to video clips, songs, artwork, and texts associated with the artifact.\n\n- The play was popular with audiences because the format allowed them to control the experience.\n\nThe student wants to explain an advantage of the \"Women and the Vote\" format. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
           "explanation": "Choice C is the best answer. The sentence explains an advantage of the \"Women and the Vote\" format, noting that the format appealed to audiences because it allowed them to control the experience.\n\nChoice A is incorrect. The sentence describes a digital drawing on the \"Women and the Vote\" website; it doesn't explain an advantage of the play's format. Choice B is incorrect. The sentence explains how audiences interacted with the \"Women and the Vote\" website; it doesn't explain an advantage of the play's format. Choice D is incorrect. While the sentence mentions that \"Women and the Vote\" had an interactive format, it doesn't explain what advantage this format might have.",
@@ -927,10 +930,10 @@
             "A) A study revealed that ducklings, which expend up to 62.8% less energy when swimming in a line behind their mother, also experience 158% less drag.",
             "B) Seeking to understand how ducklings swimming in a line behind their mother save energy, Zhiming Yuan used computer simulations to study the effect of the mother duck's wake.",
             "C) Zhiming Yuan studied the physics behind the fact that by being pushed in a forward direction by waves, ducklings save energy.",
-            "D) Naval architect Zhiming Yuan discovered that ducklings are pushed in a forward direction by the waves of their mother's wake, reducing the effect of drag by 158%.\n\n## STOP\n\nIf you finish before time is called, you may check your work on this module only. Do not turn to any other module in the test.\n\nNo Test Material On This Page\n\n<div align=\"center\">"
+            "D) Naval architect Zhiming Yuan discovered that ducklings are pushed in a forward direction by the waves of their mother's wake, reducing the effect of drag by 158%."
           ],
-          "question": "D) Using an interactive format, theater students at Radford and Virginia Tech created \"Women and the Vote,\" a play about woman suffrage activists.\n\nWhile researching a topic, a student has taken the following notes:\n\n- Ducklings expend up to 62.8% less energy when swimming in a line behind their mother than when swimming alone.\n\n- The physics behind this energy savings hasn't always been well understood.\n\n- Naval architect Zhiming Yuan used computer simulations to study the effect of the mother duck's wake.\n\n- The study revealed that ducklings are pushed in a forward direction by the wake's waves.\n\n- Yuan determined this push reduces the effect of wave drag on the ducklings by 158%.\n\nThe student wants to present the study and its methodology. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-          "explanation": "Choice B is the best answer. The sentence presents both the study and its methodology (that is, the researcher's approach to the problem), explaining that Yuan used computer simulations to study the effect of the mother duck's wake on the ducklings' energy expenditure.\n\nChoice A is incorrect. The sentence describes the findings of Yuan's study; it doesn't present the study and its methodology. Choice C is incorrect. While the sentence provides general information about Yuan's study, it doesn't present the study's methodology. Choice D is incorrect. The sentence describes the findings of Yuan's study; it doesn't present the study and its methodology.\n\n<div align=\"center\">\n\n# Math\n\n</div>",
+          "question": "While researching a topic, a student has taken the following notes:\n\n- Ducklings expend up to 62.8% less energy when swimming in a line behind their mother than when swimming alone.\n\n- The physics behind this energy savings hasn't always been well understood.\n\n- Naval architect Zhiming Yuan used computer simulations to study the effect of the mother duck's wake.\n\n- The study revealed that ducklings are pushed in a forward direction by the wake's waves.\n\n- Yuan determined this push reduces the effect of wave drag on the ducklings by 158%.\n\nThe student wants to present the study and its methodology. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "explanation": "Choice B is the best answer. The sentence presents both the study and its methodology (that is, the researcher's approach to the problem), explaining that Yuan used computer simulations to study the effect of the mother duck's wake on the ducklings' energy expenditure.\n\nChoice A is incorrect. The sentence describes the findings of Yuan's study; it doesn't present the study and its methodology.",
           "correctAnswer": "B"
         }
       ],
@@ -959,13 +962,13 @@
           "type": "multiple-choice",
           "number": 2,
           "choices": [
-            "A) $ 1 6 x=3 0 $",
-            "B) $ 1 6 x=1 3 0 $",
-            "C) $ 1 6 x=1 6 0 $",
-            "D) $ 1 6 x=1 9 0 $"
+            "A) $ 16 x=30 $",
+            "B) $ 16 x=130 $",
+            "C) $ 16 x=160 $",
+            "D) $ 16 x=190 $"
           ],
           "question": "16x+30=190\n\nWhich equation has the same solution as the given equation?",
-          "explanation": "Choice C is correct. It's given that $ 1 6 x+3 0=1 9 0 $ . Subtracting 30 from each side of this equation yields $ 1 6 x=1 6 0 $ . Therefore, the equation $ 1 6 x=1 6 0 $ is equivalent to the given equation and has the same solution.\n\nChoice A is incorrect and may result from conceptual or calculation errors.\n\nChoice B is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
+          "explanation": "Choice C is correct. It's given that $ 16 x+30=190 $ . Subtracting 30 from each side of this equation yields $ 16 x=160 $ . Therefore, the equation $ 16 x=160 $ is equivalent to the given equation and has the same solution.\n\nChoice A is incorrect and may result from conceptual or calculation errors.\n\nChoice B is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "C"
         },
         {
@@ -992,8 +995,8 @@
             "C) 9",
             "D) 13"
           ],
-          "question": "The function g is defined by $ g ( x )=x^{2}+9. $ For which value of x is $ g ( x )=2 5 $ ?",
-          "explanation": "Choice A is correct. It's given that $ g ( x )=x^{2}+9 $ . Substituting 25 for g(x) in this equation yields $ 2 5=x^{2}+9 $ . Subtracting 9 from both sides of this equation yields $ 1 6=x^{2} $ . Taking the square root of each side of this equation yields $ x=\\pm 4 $ . It follows that $ g ( x )=2 5 $ when the value of x is 4 or-4. Only 4 is listed among the choices.\n\nChoice B is incorrect and may result from conceptual or calculation errors.\n\nChoice C is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
+          "question": "The function g is defined by $ g ( x )=x^{2}+9. $ For which value of x is $ g ( x )=25 $ ?",
+          "explanation": "Choice A is correct. It's given that $ g ( x )=x^{2}+9 $ . Substituting 25 for g(x) in this equation yields $ 25=x^{2}+9 $ . Subtracting 9 from both sides of this equation yields $ 16=x^{2} $ . Taking the square root of each side of this equation yields $ x=\\pm 4 $ . It follows that $ g ( x )=25 $ when the value of x is 4 or-4. Only 4 is listed among the choices.\n\nChoice B is incorrect and may result from conceptual or calculation errors.\n\nChoice C is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "A"
         },
         {
@@ -1007,7 +1010,7 @@
             "D) $ x^{2}(9 x+5) $"
           ],
           "question": "Which expression is equivalent to $ 9 x^{2}+5 x? $",
-          "explanation": "Choice A is correct. Since x is a factor of each term in the given expression, the expression is equivalent to $ x(9 x)+x(5) $ , or $ x(9 x+5) $ .\n\nChoice B is incorrect. This expression is equivalent to $ 4 5 x^{2}+5 x $ , not $ 9 x^{2}+5 x $ .\n\nChoice C is incorrect. This expression is equivalent to $ 9 x^{2}+4 5 x $ , not $ 9 x^{2}+5 x $ .\n\nChoice D is incorrect. This expression is equivalent to $ 9 x^{3}+5 x^{2} $ , not $ 9 x^{2}+5 x $ .",
+          "explanation": "Choice A is correct. Since x is a factor of each term in the given expression, the expression is equivalent to $ x(9 x)+x(5) $ , or $ x(9 x+5) $ .\n\nChoice B is incorrect. This expression is equivalent to $ 45 x^{2}+5 x $ , not $ 9 x^{2}+5 x $ .\n\nChoice C is incorrect. This expression is equivalent to $ 9 x^{2}+45 x $ , not $ 9 x^{2}+5 x $ .\n\nChoice D is incorrect. This expression is equivalent to $ 9 x^{3}+5 x^{2} $ , not $ 9 x^{2}+5 x $ .",
           "correctAnswer": "A"
         },
         {
@@ -1024,8 +1027,8 @@
           "type": "grid-in",
           "number": 7,
           "choices": [],
-          "question": "A student council group is selling school posters for a fundraiser. They use the function $ p ( x )=5 x-2 2 0 $ to determine their profit p(x), in dollars, for selling x school posters. In order to earn a profit of $ 900, how many school posters must they sell?",
-          "explanation": "The correct answer is 224. It's given that a student council group uses the function $ p ( x )=5 x-2 2 0 $ to determine their profit $ p ( x ) $ , in dollars, for selling x school posters. Substituting 900 for $ p ( x ) $ in the given function yields $ 9 0 0=5 x-2 2 0 $ . Adding 220 to each side of this equation yields 1,120=5x. Dividing each side of this equation by 5 yields 224=x. Therefore, in order to earn a profit of $ 9 0 0 $ , they must sell 224 school posters.",
+          "question": "A student council group is selling school posters for a fundraiser. They use the function $ p ( x )=5 x-220 $ to determine their profit p(x), in dollars, for selling x school posters. In order to earn a profit of $ 900, how many school posters must they sell?",
+          "explanation": "The correct answer is 224. It's given that a student council group uses the function $ p ( x )=5 x-220 $ to determine their profit $ p ( x ) $ , in dollars, for selling x school posters. Substituting 900 for $ p ( x ) $ in the given function yields $ 900=5 x-220 $ . Adding 220 to each side of this equation yields 1,120=5x. Dividing each side of this equation by 5 yields 224=x. Therefore, in order to earn a profit of $ 900 $ , they must sell 224 school posters.",
           "correctAnswer": "224"
         },
         {
@@ -1034,12 +1037,12 @@
           "number": 8,
           "choices": [
             "A) 3w+5r=14",
-            "B) $ \\frac{1}{3} w+\\frac{1}{5} r=1 4 $",
+            "B) $ \\frac{1}{3} w+\\frac{1}{5} r=14 $",
             "C) $ \\frac{1}{3} w+\\frac{1}{5} r=112 $",
             "D) 3w+5r=112"
           ],
           "question": "Jay walks at a speed of 3 miles per hour and runs at a speed of 5 miles per hour. He walks for w hours and runs for r hours for a combined total of 14 miles. Which equation represents this situation?",
-          "explanation": "Choice A is correct. Since Jay walks at a speed of 3 miles per hour for w hours, Jay walks a total of 3w miles. Since Jay runs at a speed of 5 miles per hour for r hours, Jay runs a total of 5r miles. Therefore, the total number of miles Jay travels can be represented by $ 3 w+5 r $ . Since the combined total number of miles is 14, the equation $ 3 w+5 r=1 4 $ represents this situation.\n\nChoice B is incorrect and may result from conceptual errors. Choice C is incorrect and may result from conceptual errors. Choice D is incorrect and may result from conceptual errors.",
+          "explanation": "Choice A is correct. Since Jay walks at a speed of 3 miles per hour for w hours, Jay walks a total of 3w miles. Since Jay runs at a speed of 5 miles per hour for r hours, Jay runs a total of 5r miles. Therefore, the total number of miles Jay travels can be represented by $ 3 w+5 r $ . Since the combined total number of miles is 14, the equation $ 3 w+5 r=14 $ represents this situation.\n\nChoice B is incorrect and may result from conceptual errors. Choice C is incorrect and may result from conceptual errors. Choice D is incorrect and may result from conceptual errors.",
           "correctAnswer": "A"
         },
         {
@@ -1047,10 +1050,10 @@
           "type": "multiple-choice",
           "number": 9,
           "choices": [
-            "A) $ 1 6 p-3 7=1 6 5$",
-            "B) $ 3 7 p-1 6=1 6 5$",
-            "C) $ 1 6 p+3 7=1 6 5$",
-            "D) $ 3 7 p+1 6=1 6 5$"
+            "A) $ 16 p-37=165$",
+            "B) $ 37 p-16=165$",
+            "C) $ 16 p+37=165$",
+            "D) $ 37 p+16=165$"
           ],
           "question": "John paid a total of $165 for a microscope by making a down payment of $37 plus p monthly payments of $16 each. Which of the following equations represents this situation?",
           "explanation": "Choice C is correct. It's given that John made a $16 payment each month for p months. The total amount of these payments can be represented by the expression 16p. The down payment can be added to that amount to find the total amount John paid, yielding the expression 16p+37. It's given that John paid a total of $165. Therefore, the expression for the total amount John paid can be set equal to that amount, yielding the equation 16p+37=165.\n\nChoice A is incorrect and may result from conceptual or calculation errors.\n\nChoice B is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
@@ -1061,12 +1064,12 @@
           "type": "multiple-choice",
           "number": 10,
           "choices": [
-            "A) $ y=5 7 x+p $",
-            "B) $ y=p x+5 7 $",
-            "C) $ y=5 7 p x $",
-            "D) $ y=\\frac{p x}{5 7} $"
+            "A) $ y=57 x+p $",
+            "B) $ y=p x+57 $",
+            "C) $ y=57 p x $",
+            "D) $ y=\\frac{p x}{57} $"
           ],
-          "question": "$$\ny - 5 7 = p x\n$$\n\nThe given equation relates the positive numbers p, x, and y. Which equation correctly expresses y in terms of p and x?",
+          "question": "$$\ny - 57 = p x\n$$\n\nThe given equation relates the positive numbers p, x, and y. Which equation correctly expresses y in terms of p and x?",
           "explanation": "Choice B is correct. Adding 57 to each side of the given equation yields $ y=px+57 $ . Therefore, the equation $ y=px+57 $ correctly expresses y in terms of p and x.\n\nChoice A is incorrect and may result from conceptual errors. Choice C is incorrect and may result from conceptual errors. Choice D is incorrect and may result from conceptual errors.",
           "correctAnswer": "B"
         },
@@ -1075,10 +1078,10 @@
           "type": "multiple-choice",
           "number": 11,
           "choices": [
-            "A) $ A ( t )=3 6, 1 0 0. 0 0 ( 1. 0 5 )^{t} $",
-            "B) $ A ( t )=3 1, 9 7 1. 9 3 ( 1. 0 5 )^{t} $",
-            "C) $ A ( t )=3 1, 9 7 1. 9 3 ( 0. 0 5 )^{t} $",
-            "D) $ A ( t )=3 6, 1 0 0. 0 0 ( 0. 0 5 )^{t} $"
+            "A) $ A ( t )=36, 100. 00 ( 1. 05 )^{t} $",
+            "B) $ A ( t )=31, 971. 93 ( 1. 05 )^{t} $",
+            "C) $ A ( t )=31, 971. 93 ( 0. 05 )^{t} $",
+            "D) $ A ( t )=36, 100. 00 ( 0. 05 )^{t} $"
           ],
           "question": "A company opens an account with an initial balance of $36,100.00. The account earns interest, and no additional deposits or withdrawals are made. The account balance is given by an exponential function A, where A(t) is the account balance, in dollars, t years after the account is opened. The account balance after 13 years is $68,071.93. Which equation could define A?",
           "explanation": "Choice A is correct. Since it's given that the account balance, $ A(t) $ , in dollars, after t years can be modeled by an exponential function, it follows that function A can be written in the form $ A(t)=N r^{t} $ , where N is the initial value of the function and r is a constant related to the growth of the function. It's given that the initial balance of the account is $ 36,100.00 $ , so it follows that the initial value of the function, or N, must be 36,100.00. Substituting 36,100.00 for N in the equation $ A(t)=N r^{t} $ yields $ A(t)=36,100.00 r^{t} $ . It's given that the account balance after 13 years, or when t=13, is $ 68,071.93 $ . It follows that $ A(13)=68,071.93 $ or $ 36,100.00 r^{13}=68,071.93 $ . Dividing each side of the equation $ 36,100.00 r^{13}=68,071.93 $ by 36,100.00 yields $ r^{13}=\\frac{68,071.93}{36,100.00} $ . Taking the 13th root of both sides of this equation yields $ r=\\sqrt[13]{\\frac{68,071.93}{36,100.00}} $ , or r is approximately equal to 1.05. Substituting 1.05 for r in the equation $ A(t)=36,100.00 r^{t} $ yields $ A(t)=36,100.00(1.05)^{t} $ , so the equation $ A(t)=36,100.00(1.05)^{t} $ could define A.\n\nChoice B is incorrect. Substituting 0 for t in this function indicates an initial balance of $31,971.93, rather than $36,100.00. Choice C is incorrect. Substituting 0 for t in this function indicates an initial balance of $31,971.93, rather than $36,100.00. Additionally, this function indicates the account balance is decreasing, rather than increasing, over time. Choice D is incorrect. This function indicates the account balance is decreasing, rather than increasing, over time.",
@@ -1091,7 +1094,8 @@
           "choices": [
             "A) 24 $ \\pi $",
             "B) 48 $ \\pi $",
-            "D) $ 9 6 \\pi $"
+            "C) 72 $ \\pi $",
+            "D) 96 $ \\pi $"
           ],
           "question": "<div style='text-align: center;'><img src='images/test9/crop_1_1778641633074.png' alt='OCR图片'/></div>\n\nNote: Figure not drawn to scale.\n\nThe circle shown has center O, circumference 144 $ \\pi $ and diameters $ \\overline{P R} $ and $ \\overline{Q S} $ . The length of arc PS is twice the length of arc PQ. What is the length of arc QR ?",
           "explanation": "Choice B is correct. Since $ \\overline{P R} $ and $ \\overline{Q S} $ are diameters of the circle shown, $ \\overline{O S}, $ $ \\overline{O R}, $ $ \\overline{O P}, $ and $ \\overline{O Q} $ are radii of the circle and are therefore congruent. Since $ \\angle S O P $ and $ \\angle R O Q $ are vertical angles, they are congruent. Therefore, arc PS and arc QR are formed by congruent radii and have the same angle measure, so they are congruent arcs. Similarly, $ \\angle S O R $ and $ \\angle P O Q $ are vertical angles, so they are congruent. Therefore, arc SR and arc PQ are formed by congruent radii and have the same angle measure, so they are congruent arcs. Let x represent the length of arc SR. Since arc SR and arc PQ are congruent arcs, the length of arc PQ can also be represented by x. It's given that the length of arc PS is twice the length of arc PQ. Therefore, the length of arc PS can be represented by the expression 2x. Since arc PS and arc QR are congruent arcs, the length of arc QR can also be represented by 2x. This gives the expression $ x+x+2x+2x $ . Since it's given that the circumference is 144 $ \\pi $ , the expression $ x+x+2x+2x $ is equal to 144 $ \\pi $ . Thus $ x+x+2x+2x=144\\pi $ , or $ 6x=144\\pi $ . Dividing both sides of this equation by 6 yields $ x=24\\pi $ . Therefore, the length of arc QR is 2(24 $ \\pi $ ), or 48 $ \\pi $ .\n\nChoice A is incorrect. This is the length of arc PQ, not arc QR. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors.",
@@ -1102,8 +1106,8 @@
           "type": "grid-in",
           "number": 13,
           "choices": [],
-          "question": "$$\n\\begin{array}{l} y = - 2 x \\\\ 3 x + y = 4 0 \\\\ \\end{array}\n$$\n\nThe solution to the given system of equations is (x,y). What is the value of x?",
-          "explanation": "The correct answer is 40. It's given in the first equation of the system that $ y=-2 x $ . Substituting $ -2 x $ for y in the second equation of the system yields $ 3 x+(-2 x)=4 0 $ . Combining like terms on the left-hand side of this equation yields x=40. Therefore, the value of x is 40.",
+          "question": "$$\n\\begin{array}{l} y = - 2 x \\\\ 3 x + y = 40 \\\\ \\end{array}\n$$\n\nThe solution to the given system of equations is (x, y). What is the value of x?",
+          "explanation": "The correct answer is 40. It's given in the first equation of the system that $ y=-2 x $ . Substituting $ -2 x $ for y in the second equation of the system yields $ 3 x+(-2 x)=40 $ . Combining like terms on the left-hand side of this equation yields x=40. Therefore, the value of x is 40.",
           "correctAnswer": "40"
         },
         {
@@ -1126,7 +1130,7 @@
             "D) 201.5"
           ],
           "question": "One leg of a right triangle has a length of 43.2 millimeters. The hypotenuse of the triangle has a length of 196.8 millimeters. What is the length of the other leg of the triangle, in millimeters?",
-          "explanation": "Choice C is correct. The Pythagorean theorem states that for a right triangle, the sum of the squares of the lengths of the two legs is equal to the square of the length of the hypotenuse. It's given that one leg of a right triangle has a length of 43.2 millimeters. It's also given that the hypotenuse of the triangle has a length of 196.8 millimeters. Let b represent the length of the other leg of the triangle, in millimeters. Therefore, by the Pythagorean theorem, $ 4 3. 2^{2}+b^{2}=1 9 6. 8^{2} $ or $ 1, 8 6 6. 2 4+b^{2}=3 8, 7 3 0. 2 4 $ . Subtracting 1,866.24 from both sides of this equation yields $ b^{2}=3 6, 8 6 4 $ . Taking the positive square root of both sides of this equation yields b=192 . Therefore, the length of the other leg of the triangle, in millimeters, is 192.\n\nChoice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors.",
+          "explanation": "Choice C is correct. The Pythagorean theorem states that for a right triangle, the sum of the squares of the lengths of the two legs is equal to the square of the length of the hypotenuse. It's given that one leg of a right triangle has a length of 43.2 millimeters. It's also given that the hypotenuse of the triangle has a length of 196.8 millimeters. Let b represent the length of the other leg of the triangle, in millimeters. Therefore, by the Pythagorean theorem, $ 43. 2^{2}+b^{2}=196. 8^{2} $ or $ 1, 866. 24+b^{2}=38, 730. 24 $ . Subtracting 1,866.24 from both sides of this equation yields $ b^{2}=36, 864 $ . Taking the positive square root of both sides of this equation yields b=192 . Therefore, the length of the other leg of the triangle, in millimeters, is 192.\n\nChoice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "C"
         },
         {
@@ -1140,7 +1144,7 @@
             "D) 86"
           ],
           "question": "A wire with a length of 106 inches is cut into two parts. One part has a length of x inches, and the other part has a length of y inches. The value of x is 6 more than 4 times the value of y. What is the value of x?",
-          "explanation": "Choice D is correct. It's given that a wire with a length of 106 inches is cut into two parts. It's also given that one part has a length of x inches and the other part has a length of y inches. This can be represented by the equation $ x+y=1 0 6 $ . It's also given that the value of x is 6 more than 4 times the value of y. This can be represented by the equation $ x=4 y+6 $ . Substituting 4y+6 for x in the equation $ x+y=1 0 6 $ yields $ 4 y+6+y=1 0 6 $ , or $ 5 y+6=1 0 6 $ . Subtracting 6 from each side of this equation yields $ 5 y=1 0 0 $ . Dividing each side of this equation by 5 yields $ y=2 0 $ . Substituting 20 for y in the equation $ x=4 y+6 $ yields $ x=4(2 0)+6 $ , or $ x=8 6 $ .\n\nChoice A is incorrect. This value represents less than half of the total length of 106 inches; however, x represents the length of the longer part of the wire, since it's given that the value of x is 6 more than 4 times the value of y. Choice B is incorrect. This value represents less than half of the total length of 106 inches; however, x represents the length of the longer part of the wire, since it's given that the value of x is 6 more than 4 times the value of y. Choice C is incorrect. This represents a part that is 6 more than the length of the other part, rather than 6 more than 4 times the length of the other part.",
+          "explanation": "Choice D is correct. It's given that a wire with a length of 106 inches is cut into two parts. It's also given that one part has a length of x inches and the other part has a length of y inches. This can be represented by the equation $ x+y=106 $ . It's also given that the value of x is 6 more than 4 times the value of y. This can be represented by the equation $ x=4 y+6 $ . Substituting 4y+6 for x in the equation $ x+y=106 $ yields $ 4 y+6+y=106 $ , or $ 5 y+6=106 $ . Subtracting 6 from each side of this equation yields $ 5 y=100 $ . Dividing each side of this equation by 5 yields $ y=20 $ . Substituting 20 for y in the equation $ x=4 y+6 $ yields $ x=4(20)+6 $ , or $ x=86 $ .\n\nChoice A is incorrect. This value represents less than half of the total length of 106 inches; however, x represents the length of the longer part of the wire, since it's given that the value of x is 6 more than 4 times the value of y. Choice B is incorrect. This value represents less than half of the total length of 106 inches; however, x represents the length of the longer part of the wire, since it's given that the value of x is 6 more than 4 times the value of y. Choice C is incorrect. This represents a part that is 6 more than the length of the other part, rather than 6 more than 4 times the length of the other part.",
           "correctAnswer": "D"
         },
         {
@@ -1182,7 +1186,7 @@
             "D) 18"
           ],
           "question": "$$\n\\begin{array}{l} 4 x - 9 y = 9 y + 5 \\\\ h y = 2 + 4 x \\\\ \\end{array}\n$$\n\nIn the given system of equations, h is a constant. If the system has no solution, what is the value of h?",
-          "explanation": "Choice D is correct. A system of two linear equations in two variables, x and y, has no solution if the lines represented by the equations in the xy-plane are distinct and parallel. The graphs of two lines in the xy-plane represented by equations in the form Ax+By=C, where A, B, and C are constants, are parallel if the coefficients for x and y in one equation are proportional to the corresponding coefficients in the other equation. The first equation in the given system can be written in the form Ax+By=C by subtracting 9y from both sides of the equation to yield $ 4 x-1 8 y=5 $ . The second equation in the given system can be written in the form Ax+By=C by subtracting 4x from both sides of the equation to yield $ -4 x+h y=2 $ . The coefficient of x in this second equation, -4, is-1 times the coefficient of x in the first equation, 4. For the lines to be parallel, the coefficient of y in the second equation, h, must also be-1 times the coefficient of y in the first equation, -18. Thus, h=-1(-18), or h=18. Therefore, if the given system has no solution, the value of h is 18.\n\nChoice A is incorrect. If the value of h is-9, then the given system would have one solution, rather than no solution. Choice B is incorrect. If the value of h is 0, then the given system would have one solution, rather than no solution. Choice C is incorrect. If the value of h is 9, then the given system would have one solution, rather than no solution.",
+          "explanation": "Choice D is correct. A system of two linear equations in two variables, x and y, has no solution if the lines represented by the equations in the xy-plane are distinct and parallel. The graphs of two lines in the xy-plane represented by equations in the form Ax+By=C, where A, B, and C are constants, are parallel if the coefficients for x and y in one equation are proportional to the corresponding coefficients in the other equation. The first equation in the given system can be written in the form Ax+By=C by subtracting 9y from both sides of the equation to yield $ 4 x-18 y=5 $ . The second equation in the given system can be written in the form Ax+By=C by subtracting 4x from both sides of the equation to yield $ -4 x+h y=2 $ . The coefficient of x in this second equation, -4, is-1 times the coefficient of x in the first equation, 4. For the lines to be parallel, the coefficient of y in the second equation, h, must also be-1 times the coefficient of y in the first equation, -18. Thus, h=-1(-18), or h=18. Therefore, if the given system has no solution, the value of h is 18.\n\nChoice A is incorrect. If the value of h is-9, then the given system would have one solution, rather than no solution. Choice B is incorrect. If the value of h is 0, then the given system would have one solution, rather than no solution. Choice C is incorrect. If the value of h is 9, then the given system would have one solution, rather than no solution.",
           "correctAnswer": "D"
         },
         {
@@ -1199,9 +1203,9 @@
           "type": "grid-in",
           "number": 21,
           "choices": [],
-          "question": "$$\n\\sqrt {(x - 2) ^ {2}} = \\sqrt {3 x + 3 4}\n$$\n\nWhat is the smallest solution to the given equation?",
-          "explanation": "The correct answer is $ - 3 $ . Squaring both sides of the given equation yields $ ( x-2 )^{2}=3 x+3 4 $ , which can be rewritten as $ x^{2}-4 x+4=3 x+3 4 $ . Subtracting 3x and 34 from both sides of this equation yields $ x^{2}-7 x-3 0=0 $ . This quadratic equation can be rewritten as $ ( x-1 0 ) ( x+3 )=0 $ . According to the zero product property, $ ( x-1 0 ) ( x+3 ) $ equals zero when either $ x-1 0=0 $ or $ x+3=0 $ . Solving each of these equations for x yields x=10 or x=-3 . Therefore, the given equation has two solutions, 10 and-3 . Of these two solutions, -3 is the smallest solution to the given equation.",
-          "correctAnswer": "$ - 3 $"
+          "question": "$$\n\\sqrt {(x - 2) ^ {2}} = \\sqrt {3 x + 34}\n$$\n\nWhat is the smallest solution to the given equation?",
+          "explanation": "The correct answer is $ - 3 $ . Squaring both sides of the given equation yields $ ( x-2 )^{2}=3 x+34 $ , which can be rewritten as $ x^{2}-4 x+4=3 x+34 $ . Subtracting 3x and 34 from both sides of this equation yields $ x^{2}-7 x-30=0 $ . This quadratic equation can be rewritten as $ ( x-10 ) ( x+3 )=0 $ . According to the zero product property, $ ( x-10 ) ( x+3 ) $ equals zero when either $ x-10=0 $ or $ x+3=0 $ . Solving each of these equations for x yields x=10 or x=-3 . Therefore, the given equation has two solutions, 10 and-3 . Of these two solutions, -3 is the smallest solution to the given equation.",
+          "correctAnswer": "-3"
         },
         {
           "id": "q22",
@@ -1213,8 +1217,8 @@
             "C) 11",
             "D) 15"
           ],
-          "question": "Function f is defined by $ f ( x )=( x+6 )( x+5 )( x+1 ). $ Function g is defined by $ g ( x )=f ( x-1 ). $ The graph of y=g(x) in the xy-plane has x-intercepts at (a,0), (b,0), and (c,0), where a,b,and c are distinct constants. What is the value of a+b+c?",
-          "explanation": "Choice B is correct. It's given that $ g ( x )=f ( x-1 ) $ . Since $ f ( x )=(x+6)(x+5)(x+1) $ it follows that $ f ( x-1 )=(x-1+6)(x-1+5)(x-1+1) $ . Combining like terms yields $ f ( x-1 )=(x+5)(x+4)(x) $ . Therefore, $ g ( x )=x ( x+5 ) ( x+4 ) $ . The x-intercepts of a graph in the xy-plane are the points where $ y=0 $ . The x-coordinates of the x-intercepts of the graph of $ y=g ( x ) $ in the xy-plane can be found by solving the equation $ 0=x ( x+5 ) ( x+4 ) $ . Applying the zero product property to this equation yields three equations: $ x=0 $ $ x+5=0 $ , and $ x+4=0 $ . Solving each of these equations for x yields $ x=0 $ $ x=-5 $ , and $ x=-4 $ respectively. Therefore, the x-intercepts of the graph of $ y=g ( x ) $ are (0,0), (-5,0), and (-4,0). It follows that the values of a,b,and c are 0,-5,and -4. Thus, the value of a+b+c is 0+(-5)+(-4), which is equal to-9.\n\nChoice A is incorrect. This is the value of a+b+c if g(x)=f(x+1).Choice C is incorrect. This is the value of a+b+c-1 if g(x)=(x-6)(x-5)(x-1).Choice D is incorrect. This is the value of a+b+c if f(x)=(x-6)(x-5)(x-1).",
+          "question": "Function f is defined by $ f ( x )=( x+6 )( x+5 )( x+1 ). $ Function g is defined by $ g ( x )=f ( x-1 ). $ The graph of y=g(x) in the xy-plane has x-intercepts at (a,0), (b,0), and (c,0), where a, b, and c are distinct constants. What is the value of a+b+c?",
+          "explanation": "Choice B is correct. It's given that $ g ( x )=f ( x-1 ) $ . Since $ f ( x )=(x+6)(x+5)(x+1) $ it follows that $ f ( x-1 )=(x-1+6)(x-1+5)(x-1+1) $ . Combining like terms yields $ f ( x-1 )=(x+5)(x+4)(x) $ . Therefore, $ g ( x )=x ( x+5 ) ( x+4 ) $ . The x-intercepts of a graph in the xy-plane are the points where $ y=0 $ . The x-coordinates of the x-intercepts of the graph of $ y=g ( x ) $ in the xy-plane can be found by solving the equation $ 0=x ( x+5 ) ( x+4 ) $ . Applying the zero product property to this equation yields three equations: $ x=0 $ $ x+5=0 $ , and $ x+4=0 $ . Solving each of these equations for x yields $ x=0 $ $ x=-5 $ , and $ x=-4 $ respectively. Therefore, the x-intercepts of the graph of $ y=g ( x ) $ are (0,0), (-5,0), and (-4,0). It follows that the values of a, b, and c are 0,-5, and -4. Thus, the value of a+b+c is 0+(-5)+(-4), which is equal to-9.\n\nChoice A is incorrect. This is the value of a+b+c if g(x)=f(x+1). Choice C is incorrect. This is the value of a+b+c-1 if g(x)=(x-6)(x-5)(x-1). Choice D is incorrect. This is the value of a+b+c if f(x)=(x-6)(x-5)(x-1).",
           "correctAnswer": "B"
         },
         {
@@ -1228,7 +1232,7 @@
             "D) Increasing linear"
           ],
           "question": "For x>0, the function f is defined as follows:\n\n$ f ( x ) $ equals 201% of x\n\nWhich of the following could describe this function?",
-          "explanation": "Choice D is correct. It's given that for x>0, f(x) is equal to 201% of x. This is equivalent to $ f ( x )=\\frac{2 0 1} {1 0 0} x $ , or $ f ( x )=2. 0 1 x $ , for x>0. This function indicates that as x increases, f(x) also increases, which means f is an increasing function. Furthermore, f(x) increases at a constant rate of 2.01 for each increase of x by 1. A function with a constant rate of change is linear. Thus, the function f can be described as an increasing linear function.\n\nChoice A is incorrect and may result from conceptual errors. Choice B is incorrect and may result from conceptual errors. Choice C is incorrect. This could describe the function $ f ( x )=(2. 0 1 )^{x} $ , where f(x) is equal to 201% of f(x-1), not x, for x>0.",
+          "explanation": "Choice D is correct. It's given that for x>0, f(x) is equal to 201% of x. This is equivalent to $ f ( x )=\\frac{201} {100} x $ , or $ f ( x )=2. 01 x $ , for x>0. This function indicates that as x increases, f(x) also increases, which means f is an increasing function. Furthermore, f(x) increases at a constant rate of 2.01 for each increase of x by 1. A function with a constant rate of change is linear. Thus, the function f can be described as an increasing linear function.\n\nChoice A is incorrect and may result from conceptual errors. Choice B is incorrect and may result from conceptual errors. Choice C is incorrect. This could describe the function $ f ( x )=(2. 01 )^{x} $ , where f(x) is equal to 201% of f(x-1), not x, for x>0.",
           "correctAnswer": "D"
         },
         {
@@ -1241,8 +1245,8 @@
             "C) -5",
             "D) -3"
           ],
-          "question": "$$\nf (x) = 4 x ^ {2} + 6 4 x + 2 6 2\n$$\n\nThe function g is defined by $ g ( x )=f ( x+5 ). $ For what value of x does g(x) reach its minimum?",
-          "explanation": "Choice A is correct. It's given that $ g ( x )=f ( x+5 ) $ . Since $ f ( x )=4 x^{2}+6 4 x+2 6 2 $ , it follows that $ f ( x+5 )=4 ( x+5 )^{2}+6 4 ( x+5 )+2 6 2 $ . Expanding the quantity $ ( x+5 )^{2} $ in this equation yields $ f ( x+5 )=4 ( x^{2}+1 0 x+2 5 )+6 4 ( x+5 )+2 6 2 $ . Distributing the 4 and the 64 yields $ f ( x+5 )=4 x^{2}+4 0 x+1 0 0+6 4 x+3 2 0+2 6 2 $ . Combining like terms yields $ f ( x+5 )=4 x^{2}+1 0 4 x+6 8 2 $ . Therefore, $ g ( x )=4 x^{2}+1 0 4 x+6 8 2 $ For a quadratic function defined by an equation of the form $ g ( x )=a ( x-h )^{2}+k $ where a, h, and k are constants and a is positive, g(x) reaches its minimum, k,\n\nwhen the value of x is h. The equation $ g ( x )=4 x^{2}+1 0 4 x+6 8 2 $ can be rewritten in this form by completing the square. This equation is equivalent to $ g ( x )=4 \\left( x^{2}+2 6 x\\right)+6 8 2 $ , or $ g ( x )=4 \\left( x^{2}+2 6 x+1 6 9-1 6 9\\right)+6 8 2 $ . This equation can be rewritten as $ g ( x )=4 \\left( \\left(x+1 3\\right)^{2}-1 6 9\\right)+6 8 2 $ , or $ g ( x )=4 \\left(x+1 3\\right)^{2}-4 \\left(1 6 9\\right)+6 8 2 $ , which is equivalent to $ g ( x )=4 \\left(x+1 3\\right)^{2}+6 $ This equation is in the form $ g ( x )=a \\left(x-h\\right)^{2}+k $ , where a=4, h=-13, and k=6 Therefore, g(x) reaches its minimum when the value of x is -13.\n\nChoice B is incorrect. This is the value of x for which f(x), rather than g(x), reaches its minimum. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect. This is the value of x for which f(x-5), rather than f(x+5), reaches its minimum.",
+          "question": "$$\nf (x) = 4 x ^ {2} + 64 x + 262\n$$\n\nThe function g is defined by $ g ( x )=f ( x+5 ). $ For what value of x does g(x) reach its minimum?",
+          "explanation": "Choice A is correct. It's given that $ g ( x )=f ( x+5 ) $ . Since $ f ( x )=4 x^{2}+64 x+262 $ , it follows that $ f ( x+5 )=4 ( x+5 )^{2}+64 ( x+5 )+262 $ . Expanding the quantity $ ( x+5 )^{2} $ in this equation yields $ f ( x+5 )=4 ( x^{2}+10 x+25 )+64 ( x+5 )+262 $ . Distributing the 4 and the 64 yields $ f ( x+5 )=4 x^{2}+40 x+100+64 x+320+262 $ . Combining like terms yields $ f ( x+5 )=4 x^{2}+104 x+682 $ . Therefore, $ g ( x )=4 x^{2}+104 x+682 $ For a quadratic function defined by an equation of the form $ g ( x )=a ( x-h )^{2}+k $ where a, h, and k are constants and a is positive, g(x) reaches its minimum, k,\n\nwhen the value of x is h. The equation $ g ( x )=4 x^{2}+104 x+682 $ can be rewritten in this form by completing the square. This equation is equivalent to $ g ( x )=4 \\left( x^{2}+26 x\\right)+682 $ , or $ g ( x )=4 \\left( x^{2}+26 x+169-169\\right)+682 $ . This equation can be rewritten as $ g ( x )=4 \\left( \\left(x+13\\right)^{2}-169\\right)+682 $ , or $ g ( x )=4 \\left(x+13\\right)^{2}-4 \\left(169\\right)+682 $ , which is equivalent to $ g ( x )=4 \\left(x+13\\right)^{2}+6 $ This equation is in the form $ g ( x )=a \\left(x-h\\right)^{2}+k $ , where a=4, h=-13, and k=6 Therefore, g(x) reaches its minimum when the value of x is -13.\n\nChoice B is incorrect. This is the value of x for which f(x), rather than g(x), reaches its minimum. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect. This is the value of x for which f(x-5), rather than f(x+5), reaches its minimum.",
           "correctAnswer": "A"
         },
         {
@@ -1278,8 +1282,8 @@
           "type": "grid-in",
           "number": 27,
           "choices": [],
-          "question": "Right rectangular prism X is similar to right rectangular prism Y. The surface area of right rectangular prism X is 58 square centimeters $ \\mathrm{(c m^{2})} $ and the surface area of right rectangular prism Y is $ 1,450 \\mathrm{c m}^{2} $ . The volume of right rectangular prism Y is 1,250 cubic centimeters $ \\mathrm{(c m^{3})} $ . What is the sum of the volumes, in $ \\mathrm{c m}^{3} $ , of right rectangular prism X and right rectangular prism Y?\n\n## STOP\n\nIf you finish before time is called, you may check your work on this module only. Do not turn to any other module in the test.\n\n<div align=\"center\">",
-          "explanation": "The correct answer is 1,260. Since it's given that prisms X and Y are similar, all the linear measurements of prism Y are k times the respective linear measurements of prism X, where k is a positive constant. Therefore, the surface area of prism Y is $ k^{2} $ times the surface area of prism X and the volume of prism Y is $ k^{3} $ times the volume of prism X. It's given that the surface area of prism Y is 1,450 $ cm^{2} $ , and the surface area of prism X is 58 $ cm^{2} $ , which implies that $ 1,450=58 k^{2} $ . Dividing both sides of this equation by 58 yields $ \\frac{1,450}{58}=k^{2} $ , or $ k^{2}=25 $ . Since k is a positive constant, k=5. It's given that the volume of prism Y is 1,250 $ cm^{3} $ . Therefore, the volume of prism X is equal to $ \\frac{1,250}{k^{3}} $ $ cm^{3} $ , which is equivalent to $ \\frac{1,250}{5^{3}} $ $ cm^{3} $ , or 10 $ cm^{3} $ . Thus, the sum of the volumes, in $ cm^{3} $ , of the two prisms is 1,250+10, or 1,260.\n\n## Math",
+          "question": "Right rectangular prism X is similar to right rectangular prism Y. The surface area of right rectangular prism X is 58 square centimeters $ \\mathrm{(c m^{2})} $ and the surface area of right rectangular prism Y is $ 1,450 \\mathrm{c m}^{2} $ . The volume of right rectangular prism Y is 1,250 cubic centimeters $ \\mathrm{(c m^{3})} $ . What is the sum of the volumes, in $ \\mathrm{c m}^{3} $ , of right rectangular prism X and right rectangular prism Y?",
+          "explanation": "The correct answer is 1,260. Since it's given that prisms X and Y are similar, all the linear measurements of prism Y are k times the respective linear measurements of prism X, where k is a positive constant. Therefore, the surface area of prism Y is $ k^{2} $ times the surface area of prism X and the volume of prism Y is $ k^{3} $ times the volume of prism X. It's given that the surface area of prism Y is 1,450 $ cm^{2} $ , and the surface area of prism X is 58 $ cm^{2} $ , which implies that $ 1,450=58 k^{2} $ . Dividing both sides of this equation by 58 yields $ \\frac{1,450}{58}=k^{2} $ , or $ k^{2}=25 $ . Since k is a positive constant, k=5. It's given that the volume of prism Y is 1,250 $ cm^{3} $ . Therefore, the volume of prism X is equal to $ \\frac{1,250}{k^{3}} $ $ cm^{3} $ , which is equivalent to $ \\frac{1,250}{5^{3}} $ $ cm^{3} $ , or 10 $ cm^{3} $ . Thus, the sum of the volumes, in $ cm^{3} $ , of the two prisms is 1,250+10, or 1,260.",
           "correctAnswer": "1,260"
         }
       ],
@@ -1299,7 +1303,7 @@
             "C) 364",
             "D) 3,577"
           ],
-          "question": "$$\nw + 7 = 3 5 7\n$$\n\nWhat value of w is the solution to the given equation?",
+          "question": "$$\nw + 7 = 357\n$$\n\nWhat value of w is the solution to the given equation?",
           "explanation": "Choice B is correct. Subtracting 7 from each side of the given equation yields $ w=350 $ . Therefore, the value of w that is the solution to the given equation is 350.\n\nChoice A is incorrect. This is the value of w that is the solution to the equation 7w=357, not w+7=357. Choice C is incorrect. This is the value of w that is the solution to the equation w-7=357, not w+7=357. Choice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "B"
         },
@@ -1308,12 +1312,12 @@
           "type": "multiple-choice",
           "number": 2,
           "choices": [
-            "A) $ 1 6 x+3 1 $",
-            "B) $ 1 6 x+2 4 0 $",
-            "C) $ 1 6 x+1 $",
-            "D) $ 1 6 x+1 5 $"
+            "A) $ 16 x+31 $",
+            "B) $ 16 x+240 $",
+            "C) $ 16 x+1 $",
+            "D) $ 16 x+15 $"
           ],
-          "question": "Which expression is equivalent to $ 1 6 ( x+1 5) $ ?",
+          "question": "Which expression is equivalent to $ 16 ( x+15) $ ?",
           "explanation": "Choice B is correct. The expression 16(x+15) can be rewritten as 16(x)+16(15), which is equivalent to 16x+240.\n\nChoice A is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "B"
         },
@@ -1341,8 +1345,8 @@
             "C) 18",
             "D) 30"
           ],
-          "question": "3x=12\n\n-3x+y=-6\n\nThe solution to the given system of equations is (x,y). What is the value of y?",
-          "explanation": "Choice B is correct. Adding the second equation in the given system to the first equation in the given system yields $ 3 x+(-3 x+y)=1 2+(-6), $ which is equivalent to y=6.\n\nChoice A is incorrect and may result from conceptual or calculation errors.\n\nChoice C is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
+          "question": "3x=12\n\n-3x+y=-6\n\nThe solution to the given system of equations is (x, y). What is the value of y?",
+          "explanation": "Choice B is correct. Adding the second equation in the given system to the first equation in the given system yields $ 3 x+(-3 x+y)=12+(-6), $ which is equivalent to y=6.\n\nChoice A is incorrect and may result from conceptual or calculation errors.\n\nChoice C is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "B"
         },
         {
@@ -1350,13 +1354,13 @@
           "type": "multiple-choice",
           "number": 5,
           "choices": [
-            "A) $ y=-\\frac{1}{9} x-1 4 $",
-            "B) $ y=-\\frac{1}{9} x+1 4 $",
-            "C) $ y=\\frac{1}{9} x-1 4 $",
-            "D) $ y=\\frac{1}{9} x+1 4 $"
+            "A) $ y=-\\frac{1}{9} x-14 $",
+            "B) $ y=-\\frac{1}{9} x+14 $",
+            "C) $ y=\\frac{1}{9} x-14 $",
+            "D) $ y=\\frac{1}{9} x+14 $"
           ],
           "question": "A line in the xy-plane has a slope of $ \\frac{1}{9} $ and passes through the point (0,14). Which equation represents this line?",
-          "explanation": "Choice D is correct. The equation of a line in the xy-plane can be written as $ y=mx+b $ , where m represents the slope of the line and (0,b) represents the y-intercept of the line. It's given that the slope of the line is $ \\frac{1}{9} $ . It follows that $ m=\\frac{1}{9}. $ It's also given that the line passes through the point (0,14). It follows that $ b=14. $ Substituting $ \\frac{1}{9} $ for m and 14 for b in $ y=mx+b $ yields $ y=\\frac{1}{9} x+14. $ Thus, the equation $ y=\\frac{1}{9} x+14 $ represents this line.\n\nChoice A is incorrect. This equation represents a line with a slope of $ -\\frac{1}{9} $ and a y-intercept of (0,-14). Choice B is incorrect. This equation represents a line with a slope of $ -\\frac{1}{9} $ and a y-intercept of (0,14). Choice C is incorrect. This equation represents a line with a slope of $ \\frac{1}{9} $ and a y-intercept of (0,-14).",
+          "explanation": "Choice D is correct. The equation of a line in the xy-plane can be written as $ y=mx+b $ , where m represents the slope of the line and (0, b) represents the y-intercept of the line. It's given that the slope of the line is $ \\frac{1}{9} $ . It follows that $ m=\\frac{1}{9}. $ It's also given that the line passes through the point (0,14). It follows that $ b=14. $ Substituting $ \\frac{1}{9} $ for m and 14 for b in $ y=mx+b $ yields $ y=\\frac{1}{9} x+14. $ Thus, the equation $ y=\\frac{1}{9} x+14 $ represents this line.\n\nChoice A is incorrect. This equation represents a line with a slope of $ -\\frac{1}{9} $ and a y-intercept of (0,-14). Choice B is incorrect. This equation represents a line with a slope of $ -\\frac{1}{9} $ and a y-intercept of (0,14). Choice C is incorrect. This equation represents a line with a slope of $ \\frac{1}{9} $ and a y-intercept of (0,-14).",
           "correctAnswer": "D"
         },
         {
@@ -1365,7 +1369,7 @@
           "number": 6,
           "choices": [],
           "question": "<div style='text-align: center;'><img src='images/test9/crop_1_1778641633088.png' alt='OCR图片'/></div>\n\nNote: Figure not drawn to scale.\n\nIn the figure shown, line c intersects parallel lines s and t. What is the value of x?",
-          "explanation": "The correct answer is 70. Based on the figure, the angle with measure $ 1 1 0^{\\circ} $ and the angle vertical to the angle with measure $ x^{\\circ} $ are same side interior angles. Since vertical angles are congruent, the angle vertical to the angle with measure $ x^{\\circ} $ also has measure $ x^{\\circ} $ . It's given that lines s and t are parallel. Therefore, same side interior angles between lines s and t are supplementary. It follows that $ x+1 1 0=1 8 0 $ . Subtracting 110 from both sides of this equation yields $ x=7 0 $",
+          "explanation": "The correct answer is 70. Based on the figure, the angle with measure $ 110^{\\circ} $ and the angle vertical to the angle with measure $ x^{\\circ} $ are same side interior angles. Since vertical angles are congruent, the angle vertical to the angle with measure $ x^{\\circ} $ also has measure $ x^{\\circ} $ . It's given that lines s and t are parallel. Therefore, same side interior angles between lines s and t are supplementary. It follows that $ x+110=180 $ . Subtracting 110 from both sides of this equation yields $ x=70 $",
           "correctAnswer": "70"
         },
         {
@@ -1373,8 +1377,8 @@
           "type": "grid-in",
           "number": 7,
           "choices": [],
-          "question": "$$\nf (x) = x + \\frac {8}{1 1}\n$$\n\nThe function f is defined by the given equation What is the value of f(x) when $ x=\\frac{3}{11} $?",
-          "explanation": "The correct answer is 1. It's given that the function f is defined by $ f ( x )=x+\\frac{8}{1 1}. $ Substituting $ \\frac{3}{1 1} $ for x in the given function yields $ f \\left( \\frac{3}{1 1} \\right)=\\frac{3}{1 1}+\\frac{8}{1 1}, $ which gives $ f \\left( \\frac{3}{1 1} \\right)=\\frac{1 1}{1 1}, $ or $ f \\left( \\frac{3}{1 1} \\right)=1. $ Therefore, when $ x=\\frac{3}{1 1}, $ the value of f(x) is 1.",
+          "question": "$$\nf (x) = x + \\frac {8}{11}\n$$\n\nThe function f is defined by the given equation What is the value of f(x) when $ x=\\frac{3}{11} $?",
+          "explanation": "The correct answer is 1. It's given that the function f is defined by $ f ( x )=x+\\frac{8}{11}. $ Substituting $ \\frac{3}{11} $ for x in the given function yields $ f \\left( \\frac{3}{11} \\right)=\\frac{3}{11}+\\frac{8}{11}, $ which gives $ f \\left( \\frac{3}{11} \\right)=\\frac{11}{11}, $ or $ f \\left( \\frac{3}{11} \\right)=1. $ Therefore, when $ x=\\frac{3}{11}, $ the value of f(x) is 1.",
           "correctAnswer": "1"
         },
         {
@@ -1388,7 +1392,7 @@
             "D) y=-5x+18"
           ],
           "question": "<table border=\"1\"><tr><td>x</td><td>y</td></tr><tr><td>0</td><td>18</td></tr><tr><td>1</td><td>13</td></tr><tr><td>2</td><td>8</td></tr></table>\n\nThe table shows three values of x and their corresponding values of y. There is a linear relationship between x and y. Which of the following equations represents this relationship?",
-          "explanation": "Choice D is correct. A linear relationship can be represented by an equation of the form y=mx+b,where m and b are constants. It's given in the table that when x=0, y=18. Substituting 0 for x and 18 for y in y=mx+b yields 18=m(0)+b, or 18=b. Substituting 18 for b in the equation y=mx+b yields y=mx+18. It's also given in the table that when x=1, y=13. Substituting 1 for x and 13 for y in the equation y=mx+18 yields 13=m(1)+18, or 13=m+18. Subtracting 18 from both sides of this equation yields $ - 5=m $ . Therefore, the equation y=-5x+18 represents the relationship between x and y.\n\nChoice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors.",
+          "explanation": "Choice D is correct. A linear relationship can be represented by an equation of the form y=mx+b, where m and b are constants. It's given in the table that when x=0, y=18. Substituting 0 for x and 18 for y in y=mx+b yields 18=m(0)+b, or 18=b. Substituting 18 for b in the equation y=mx+b yields y=mx+18. It's also given in the table that when x=1, y=13. Substituting 1 for x and 13 for y in the equation y=mx+18 yields 13=m(1)+18, or 13=m+18. Subtracting 18 from both sides of this equation yields $ - 5=m $ . Therefore, the equation y=-5x+18 represents the relationship between x and y.\n\nChoice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "D"
         },
         {
@@ -1401,8 +1405,8 @@
             "C) (3,10)",
             "D) (3,70)"
           ],
-          "question": "$$\nx+7=1 0\n$$\n\n$$\n(x + 7) ^ {2} = y\n$$\n\nWhich ordered pair (x,y) is a solution to the given system of equations?",
-          "explanation": "Choice A is correct. The solution to a system of equations is the ordered pair (x,y) that satisfies all equations in the system. It's given by the first equation in the system that $ x+7=1 0 $ . Substituting 10 for $ x+7 $ into the second equation yields $ 1 0^{2}=y $ , or $ y=1 0 0 $ . The x-coordinate of the solution to the system of equations can be found by subtracting 7 from both sides of the equation $ x+7=1 0 $ , which yields $ x=3 $ . Therefore, the ordered pair (3,100) is a solution to the given system of equations.\n\nChoice B is incorrect and may result from conceptual or calculation errors.\n\nChoice C is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
+          "question": "$$\nx+7=10\n$$\n\n$$\n(x + 7) ^ {2} = y\n$$\n\nWhich ordered pair (x, y) is a solution to the given system of equations?",
+          "explanation": "Choice A is correct. The solution to a system of equations is the ordered pair (x, y) that satisfies all equations in the system. It's given by the first equation in the system that $ x+7=10 $ . Substituting 10 for $ x+7 $ into the second equation yields $ 10^{2}=y $ , or $ y=100 $ . The x-coordinate of the solution to the system of equations can be found by subtracting 7 from both sides of the equation $ x+7=10 $ , which yields $ x=3 $ . Therefore, the ordered pair (3,100) is a solution to the given system of equations.\n\nChoice B is incorrect and may result from conceptual or calculation errors.\n\nChoice C is incorrect and may result from conceptual or calculation errors.\n\nChoice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "A"
         },
         {
@@ -1415,7 +1419,7 @@
             "C) (7,0)",
             "D) (12,0)"
           ],
-          "question": "The function f is defined by $ f ( x )=7 x-8 4 $ . What is the x-intercept of the graph of $ y=f(x) $ in the xy-plane?",
+          "question": "The function f is defined by $ f ( x )=7 x-84 $ . What is the x-intercept of the graph of $ y=f(x) $ in the xy-plane?",
           "explanation": "Choice D is correct. The given function f is a linear function. Therefore, the graph of y=f(x) in the xy-plane has one x-intercept at the point (k,0), where k is a constant. Substituting 0 for f(x) and k for x in the given function yields 0=7k-84. Adding 84 to both sides of this equation yields 84=7k. Dividing both sides of this equation by 7 yields 12=k. Therefore, the x-intercept of the graph of y=f(x) in the xy-plane is (12,0).\n\nChoice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "D"
         },
@@ -1424,9 +1428,9 @@
           "type": "multiple-choice",
           "number": 11,
           "choices": [
-            "A) $ n=(1+6 0 4)^{t} $",
+            "A) $ n=(1+604)^{t} $",
             "B) $ n=(1+0.004)^{t} $",
-            "C) $ n=6 0 4(1+0. 0 0 4)^{t} $",
+            "C) $ n=604(1+0. 004)^{t} $",
             "D) $ n=0.004(1+604)^{t} $"
           ],
           "question": "<table border=\"1\"><tr><td>Time(years)</td><td>Total amount(dollars)</td></tr><tr><td>0</td><td>604.00</td></tr><tr><td>1</td><td>606.42</td></tr><tr><td>2</td><td>608.84</td></tr></table>\n\nRosa opened a savings account at a bank. The table shows the exponential relationship between the time t, in years, since Rosa opened the account and the total amount n, in dollars, in the account. If Rosa made no additional deposits or withdrawals, which of the following equations best represents the relationship between t and n?",
@@ -1443,8 +1447,8 @@
             "C) 75",
             "D) 4"
           ],
-          "question": "$$\nw (t) = 3 0 0 - 4 t\n$$\n\nThe function w models the volume of liquid, in milliliters, in a container t seconds after it begins draining from a hole at the bottom. According to the model, what is the predicted volume, in milliliters, draining from the container each second?",
-          "explanation": "Choice D is correct. It's given that the function w models the volume of liquid, in milliliters, in a container t seconds after it begins draining from a hole at the bottom. The given function $ w ( t )=3 0 0-4 t $ can be rewritten as $ w ( t )=-4 t+3 0 0. $ Thus, for each increase of t by 1, the value of w(t) decreases by 4(1), or 4. Therefore, the predicted volume, in milliliters, draining from the container each second is 4 milliliters.\n\nChoice A is incorrect. This is the amount of liquid, in milliliters, in the container before the liquid begins draining. Choice B is incorrect and may result from conceptual errors. Choice C is incorrect and may result from conceptual errors.",
+          "question": "$$\nw (t) = 300 - 4 t\n$$\n\nThe function w models the volume of liquid, in milliliters, in a container t seconds after it begins draining from a hole at the bottom. According to the model, what is the predicted volume, in milliliters, draining from the container each second?",
+          "explanation": "Choice D is correct. It's given that the function w models the volume of liquid, in milliliters, in a container t seconds after it begins draining from a hole at the bottom. The given function $ w ( t )=300-4 t $ can be rewritten as $ w ( t )=-4 t+300. $ Thus, for each increase of t by 1, the value of w(t) decreases by 4(1), or 4. Therefore, the predicted volume, in milliliters, draining from the container each second is 4 milliliters.\n\nChoice A is incorrect. This is the amount of liquid, in milliliters, in the container before the liquid begins draining. Choice B is incorrect and may result from conceptual errors. Choice C is incorrect and may result from conceptual errors.",
           "correctAnswer": "D"
         },
         {
@@ -1461,8 +1465,8 @@
           "type": "grid-in",
           "number": 14,
           "choices": [],
-          "question": "$$\nz ^ {2} + 1 0 z - 2 4 = 0\n$$\n\nWhat is one of the solutions to the given equation?",
-          "explanation": "The correct answer is either 2 or -12. The left-hand side of the given equation can be rewritten by factoring. The two values that multiply to -24 and add to 10 are 12 and -2. It follows that the given equation can be rewritten as $ ( z+1 2 ) ( z-2 )=0 $ . Setting each factor equal to 0 yields two equations: $ z+1 2=0 $ and $ z-2=0 $ . Subtracting 12 from both sides of the equation $ z+1 2=0 $ results in $ z=-1 2 $ . Adding 2 to both sides of the equation $ z-2=0 $ results in $ z=2 $ . Note that 2 and -12 are examples of ways to enter a correct answer.",
+          "question": "$$\nz ^ {2} + 10 z - 24 = 0\n$$\n\nWhat is one of the solutions to the given equation?",
+          "explanation": "The correct answer is either 2 or -12. The left-hand side of the given equation can be rewritten by factoring. The two values that multiply to -24 and add to 10 are 12 and -2. It follows that the given equation can be rewritten as $ ( z+12 ) ( z-2 )=0 $ . Setting each factor equal to 0 yields two equations: $ z+12=0 $ and $ z-2=0 $ . Subtracting 12 from both sides of the equation $ z+12=0 $ results in $ z=-12 $ . Adding 2 to both sides of the equation $ z-2=0 $ results in $ z=2 $ . Note that 2 and -12 are examples of ways to enter a correct answer.",
           "correctAnswer": "either 2 or -12"
         },
         {
@@ -1490,7 +1494,7 @@
             "D) 1.7"
           ],
           "question": "The population of Greenville increased by 7% from 2015 to 2016. If the 2016 population is k times the 2015 population, what is the value of k?",
-          "explanation": "Choice C is correct. Let x be the 2015 population of Greenville. It's given that the population increased by 7% from 2015 to 2016. The increase in population can be written as (0.07)x. The 2016 population of Greenville is given as the sum of the 2015 population of Greenville and the increase in population from 2015 to 2016. This can be rewritten as $ x+ ( 0. 0 7 ) x $ , or 1.07x. Therefore, the value of k is 1.07.\n\nChoice A is incorrect. This is the percent, represented as a decimal, that the population increased from 2015 to 2016, not the value of k. Choice B is incorrect and may result from conceptual or calculation errors. Choice D is incorrect. This is the value of k if the population increased by 70%, not 7%, from 2015 to 2016.",
+          "explanation": "Choice C is correct. Let x be the 2015 population of Greenville. It's given that the population increased by 7% from 2015 to 2016. The increase in population can be written as (0.07)x. The 2016 population of Greenville is given as the sum of the 2015 population of Greenville and the increase in population from 2015 to 2016. This can be rewritten as $ x+ ( 0. 07 ) x $ , or 1.07x. Therefore, the value of k is 1.07.\n\nChoice A is incorrect. This is the percent, represented as a decimal, that the population increased from 2015 to 2016, not the value of k. Choice B is incorrect and may result from conceptual or calculation errors. Choice D is incorrect. This is the value of k if the population increased by 70%, not 7%, from 2015 to 2016.",
           "correctAnswer": "C"
         },
         {
@@ -1517,8 +1521,8 @@
             "C) The predicted body mass of the animal was approximately 362 kg $ \\frac{330}{7} $ days after it was born.",
             "D) The predicted body mass of the animal was approximately $ \\frac{330}{7} $ kg 362 days after it was born."
           ],
-          "question": "The function m gives the predicted body mass m(t) in kilograms (kg), of a certain animal t days after it was born in a wildlife reserve, where t $ \\leq $ 390. Which of the following is the best interpretation of the statement \"m(330) is approximately equal to 362\" in this context?",
-          "explanation": "Choice B is correct. In the statement \"m(330) is approximately equal to 362,\" the input of the function, 330, is the value of t,the elapsed time, in days, since the animal was born. The approximate value of the function, 362, is the predicted body mass, in kilograms, of the animal after that time has elapsed. Therefore, the predicted body mass of the animal was approximately 362 kg 330 days after it was born.\n\nChoice A is incorrect. This would be the best interpretation of the statement \"m(362) is approximately equal to 330.\" Choice C is incorrect. The number $ \\frac{330}{7} $ is the number of weeks, not the number of days, after the animal was born. Choice D is incorrect. This would be the best interpretation of the statement \"m(362) is approximately equal to $ \\frac{330}{7} $.\"",
+          "question": "$$\nm(t) = -0.0274\\left(\\frac{t}{7}\\right)^{2} + 7.3873\\left(\\frac{t}{7}\\right) + 75.032\n$$\n\nThe function m gives the predicted body mass m(t) in kilograms (kg), of a certain animal t days after it was born in a wildlife reserve, where t $ \\leq $ 390. Which of the following is the best interpretation of the statement \"m(330) is approximately equal to 362\" in this context?",
+          "explanation": "Choice B is correct. In the statement \"m(330) is approximately equal to 362,\" the input of the function, 330, is the value of t, the elapsed time, in days, since the animal was born. The approximate value of the function, 362, is the predicted body mass, in kilograms, of the animal after that time has elapsed. Therefore, the predicted body mass of the animal was approximately 362 kg 330 days after it was born.\n\nChoice A is incorrect. This would be the best interpretation of the statement \"m(362) is approximately equal to 330.\" Choice C is incorrect. The number $ \\frac{330}{7} $ is the number of weeks, not the number of days, after the animal was born. Choice D is incorrect. This would be the best interpretation of the statement \"m(362) is approximately equal to $ \\frac{330}{7} $.\"",
           "correctAnswer": "B"
         },
         {
@@ -1527,12 +1531,12 @@
           "number": 19,
           "choices": [
             "A) $ 2^{\\circ} $",
-            "B) $ 1 0^{\\circ} $",
-            "C) $ 2 0^{\\circ} $",
-            "D) $ 4 0^{\\circ} $"
+            "B) $ 10^{\\circ} $",
+            "C) $ 20^{\\circ} $",
+            "D) $ 40^{\\circ} $"
           ],
-          "question": "Triangle XYZ is similar to triangle RST such that X, Y, and Z correspond to R, S, and T, respectively. The measure of $ \\angle Z $ is $ 2 0^{\\circ} $ and $ 2 X Y=R S $ . What is the measure of $ \\angle T $ ?",
-          "explanation": "Choice C is correct. It's given that triangle XYZ is similar to triangle RST, such that X, Y, and Z correspond to R, S, and T, respectively. Since corresponding angles of similar triangles are congruent, it follows that the measure of $ \\angle Z $ is congruent to the measure of $ \\angle T $ . It's given that the measure of $ \\angle Z $ is $ 2 0^{\\circ} $ Therefore, the measure of $ \\angle T $ is $ 2 0^{\\circ} $\n\nChoice A is incorrect and may result from a conceptual error. Choice B is incorrect. This is half the measure of $ \\angle Z $ . Choice D is incorrect. This is twice the measure of $ \\angle Z $ .",
+          "question": "Triangle XYZ is similar to triangle RST such that X, Y, and Z correspond to R, S, and T, respectively. The measure of $ \\angle Z $ is $ 20^{\\circ} $ and $ 2 X Y=R S $ . What is the measure of $ \\angle T $ ?",
+          "explanation": "Choice C is correct. It's given that triangle XYZ is similar to triangle RST, such that X, Y, and Z correspond to R, S, and T, respectively. Since corresponding angles of similar triangles are congruent, it follows that the measure of $ \\angle Z $ is congruent to the measure of $ \\angle T $ . It's given that the measure of $ \\angle Z $ is $ 20^{\\circ} $ Therefore, the measure of $ \\angle T $ is $ 20^{\\circ} $\n\nChoice A is incorrect and may result from a conceptual error. Choice B is incorrect. This is half the measure of $ \\angle Z $ . Choice D is incorrect. This is twice the measure of $ \\angle Z $ .",
           "correctAnswer": "C"
         },
         {
@@ -1540,8 +1544,8 @@
           "type": "grid-in",
           "number": 20,
           "choices": [],
-          "question": "The function $ f ( t )=6 0, 0 0 0(2)^{\\frac{t}{4 1 0}} $ gives the number of bacteria in a population t minutes after an initial observation. How much time, in minutes, does it take for the number of bacteria in the population to double?",
-          "explanation": "The correct answer is 410. It 's given that t minutes after an initial observation, the number of bacteria in a population is $ 6 0, 0 0 0 ( 2 )^{\\frac{t}{4 1 0}} $ . This expression consists of the initial number of bacteria, 60,000, multiplied by the expression $ 2^{\\frac{t}{4 1 0}} $ . The time it takes for the number of bacteria to double is the increase in the value of t that causes the expression $ 2^{\\frac{t}{4 1 0}} $ to double. Since the base of the expression $ 2^{\\frac{t}{4 1 0}} $ is 2, the expression $ 2^{\\frac{t}{4 1 0}} $ will double when the exponent increases by 1. Since the exponent of the expression $ 2^{\\frac{t}{4 1 0}} $ is $ \\frac{t}{4 1 0} $ , the exponent will increase by 1 when t increases by 410. Therefore the time, in minutes, it takes for the number of bacteria in the population to double is 410.",
+          "question": "The function $ f ( t )=60, 000(2)^{\\frac{t}{410}} $ gives the number of bacteria in a population t minutes after an initial observation. How much time, in minutes, does it take for the number of bacteria in the population to double?",
+          "explanation": "The correct answer is 410. It's given that t minutes after an initial observation, the number of bacteria in a population is $ 60, 000 ( 2 )^{\\frac{t}{410}} $ . This expression consists of the initial number of bacteria, 60,000, multiplied by the expression $ 2^{\\frac{t}{410}} $ . The time it takes for the number of bacteria to double is the increase in the value of t that causes the expression $ 2^{\\frac{t}{410}} $ to double. Since the base of the expression $ 2^{\\frac{t}{410}} $ is 2, the expression $ 2^{\\frac{t}{410}} $ will double when the exponent increases by 1. Since the exponent of the expression $ 2^{\\frac{t}{410}} $ is $ \\frac{t}{410} $ , the exponent will increase by 1 when t increases by 410. Therefore the time, in minutes, it takes for the number of bacteria in the population to double is 410.",
           "correctAnswer": "410"
         },
         {
@@ -1550,7 +1554,7 @@
           "number": 21,
           "choices": [],
           "question": "The function f is defined by $ f ( x )=a^{x}+b $ , where a and b are constants and a > 0. In the xy-plane, the graph of y=f(x) has a y-intercept at (0,-25) and passes through the point (2,23). What is the value of a+b?",
-          "explanation": "The correct answer is -19. It's given that function f is defined by $ f ( x )=a^{x}+b $ where a and b are constants and a>0. It's also given that the graph of y=f(x) in the xy-plane has a y-intercept at (0,-25) and passes through the point (2,23). Since the graph has a y-intercept at (0,-25), $ f ( 0 )=-2 5 $ . Substituting 0 for x in the given equation yields $ f ( 0 )=a^{0}+b $ , or $ f ( 0 )=1+b $ , and substituting-25 for $ f ( 0 ) $ in this equation yields $ -2 5=1+b $ . Subtracting 1 from each side of this equation yields $ -2 6=b $ . Substituting-26 for b in the equation $ f ( x )=a^{x}+b $ yields $ f ( x )=a^{x}-2 6 $ . Since the graph also passes through the point (2,23), $ f ( 2 )=2 3 $ . Substituting 2 for x in the equation $ f ( x )=a^{x}-2 6 $ yields $ f ( 2 )=a^{2}-2 6 $ , and substituting 23 for f(2) yields $ 2 3=a^{2}-2 6 $ . Adding 26 to each side of this equation yields $ 4 9=a^{2} $ . Taking the square root of both sides of this equation yields $ \\pm 7=a $ . Since it's given that a>0, the value of a is 7. It follows that the value of a+b is 7-26, or-19.",
+          "explanation": "The correct answer is -19. It's given that function f is defined by $ f ( x )=a^{x}+b $ where a and b are constants and a>0. It's also given that the graph of y=f(x) in the xy-plane has a y-intercept at (0,-25) and passes through the point (2,23). Since the graph has a y-intercept at (0,-25), $ f ( 0 )=-25 $ . Substituting 0 for x in the given equation yields $ f ( 0 )=a^{0}+b $ , or $ f ( 0 )=1+b $ , and substituting-25 for $ f ( 0 ) $ in this equation yields $ -25=1+b $ . Subtracting 1 from each side of this equation yields $ -26=b $ . Substituting-26 for b in the equation $ f ( x )=a^{x}+b $ yields $ f ( x )=a^{x}-26 $ . Since the graph also passes through the point (2,23), $ f ( 2 )=23 $ . Substituting 2 for x in the equation $ f ( x )=a^{x}-26 $ yields $ f ( 2 )=a^{2}-26 $ , and substituting 23 for f(2) yields $ 23=a^{2}-26 $ . Adding 26 to each side of this equation yields $ 49=a^{2} $ . Taking the square root of both sides of this equation yields $ \\pm 7=a $ . Since it's given that a>0, the value of a is 7. It follows that the value of a+b is 7-26, or-19.",
           "correctAnswer": "-19"
         },
         {
@@ -1563,17 +1567,22 @@
             "C)\n\n<table border=\"1\"><tr><td>x</td><td>y</td></tr><tr><td>3</td><td>16</td></tr><tr><td>5</td><td>42</td></tr><tr><td>8</td><td>81</td></tr></table>",
             "D)\n\n<table border=\"1\"><tr><td>x</td><td>y</td></tr><tr><td>3</td><td>26</td></tr><tr><td>5</td><td>52</td></tr><tr><td>8</td><td>91</td></tr></table>"
           ],
-          "question": "$$\ny > 1 3 x - 1 8\n$$\n\nFor which of the following tables are all the values of x and their corresponding values of y solutions to the given inequality?",
+          "question": "$$\ny > 13 x - 18\n$$\n\nFor which of the following tables are all the values of x and their corresponding values of y solutions to the given inequality?",
           "explanation": "Choice D is correct. All the tables in the choices have the same three values of x, so each of the three values of x can be substituted in the given inequality to compare the corresponding values of y in each of the tables. Substituting 3 for x in the given inequality yields y>13(3)-18, or y>21. Therefore, when x=3, the corresponding value of y is greater than 21. Substituting 5 for x in the given inequality yields y>13(5)-18, or y>47. Therefore, when x=5, the corresponding value of y is greater than 47. Substituting 8 for x in the given inequality yields y>13(8)-18, or y>86. Therefore, when x=8, the corresponding value of y is greater than 86. For the table in choice D, when x=3, the corresponding value of y is 26, which is greater than 21; when x=5, the corresponding value of y is 52, which is greater than 47; when x=8, the corresponding value of y is 91, which is greater than 86. Therefore, the table in choice D gives values of x and their corresponding values of y that are all solutions to the given inequality.\n\nChoice A is incorrect. In the table for choice A, when x=3, the corresponding value of y is 21, which is not greater than 21; when x=5, the corresponding value of y is 47, which is not greater than 47; when x=8, the corresponding value of y is 86, which is not greater than 86. Choice B is incorrect. In the table for choice B, when x=5, the corresponding value of y is 42, which is not greater than 47; when x=8, the corresponding value of y is 86, which is not greater than 86. Choice C is incorrect. In the table for choice C, when x=3, the corresponding value of y is 16, which is not greater than 21; when x=5, the corresponding value of y is 42, which is not greater than 47; when x=8, the corresponding value of y is 81, which is not greater than 86.",
           "correctAnswer": "D"
         },
         {
           "id": "q23",
-          "type": "grid-in",
+          "type": "multiple-choice",
           "number": 23,
-          "choices": [],
-          "question": "A certain town has an area of 4.36 square miles. What is the area, in square yards, of this town? (1 mile = 1,760 yards) A) 404 B) 7,674 C) 710,459 D) 13,505,536",
-          "explanation": "Choice D is correct. Since the number of yards in 1 mile is 1,760, the number of square yards in 1 square mile is （1,760）（1,760）=3,097,600. Therefore, if the area of the town is 4.36 square miles, it is 4.36(3,097,600)=13,505,536,in square yards.\n\nChoice A is incorrect and may result from dividing the number of yards in a mile by the square mileage of the town. Choice B is incorrect and may result from multiplying the number of yards in a mile by the square mileage of the town. Choice C is incorrect and may result from dividing the number of square yards in a square mile by the square mileage of the town.",
+          "choices": [
+            "A) 404",
+            "B) 7,674",
+            "C) 710,459",
+            "D) 13,505,536"
+          ],
+          "question": "A certain town has an area of 4.36 square miles. What is the area, in square yards, of this town? (1 mile = 1,760 yards)",
+          "explanation": "Choice D is correct. Since the number of yards in 1 mile is 1,760, the number of square yards in 1 square mile is （1,760）（1,760）=3,097,600. Therefore, if the area of the town is 4.36 square miles, it is 4.36(3,097,600)=13,505,536, in square yards.\n\nChoice A is incorrect and may result from dividing the number of yards in a mile by the square mileage of the town. Choice B is incorrect and may result from multiplying the number of yards in a mile by the square mileage of the town. Choice C is incorrect and may result from dividing the number of square yards in a square mile by the square mileage of the town.",
           "correctAnswer": "D"
         },
         {
@@ -1582,12 +1591,12 @@
           "number": 24,
           "choices": [
             "A) 20",
-            "B)\n\n$$\n\\frac {2 0 \\sqrt {2}}{2}\n$$",
-            "C)\n\n$$\n2 0 \\sqrt {2}\n$$",
+            "B)\n\n$$\n\\frac {20 \\sqrt {2}}{2}\n$$",
+            "C)\n\n$$\n20 \\sqrt {2}\n$$",
             "D) 40"
           ],
-          "question": "A square is inscribed in a circle. The radius of the circle is $ \\frac{2 0 \\sqrt{2}}{2} $ inches. What is the side length, in inches, of the square?",
-          "explanation": "Choice A is correct. When a square is inscribed in a circle, a diagonal of the square is a diameter of the circle. It's given that a square is inscribed in a circle and the length of a radius of the circle is $ \\frac{2 0 \\sqrt{2}}{2} $ inches. Therefore, the length of a diameter of the circle is $ 2 \\left( \\frac{2 0 \\sqrt{2}}{2} \\right) $ inches, or $ 2 0 \\sqrt{2} $ inches. It follows that the length of a diagonal of the square is $ 2 0 \\sqrt{2} $ inches. A diagonal of a square separates the square into two right triangles in which the legs are the sides of the square and the hypotenuse is a diagonal. Since a square has 4 congruent sides, each of these two right triangles has congruent legs and a hypotenuse of length $ 2 0 \\sqrt{2} $ inches. Since each of these two right triangles has congruent legs, they are both 45-45-90 triangles. In a 45-45-90 triangle, the length of the hypotenuse is $ \\sqrt{2} $ times the length of a leg. Let s represent the length of a leg of one of these 45-45-90 triangles. It follows that $ 2 0 \\sqrt{2}=\\sqrt{2} (s) $ . Dividing both sides of this equation by $ \\sqrt{2} $ yields 20=s. Therefore, the length of a leg of one of these 45-45-90 triangles is 20 inches. Since the legs of these two 45-45-90 triangles are the sides of the square, it follows that the side length of the square is 20 inches.\n\nChoice B is incorrect. This is the length of a radius, in inches, of the circle. Choice C is incorrect. This is the length of a diameter, in inches, of the circle. Choice D is incorrect and may result from conceptual or calculation errors.",
+          "question": "A square is inscribed in a circle. The radius of the circle is $ \\frac{20 \\sqrt{2}}{2} $ inches. What is the side length, in inches, of the square?",
+          "explanation": "Choice A is correct. When a square is inscribed in a circle, a diagonal of the square is a diameter of the circle. It's given that a square is inscribed in a circle and the length of a radius of the circle is $ \\frac{20 \\sqrt{2}}{2} $ inches. Therefore, the length of a diameter of the circle is $ 2 \\left( \\frac{20 \\sqrt{2}}{2} \\right) $ inches, or $ 20 \\sqrt{2} $ inches. It follows that the length of a diagonal of the square is $ 20 \\sqrt{2} $ inches. A diagonal of a square separates the square into two right triangles in which the legs are the sides of the square and the hypotenuse is a diagonal. Since a square has 4 congruent sides, each of these two right triangles has congruent legs and a hypotenuse of length $ 20 \\sqrt{2} $ inches. Since each of these two right triangles has congruent legs, they are both 45-45-90 triangles. In a 45-45-90 triangle, the length of the hypotenuse is $ \\sqrt{2} $ times the length of a leg. Let s represent the length of a leg of one of these 45-45-90 triangles. It follows that $ 20 \\sqrt{2}=\\sqrt{2} (s) $ . Dividing both sides of this equation by $ \\sqrt{2} $ yields 20=s. Therefore, the length of a leg of one of these 45-45-90 triangles is 20 inches. Since the legs of these two 45-45-90 triangles are the sides of the square, it follows that the side length of the square is 20 inches.\n\nChoice B is incorrect. This is the length of a radius, in inches, of the circle. Choice C is incorrect. This is the length of a diameter, in inches, of the circle. Choice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "A"
         },
         {
@@ -1595,13 +1604,13 @@
           "type": "multiple-choice",
           "number": 25,
           "choices": [
-            "A) $ \\frac{xy+y+4}{x^{3} y-1 6 x^{2} y+6 4 x y} $",
-            "B) $ \\frac{xy+9 y+1 2}{x^{2} y-8 x y+x-8} $",
-            "C) $ \\frac{xy^{2}+1 3 x y-8 y}{x^{2} y-8 x y} $",
-            "D) $ \\frac{xy^{2}+1 3 x y-8 y}{x^{3} y-1 6 x^{2} y+6 4 x y} $"
+            "A) $ \\frac{xy+y+4}{x^{3} y-16 x^{2} y+64 x y} $",
+            "B) $ \\frac{xy+9 y+12}{x^{2} y-8 x y+x-8} $",
+            "C) $ \\frac{xy^{2}+13 x y-8 y}{x^{2} y-8 x y} $",
+            "D) $ \\frac{xy^{2}+13 x y-8 y}{x^{3} y-16 x^{2} y+64 x y} $"
           ],
-          "question": "Which expression is equivalent\n\nto $ \\frac{y+1 2}{x-8}+\\frac{y(x-8)}{x^{2} y-8 x y} $ ?",
-          "explanation": "Choice C is correct. Factoring the denominator in the second term of the given expression gives $ \\frac{y+1 2}{x-8}+\\frac{y(x-8)}{x y(x-8)} $ . This expression can be rewritten with common denominators by multiplying the first term by $ \\frac{x y}{x y} $ , giving $ \\frac{x y(y+1 2)}{x y(x-8)}+\\frac{y(x-8)}{x y(x-8)} $ . Adding these two terms yields $ \\frac{x y(y+1 2)+y(x-8)}{x y(x-8)} $ . Using the distributive property to rewrite this expression gives $ \\frac{x y^{2}+1 2 x y+x y-8 y}{x^{2} y-8 x y} $ . Combining the like terms in the numerator of this expression gives $ \\frac{x y^{2}+1 3 x y-8 y}{x^{2} y-8 x y}. $\n\nChoice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors.",
+          "question": "Which expression is equivalent\n\nto $ \\frac{y+12}{x-8}+\\frac{y(x-8)}{x^{2} y-8 x y} $ ?",
+          "explanation": "Choice C is correct. Factoring the denominator in the second term of the given expression gives $ \\frac{y+12}{x-8}+\\frac{y(x-8)}{x y(x-8)} $ . This expression can be rewritten with common denominators by multiplying the first term by $ \\frac{x y}{x y} $ , giving $ \\frac{x y(y+12)}{x y(x-8)}+\\frac{y(x-8)}{x y(x-8)} $ . Adding these two terms yields $ \\frac{x y(y+12)+y(x-8)}{x y(x-8)} $ . Using the distributive property to rewrite this expression gives $ \\frac{x y^{2}+12 x y+x y-8 y}{x^{2} y-8 x y} $ . Combining the like terms in the numerator of this expression gives $ \\frac{x y^{2}+13 x y-8 y}{x^{2} y-8 x y}. $\n\nChoice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors.",
           "correctAnswer": "C"
         },
         {
@@ -1623,8 +1632,8 @@
           "type": "grid-in",
           "number": 27,
           "choices": [],
-          "question": "$$\nx (k x - 5 6) = - 1 6\n$$\n\nIn the given equation, k is an integer constant. If the equation has no real solution, what is the least possible value of k?\n\n## STOP\n\nIf you finish before time is called, you may check your work on this module only. Do not turn to any other module in the test.\n\nNo Test Material On This Page\n\nNo Test Material On This Page\n\nNo Test Material On This Page\n\nNo Test Material On This Page\n\nNo Test Material On This Page\n\nNo Test Material On This Page\n\nNo Test Material On This Page\n\n## The SAT\n\n## GENERAL DIRECTIONS\n\n- You may work on only one module at a time.\n\n- If you finish a module before time is called, check your work on that module only. You may NOT turn to any other module.\n\n## TIMING\n\nReading and Writing, Module 1: 39 minutes\n\nReading and Writing, Module 2: 39 minutes\n\n10-minute break\n\nMath, Module 1:43 minutes\n\nMath, Module 2: 43 minutes\n\nThe above are standard times. If you are approved for accommodations involving additional time, you should give yourself that time when you practice.\n\n## MARKING YOUR ANSWERS\n\n- Be sure to answer your questions properly in this book.\n\n- Circle only one answer to each question. If you change your mind, completely erase the circle. You will not get credit for questions with more than one answer circled, or for questions with no answers circled.\n\n## USING YOUR TEST BOOK\n\n- You may use the test book for scratch work.\n\n- You may not fold or remove pages or portions of a page from this book, or take the book from the testing room.",
-          "explanation": "The correct answer is 50. An equation of the form $ a x^{2}+b x+c=0 $ ,where a,b and c are constants,has no real solutions if and only if its discriminant, $ b^{2}-4 a c $ is negative. Applying the distributive property to the left-hand side of the equation $ x(k x-5 6)=-1 6 $ yields $ k x^{2}-5 6 x=-1 6 $ .Adding 16 to each side of this equation yields $ k x^{2}-5 6 x+1 6=0 $ .Substituting k for a,-56 for b,and 16 for c in $ b^{2}-4 a c $ yields a discriminant of $ (-5 6)^{2}-4(k)(1 6) $ ,or 3,136-64k .If the given equation has no real solution,it follows that the value of 3,136-64k must be negative. Therefore, 3,136-64k<0.Adding 64k to both sides of this inequality yields 3,136<64k .Dividing both sides of this inequality by 64 yields 49<k,or k>49.Since it's given that k is an integer,the least possible value of k is 50.",
+          "question": "$$\nx (k x - 56) = - 16\n$$\n\nIn the given equation, k is an integer constant. If the equation has no real solution, what is the least possible value of k?",
+          "explanation": "The correct answer is 50. An equation of the form $ a x^{2}+b x+c=0 $ , where a, b and c are constants, has no real solutions if and only if its discriminant, $ b^{2}-4 a c $ is negative. Applying the distributive property to the left-hand side of the equation $ x(k x-56)=-16 $ yields $ k x^{2}-56 x=-16 $ . Adding 16 to each side of this equation yields $ k x^{2}-56 x+16=0 $ . Substituting k for a,-56 for b, and 16 for c in $ b^{2}-4 a c $ yields a discriminant of $ (-56)^{2}-4(k)(16) $ , or 3,136-64k . If the given equation has no real solution, it follows that the value of 3,136-64k must be negative. Therefore, 3,136-64k<0. Adding 64k to both sides of this inequality yields 3,136<64k . Dividing both sides of this inequality by 64 yields 49<k, or k>49. Since it's given that k is an integer, the least possible value of k is 50.",
           "correctAnswer": "50"
         }
       ],
