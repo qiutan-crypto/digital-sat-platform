@@ -1,0 +1,1351 @@
+{
+  "title": "SAT Practice Test 13 (Princeton Review)",
+  "test_id": "test13",
+  "modules": [
+    {
+      "id": "mod1",
+      "name": "Reading and Writing Module 1",
+      "timeLimit": 2340,
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "number": 1,
+          "choices": [
+            "A) required",
+            "B) ancient",
+            "C) unnecessary",
+            "D) curious"
+          ],
+          "question": "In 1919, Rafael Palma delivered an address advocating for women's suffrage, or right to vote, to the Philippine Senate. Because the debate in the nation around this issue was similar to past debates about women's education, Palma reminded his audience that any concerns were ________: only positive results had arisen from women's education, and the same results would come from women's suffrage.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "explanation": "Choice C is the best answer because the text explains that only positive results had come from women's education and that the same positive outcome would result from women's suffrage. This logic supports the idea that there was no real reason for concern—that is, any worries were unnecessary. Choice A is incorrect because \"required\" suggests concerns were needed or justified, the opposite of what the passage's logic supports. Choice B is incorrect because \"ancient\" describes the age of the concerns, not whether they were justified, and nothing in the text discusses how old the concerns were. Choice D is incorrect because \"curious\" would describe the concerns as strange or odd, which does not match the passage's point that the concerns had no basis given the positive track record of women's education.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "number": 2,
+          "choices": [
+            "A) phenomenal",
+            "B) conventional",
+            "C) feasible",
+            "D) steady"
+          ],
+          "question": "Similar to modern tourism websites, an 1890 publication—E. L. Lomax's Oregon, Washington, and Alaska: Sights and Scenes for the Tourist—relates stories of local folklore to potential visitors. In one section of the publication, Lomax tells the legend of The Dalles, where there lived creatures of such ________ size and strength that a strike of their tails could create chasms in the ground.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "explanation": "Choice A is the best answer because the legendary creatures are described as having size and strength so great that a single strike of their tails could create chasms—an extraordinary, almost supernatural feat that matches \"phenomenal.\" Choice B is incorrect because \"conventional\" means ordinary or typical, which directly contradicts the extraordinary effect described (creating chasms in the ground). Choice C is incorrect because \"feasible\" means possible or achievable, a concept that does not logically describe a creature's size or strength. Choice D is incorrect because \"steady\" means stable or unchanging, which has no logical connection to the creatures' extraordinary size and destructive strength.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q3",
+          "type": "multiple-choice",
+          "number": 3,
+          "choices": [
+            "A) unconventional",
+            "B) condemned",
+            "C) impressionable",
+            "D) marketable"
+          ],
+          "question": "During the late nineteenth century, author Marie Corelli was best known for her use of supernatural and romantic themes in her novels. Despite predictions from critics that Corelli's reliance on sentimental and unrealistic plots would impact the earning potential of her works, Corelli went on to become one of the most ________ writers of her time.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "explanation": "Choice D is the best answer because the word \"Despite\" signals a contrast between the critics' prediction (that her sentimental plots would hurt the earning potential of her books) and what actually happened. The logical contrast to reduced earning potential is that Corelli's books earned a great deal—that is, she became one of the most marketable writers of her time. Choice A is incorrect because \"unconventional\" merely restates the already-established fact that her themes were supernatural and romantic; it does not create the needed contrast with the critics' prediction about earning potential. Choice B is incorrect because \"condemned\" does not logically follow from \"Despite\" a prediction about earning potential—being condemned is not a coherent contrast to reduced sales. Choice C is incorrect because \"impressionable\" describes a person easily influenced by others, which is unrelated to a writer's commercial success or earning potential.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q4",
+          "type": "multiple-choice",
+          "number": 4,
+          "choices": [
+            "A) Criticize",
+            "B) Humiliate",
+            "C) Remind",
+            "D) Question"
+          ],
+          "question": "The following text is adapted from Susan Glaspell's 1916 play Trifles.\n\nMRS PETERS: But of course you were awful busy, Mrs Hale—your house and your children.\n\nMRS HALE: I could've come. I stayed away because it weren't cheerful—and that's why I ought to have come. I—I've never liked this place. Maybe because it's down in a hollow and you don't see the road. I dunno what it is, but it's a lonesome place and always was. I wish I had come over to see Minnie Foster sometimes. I can see now—\n\nMRS PETERS: Well, you mustn't reproach yourself, Mrs Hale. Somehow we just don't see how it is with other folks until—something comes up.\n\nAs used in the text, what does the word \"reproach\" most nearly mean?",
+          "explanation": "Choice A is the best answer because Mrs. Hale has just been blaming herself for not visiting Minnie Foster, and Mrs. Peters tells her not to \"reproach\" herself, meaning not to blame or criticize herself for this. Choice B is incorrect because \"humiliate\" implies causing shame in front of others, which is a much stronger and more public act than the private self-blame Mrs. Hale is expressing. Choice C is incorrect because \"remind\" does not capture the negative, self-blaming tone of Mrs. Hale's guilt; Mrs. Peters is telling her not to blame herself, not telling her not to recall something. Choice D is incorrect because \"question\" would mean to doubt or interrogate oneself, which does not match the specific act of self-blame that Mrs. Peters is addressing.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q5",
+          "type": "multiple-choice",
+          "number": 5,
+          "choices": [
+            "A) To discount the theory that glee is a less frequently perceived emotion than hopelessness is",
+            "B) To convey how the perceptions of people who experience freedom relate to those who experience imprisonment",
+            "C) To consider whether actions taken in confined spaces cause more damage than those taken out in the open",
+            "D) To contemplate how a type of vocalization associated with positivity can actually represent both despair and longing"
+          ],
+          "question": "The following text is from the 1899 poem \"Sympathy\" by Paul Laurence Dunbar, who was a prominent African American poet born in Ohio.\n\nI know why the caged bird sings, ah me, / When his wing is bruised and his bosom sore,— / When he beats his bars and he would be free; / It is not a carol of joy or glee, / But a prayer that he sends from his heart's deep core, / But a plea, that upward to Heaven he flings— / I know why the caged bird sings!\n\nWhich choice best states the main purpose of the text?",
+          "explanation": "Choice D is the best answer because the speaker explicitly states that the bird's singing—an act normally associated with joy—is \"not a carol of joy or glee\" but instead \"a prayer\" and \"a plea\" sent from a place of suffering. The poem's purpose is to reflect on how singing, generally understood as a happy sound, can actually express despair and a longing for freedom. Choice A is incorrect because the poem never compares how frequently glee versus hopelessness is perceived; it focuses on reinterpreting one specific vocalization (singing), not on comparing the frequency of emotions. Choice B is incorrect because the poem is told entirely from the caged bird's perspective and does not present or compare the perceptions of free people to those of imprisoned ones. Choice C is incorrect because the poem does not address or compare the amount of damage caused by actions in confined versus open spaces; its focus is on the meaning behind the bird's song, not on damage or action.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q6",
+          "type": "multiple-choice",
+          "number": 6,
+          "choices": [
+            "A) It characterizes the rapidity with which the speaker questions himself.",
+            "B) It contrasts the speaker's feelings with the expectations of those around him.",
+            "C) It highlights the helplessness the speaker feels about the direction of his life.",
+            "D) It demonstrates the speaker's optimism that his questions will be eventually answered."
+          ],
+          "question": "The following text is from the 1849 poem \"Self-Dependence\" by Matthew Arnold.\n\nWeary of myself, and sick of asking / What I am, and what I ought to be, / At this vessel's prow I stand, which bears me / Forwards, forwards, o'er the starlit sea. / And a look of passionate desire / O'er the sea and to the stars I send: / \"Ye who from my childhood up have calm'd me, / Calm me, ah, compose me to the end!\n\nWhich choice best describes the function of the underlined portion (\"At this vessel's prow I stand, which bears me / Forwards, forwards, o'er the starlit sea.\") in the text as a whole?",
+          "explanation": "Choice C is the best answer because the underlined lines depict the speaker as a passive figure standing at the prow while the vessel—not the speaker himself—is what \"bears\" him forward. Combined with the opening lines, in which the speaker is \"weary\" and \"sick of asking\" who he is and what he ought to be, this image of being carried forward by forces outside his control conveys the speaker's sense of helplessness over the course and direction of his own life. Choice A is incorrect because the lines describe the speaker being physically carried across the sea, not describe how quickly or repeatedly he questions himself; the repetition of \"forwards, forwards\" refers to the ship's movement, not the pace of his self-questioning. Choice B is incorrect because the lines make no mention of other people or their expectations; they focus solely on the speaker's own physical and emotional state aboard the ship. Choice D is incorrect because the passive, weary tone of being merely carried along by the vessel does not convey optimism; rather than suggesting confidence that his questions will be answered, the imagery reinforces the speaker's uncertainty and lack of control.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q7",
+          "type": "multiple-choice",
+          "number": 7,
+          "choices": [
+            "A) It explains that a character is desperate to solve a problem, and then details how another character solves it.",
+            "B) It lists a character's concerns about his public image, and then explains how the character addresses these concerns.",
+            "C) It discloses the inspiration behind the actions of a character, and then describes why the character feels this way.",
+            "D) It details the speaker's attempt to emulate another character's behavior, and then underscores that the speaker was not as effective as the other character."
+          ],
+          "question": "The following text is adapted from Sir Arthur Conan Doyle's 1905 novel The Return of Sherlock Holmes. Sherlock Holmes is a detective who uses his skills of deduction to solve crimes. His friend and partner, John Watson, narrates the novel.\n\nIt can be imagined that my close intimacy with Sherlock Holmes had interested me deeply in crime, and that after his disappearance I never failed to read with care the various problems which came before the public. There were points about this strange business which would, I was sure, have specially appealed to him, and the efforts of the police would have been supplemented, or more probably anticipated, by the trained observation and the alert mind of the first criminal agent in Europe. And I even attempted, more than once, for my own private satisfaction, to employ his methods in their solution, though with indifferent success.\n\nWhich choice best describes the overall structure of the text?",
+          "explanation": "Choice D is the best answer because the text first describes how Watson (the speaker) attempted to imitate Holmes's methods of deduction (\"I even attempted... to employ his methods in their solution\") and then explicitly notes that this attempt was less successful than Holmes himself would have been (\"though with indifferent success,\" and the earlier statement that the police's efforts would have been \"supplemented\" or \"anticipated\" by Holmes's superior skill). Choice A is incorrect because the text does not describe another character solving a problem; it only discusses Watson's personal attempts and his belief that Holmes could have handled the cases better, without depicting an actual resolution by another character. Choice B is incorrect because the text is not concerned with Watson's public image or concerns about how he is perceived; it centers on his private interest in crime and his personal attempts to use Holmes's methods. Choice C is incorrect because the passage does not explain the inspiration behind actions and then explore the character's feelings about that inspiration—it recounts an attempted imitation and its limited success, not a psychological exploration of motivation.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q8",
+          "type": "multiple-choice",
+          "number": 8,
+          "choices": [
+            "A) To recall a particular memory of a young bird safely navigating a storm",
+            "B) To emphasize the importance of remaining optimistic in the core of one's being",
+            "C) To bring awareness to life's challenges and the specific methods needed to overcome them",
+            "D) To claim that certain music can promote a diverse assortment of positive emotions"
+          ],
+          "question": "The following text is from Emily Dickinson's 1891 poem \"Hope.\"\n\n\"Hope\" is the thing with feathers – / That perches in the soul – / And sings the tune without the words – / And never stops – at all – / And sweetest – in the Gale – is heard – / And sore must be the storm – / That could abash the little Bird / That kept so many warm –\n\nWhich choice best states the main purpose of the text?",
+          "explanation": "Choice B is the best answer because the poem personifies hope as a bird that \"perches in the soul\" and \"never stops\" singing, even during a \"Gale\" or storm, emphasizing that hope persists deep within a person no matter how difficult circumstances become—this conveys the importance of maintaining optimism at one's core. Choice A is incorrect because the poem is an extended metaphor about hope in general, not a recollection of one specific memory of an actual young bird surviving a storm. Choice C is incorrect because the poem does not detail specific methods for overcoming life's challenges; it simply describes hope's persistent, comforting presence without offering practical strategies. Choice D is incorrect because the poem focuses on hope itself, symbolized by the bird's song, rather than making a broader claim about music in general or its ability to produce a variety of positive emotions.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q9",
+          "type": "multiple-choice",
+          "number": 9,
+          "choices": [
+            "A) Meg spends a long time getting ready each day in order to delay her responsibilities.",
+            "B) Meg feels quite overwhelmed with the prospect of caring for her sisters.",
+            "C) Meg remains calm and collected to help ease her family's burden.",
+            "D) Meg is becoming resentful of having to work on her appearance each day."
+          ],
+          "question": "The following is text adapted from Louisa May Alcott's 1868 novel Little Women. Meg, the oldest daughter in her family, often helps her mother with caring for her younger sisters.\n\nThis idea tickled Jo's fancy and put her in good spirits, but Meg didn't brighten, for her burden, consisting of four spoiled children, seemed heavier than ever. She had not heart enough even to make herself pretty as usual by putting on a blue neck ribbon and dressing her hair in the most becoming way.\n\nWhich choice best states the main idea of the text?",
+          "explanation": "Choice B is the best answer because the text states that Meg's \"burden\"—caring for \"four spoiled children\"—\"seemed heavier than ever,\" and that she lacked even the energy or heart to attend to her own appearance as she normally would. Both details show that Meg feels overwhelmed by the responsibility of caring for her sisters. Choice A is incorrect because the text says the opposite: Meg does not spend time on her appearance, rather she lacks the heart to do so, so this cannot be a delay tactic. Choice C is incorrect because the text shows Meg as weighed down and unhappy (\"didn't brighten\"), not calm and collected. Choice D is incorrect because the text does not describe resentment toward her own appearance routine; rather, it shows that her exhaustion from caregiving prevents her from maintaining her usual appearance.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q10",
+          "type": "multiple-choice",
+          "number": 10,
+          "choices": [
+            "A) Despite their great success, the novels written by Jane Austen were not attributed to her due to a personal choice based on societal expectations.",
+            "B) Publishing anonymous novels like those written by Austen is the most efficient method to avoid judgments based on gender.",
+            "C) Although publishing works anonymously and maintaining secrecy such as Austen did can prevent societal criticism, it is unethical.",
+            "D) As an author, Austen was routinely encouraged by her friends and family members to take public credit for her works."
+          ],
+          "question": "Because of the widespread belief in the early nineteenth century that it was improper for women to engage in literary careers, Jane Austen published her novels anonymously and did not reveal the secret of her authorship. Only her family members knew what she had written; this remained the case even as her novels gained popularity. The secret was rigorously kept: friends who came to visit and discuss her latest novels did not know they were speaking about them with the woman who had written them.\n\nWhich choice best states the main idea of the text?",
+          "explanation": "Choice A is the best answer because the text explains that Austen chose to publish anonymously (\"did not reveal the secret of her authorship\") specifically because of the era's societal belief that it was improper for women to have literary careers, and that this secrecy persisted \"even as her novels gained popularity\"—i.e., despite her success. Choice B is incorrect because the text does not make a general claim about anonymous publishing being the \"most efficient method\" for anyone facing gender-based judgment; it only describes Austen's specific personal choice. Choice C is incorrect because the text never characterizes Austen's choice to remain anonymous as unethical; it simply reports the fact and reasoning behind her secrecy without passing moral judgment. Choice D is incorrect because the text states the opposite: her secret was \"rigorously kept,\" and even her friends did not know she was the author, meaning she was not being routinely encouraged by friends and family to take public credit—only her family knew at all, and there's no mention of anyone urging her to reveal herself.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q11",
+          "type": "multiple-choice",
+          "number": 11,
+          "choices": [
+            "A) \"Much have I seen and known; cities of men.\"",
+            "B) \"How dull it is to pause, to make an end.\"",
+            "C) \"Some work of noble note, may yet be done.\"",
+            "D) \"Come, my friends, 'tis not too late to seek a newer world.\""
+          ],
+          "question": "\"Ulysses\" is an 1842 poem by Alfred, Lord Tennyson. In the poem, Tennyson describes a king who proclaims his desire to travel once more, which he expresses to his companions, saying ________\n\nWhich quotation from \"Ulysses\" most effectively illustrates the claim?",
+          "explanation": "Choice D is the best answer because it directly addresses the king's companions (\"my friends\") and explicitly expresses his desire to travel again, urging them to \"seek a newer world\" together, which precisely matches the claim that the king expresses his wish to travel once more to his companions. Choice A is incorrect because it only reflects on places the king has already seen in the past; it does not express a desire to travel again or address his companions directly. Choice B is incorrect because while it expresses dissatisfaction with stopping, it does not explicitly state a desire to travel or address his companions. Choice C is incorrect because it speaks generally about accomplishing some noble deed in the future, but it does not specifically reference travel or explicitly address his companions about a journey.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q12",
+          "type": "multiple-choice",
+          "number": 12,
+          "choices": [
+            "A) For these four nations, Costa Rica and Panama had the lowest percentage of people working in the agricultural sector and the lowest percentage of people living in urban areas.",
+            "B) For these four nations, the nation with the highest percentage of people in the agricultural sector also had the highest percentage of people in urban areas.",
+            "C) Belize demonstrated a similar percentage of people in the agricultural sector to El Salvador's despite having a lower percentage of people in urban areas.",
+            "D) El Salvador and Panama had similar percentages of people in the agricultural sector, but Panama had a higher percentage of people in urban areas than El Salvador did."
+          ],
+          "question": "Percentages of Population Working in the Agricultural Sector and Living in Urban Areas for Four Central American Nations\n\n<table><tr><th>Nation</th><th>Percentage working in the agricultural sector</th><th>Percentage living in urban areas</th></tr><tr><td>Belize</td><td>16.80</td><td>45.87</td></tr><tr><td>Costa Rica</td><td>11.97</td><td>80.08</td></tr><tr><td>El Salvador</td><td>16.29</td><td>72.75</td></tr><tr><td>Panama</td><td>14.41</td><td>68.06</td></tr></table>\n\nA group of researchers conducted a study of four Central American nations to explore the relationship between the percentage of the population working in the agricultural sector and the percentage of the population living in urban areas. Although the percentages of those living in urban areas varied significantly, the percentages of those working in the agricultural sector did not vary as greatly. The group claimed that, for these four nations, there is not a strong correlation between where people work and where they live.\n\nWhich choice best describes data from the table that support the researchers' claim?",
+          "explanation": "Choice C is the best answer because it identifies two nations, Belize (16.80%) and El Salvador (16.29%), that have very similar percentages of people working in the agricultural sector, yet have quite different percentages of people living in urban areas (45.87% versus 72.75%). This shows that a similar agricultural-sector percentage does not correspond to a similar urban-living percentage, directly supporting the claim that there is no strong correlation between the two variables. Choice A is incorrect because it merely states which two nations had the lowest values in each category without showing whether similar or different agricultural percentages correspond to similar or different urban percentages—it does not demonstrate a lack of correlation. Choice B is incorrect because it actually describes a pattern where agricultural and urban percentages move together (the highest of one corresponds to the highest of the other), which would suggest a correlation, undermining rather than supporting the researchers' claim. Choice D is incorrect because it describes two nations, El Salvador and Panama, whose agricultural percentages are similar (16.29 vs. 14.41) but whose urban percentages differ modestly (72.75 vs. 68.06)—this contrast is far less stark than the one in Choice C and does not as clearly demonstrate the lack of correlation, since Costa Rica's data (lowest agricultural percentage, highest urban percentage) shows the numbers were not even used to their full contrastive potential compared to the Belize/El Salvador pairing.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q13",
+          "type": "multiple-choice",
+          "number": 13,
+          "choices": [
+            "A) The largest increase in words given to the subjects occurred from Trial 1 to Trial 4.",
+            "B) The number of words recited in Trial 3 was greater than the number of words given in Trial 3.",
+            "C) The words recited by the subjects still increased in Trial 4 despite an increase from Trial 3 in the words given.",
+            "D) The words given and the words recited were the same in Trial 2."
+          ],
+          "question": "Words Recited Based on Word Count (bar graph showing, for Trials 1 through 4, the average number of words given and the average number of words recited)\n\nTo determine how many items a person can hold in their short-term memory, a psychologist gave four subjects word lists in four different trials and asked them to memorize and then recite the words on the list. The list in each trial contained a different number of words. The psychologist concluded that there is a limit to the number of items people can hold in their short-term memory.\n\nWhich choice best describes data from the graph that weaken the psychologist's conclusion?",
+          "explanation": "Choice C is the best answer because if the number of words recited kept increasing in Trial 4 even as the number of words given also increased from Trial 3, this suggests that the subjects had not yet hit a maximum capacity—their recall kept pace with the increasing list length rather than plateauing at some fixed limit. This directly weakens the conclusion that there is a hard limit to short-term memory capacity. Choice A is incorrect because it only describes a change in the number of words given to subjects, not their recall performance, so it says nothing about whether a memory limit exists. Choice B is incorrect because it is not a meaningful or even plausible way to weaken the conclusion—subjects cannot recite more words than they were given, so this comparison does not provide evidence about a memory ceiling. Choice D is incorrect because showing that given and recited words matched in Trial 2 (likely a trial with a small word count) does not address whether a ceiling exists at higher word counts, so it fails to weaken the specific conclusion about there being an upper limit.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q14",
+          "type": "multiple-choice",
+          "number": 14,
+          "choices": [
+            "A) decrease the cost of postage for letters that contain only news and information.",
+            "B) provide news and information to everyone, especially those in lower classes.",
+            "C) transform the common relationship between wealth and the privilege of postage use.",
+            "D) encourage members of lower classes considering a post office job to apply for a newspaper position instead."
+          ],
+          "question": "Although postage for letters in the early United States was expensive and therefore largely limited to the wealthy, politicians such as James Madison believed that money raised by the postal system could be used to benefit the nation as a whole. Madison proposed that a possible application of these funds toward the purpose of benefitting young Americans was the establishment of a newspaper for the general public, which would therefore ________\n\nWhich choice most logically completes the text?",
+          "explanation": "Choice B is the best answer because the passage establishes that expensive postage limited access to information to the wealthy, and that Madison wanted to use postal funds to benefit the nation \"as a whole,\" including young Americans. A newspaper \"for the general public\" logically would provide news and information to everyone, particularly the lower classes who were previously excluded by the high cost of postage. Choice A is incorrect because the passage is about funding a new public newspaper, not about reducing the cost of existing letter postage; nothing suggests the plan targeted postage rates for news-only letters. Choice C is incorrect because while the newspaper might indirectly affect who has access to information, the passage does not suggest that Madison's specific proposal was intended to \"transform\" the wealth-postage relationship as a whole—his aim, as stated, was benefiting the public through a newspaper, not policy reform of postage privilege itself. Choice D is incorrect because there is no mention in the text of encouraging lower-class individuals to switch from postal jobs to newspaper jobs; this idea is entirely unsupported by the passage.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q15",
+          "type": "multiple-choice",
+          "number": 15,
+          "choices": [
+            "A) theories and the lack of",
+            "B) theories and the lack of,",
+            "C) theories, and the lack of,",
+            "D) theories, and, the lack of"
+          ],
+          "question": "Pinpointing the exact cause of chronic fatigue syndrome (CFS) has been difficult due to the absence of conclusive proof for any of the proposed ________ a clear diagnostic test for the condition.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "explanation": "Choice A is the best answer because the sentence is built around a single prepositional phrase, \"due to,\" with two objects joined by \"and\": \"the absence of conclusive proof for any of the proposed theories\" and \"the lack of a clear diagnostic test for the condition.\" Because this is a simple two-item compound (X and Y) rather than a list of three or more items or two independent clauses, no comma is needed before or after \"and,\" and no comma should separate the preposition \"of\" from its object \"a clear diagnostic test.\" Choice B is incorrect because it inserts a comma after \"of,\" incorrectly separating the preposition from its object noun phrase. Choice C is incorrect because it adds an unnecessary comma before \"and\" (which is not needed for a simple two-item compound) as well as the same incorrect comma after \"of\" seen in Choice B. Choice D is incorrect because it adds unneeded commas both before and after \"and,\" as well as after \"of,\" needlessly fragmenting the phrase and disrupting its grammatical structure.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q16",
+          "type": "multiple-choice",
+          "number": 16,
+          "choices": [
+            "A) historians Diodorus Siculus, and Quintus Rufus",
+            "B) historians, Diodorus Siculus and Quintus Rufus,",
+            "C) historians, Diodorus Siculus and Quintus Rufus",
+            "D) historians Diodorus Siculus and Quintus Rufus"
+          ],
+          "question": "Persepolis was an ancient city in the First Persian Empire, located in what is now Iran. Ancient ________ claimed that Alexander the Great had purposely burned down the city's structures after he and his army had conquered Persepolis in 330 BCE.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "explanation": "Choice D is the best answer because \"Diodorus Siculus and Quintus Rufus\" functions as a restrictive (essential) appositive that specifies exactly which historians are being discussed—without these names, \"Ancient historians\" would be too vague to identify who made the claim. Because the appositive is essential to the sentence's meaning, it should not be set off by any commas. Choice A is incorrect because it inserts an unnecessary comma before \"and,\" incorrectly separating the two names in what should be a simple two-item list within the appositive. Choice B is incorrect because it sets off the appositive with commas on both sides, treating it as nonessential extra information, when in fact the names are essential to specifying which historians are meant. Choice C is incorrect because it includes a comma before the appositive but not after it, creating inconsistent and grammatically incorrect punctuation—since the appositive is restrictive, it should have no commas at all, not just one.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q17",
+          "type": "multiple-choice",
+          "number": 17,
+          "choices": [
+            "A) hymns, earlier,",
+            "B) hymns earlier,",
+            "C) hymns;",
+            "D) hymns,"
+          ],
+          "question": "Homer was an ancient Greek poet who lived during the 8th century BCE, but he is not the world's earliest known author. During the 23rd century BCE in ancient Mesopotamia, Enheduanna, a high priestess, wrote poems and ________ during the 24th century BCE in ancient Egypt, a government official named Ptahhotep wrote aphorisms and maxims intended to guide young people.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "explanation": "Choice C is the best answer because the sentence contains two independent clauses: \"Enheduanna...wrote poems and hymns\" and \"during the 24th century BCE in ancient Egypt, a government official named Ptahhotep wrote aphorisms and maxims....\" Two independent clauses must be joined either with a comma and coordinating conjunction, a period, or a semicolon; here, a semicolon is the correct choice to link the two closely related independent clauses. Choice A is incorrect because it creates a comma splice, joining two independent clauses with only commas (and an inserted word \"earlier\"), which is not grammatically permitted. Choice B is incorrect for the same reason—it joins the two independent clauses with only a comma, resulting in a comma splice. Choice D is incorrect because it also joins the two independent clauses with only a comma and no coordinating conjunction, again creating a comma splice.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q18",
+          "type": "multiple-choice",
+          "number": 18,
+          "choices": [
+            "A) mammals:",
+            "B) mammals.",
+            "C) mammals;",
+            "D) mammals"
+          ],
+          "question": "Although it is often assumed that one of the essential characteristics of mammals is that they give live birth to their young, there are actually two species of egg-laying ________ Ornithorhynchus anatinus, more commonly known as the duck-billed platypus, and Tachyglossus aculeatus, also called a short-beaked echidna or spiny anteater.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "explanation": "Choice A is the best answer because a colon is used to introduce a list or explanation that elaborates on the preceding independent clause. Here, \"there are actually two species of egg-laying mammals\" is a complete independent clause, and the colon correctly introduces the two specific species that make up that claim. Choice B is incorrect because a period would require what follows to be a complete, independent sentence, but \"Ornithorhynchus anatinus...and Tachyglossus aculeatus...\" has no main verb and is a sentence fragment, not a complete sentence. Choice C is incorrect because a semicolon must join two independent clauses, but what follows the semicolon is not an independent clause—it lacks a verb and is simply a list of two species. Choice D is incorrect because using no punctuation at all creates a run-on, failing to clearly signal that a list explaining \"mammals\" follows.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q19",
+          "type": "multiple-choice",
+          "number": 19,
+          "choices": [
+            "A) the praise from many historians has been for Worth's pioneering work in high-end dressmaking; they",
+            "B) many historians have praised Worth as a pioneer of high-end dressmaking and",
+            "C) Worth's pioneering work in high-end dressmaking has been praised by many historians, who",
+            "D) there are many historians who have praised Worth as a pioneer of high-end dressmaking, and they"
+          ],
+          "question": "In analyzing the designs, career, and legacy of English fashion designer Charles Frederick Worth, ________ have declared him to be the first modern fashion designer.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "explanation": "Choice B is the best answer because the sentence opens with the introductory participial phrase \"In analyzing the designs, career, and legacy of...Worth,\" which must be immediately followed by the noun performing that analyzing action to avoid a dangling modifier. Only \"many historians\" can logically be the ones doing the analyzing, and Choice B correctly places \"many historians\" as the subject, followed by two parallel verbs (\"have praised...and [have] declared\"). Choice A is incorrect because it creates a dangling modifier: \"the praise\" cannot logically be the one \"analyzing\" Worth's designs, career, and legacy. Choice C is incorrect for the same reason—\"Worth's pioneering work\" cannot be the entity doing the analyzing described in the introductory phrase. Choice D is incorrect because it places \"there\" as the subject of the analyzing action, which is also illogical and creates a dangling modifier, since \"there\" cannot analyze anything.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q20",
+          "type": "multiple-choice",
+          "number": 20,
+          "choices": [
+            "A) Audible, in 2008, a live streaming platform,",
+            "B) Audible; in 2008, a live streaming platform;",
+            "C) Audible; in 2008, a live streaming platform,",
+            "D) Audible, in 2008; a live streaming platform,"
+          ],
+          "question": "Amazon, one of the largest technology companies in the world, was founded in 1994 as an online bookstore and has gone on to acquire a seller of audiobooks, ________ Twitch, in 2014; and a supermarket chain, Whole Foods Market, in 2017.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "explanation": "Choice D is the best answer because the sentence presents a list of three acquisitions, each written as a category followed by a specific name and year (e.g., \"a seller of audiobooks, Audible, in 2008\"). Because each list item already contains internal commas, semicolons are needed to separate the three items from one another so the list is not confusing; Choice D correctly places a semicolon after \"in 2008\" to close the first item (\"a seller of audiobooks, Audible, in 2008\") before starting the next item (\"a live streaming platform, Twitch, in 2014\"). Choice A is incorrect because it uses only commas throughout, making it impossible to tell where one list item ends and the next begins, since each item already contains commas of its own. Choice B is incorrect because it places a semicolon right after \"Audible,\" incorrectly severing the name \"Audible\" from its accompanying year \"in 2008,\" which are part of the same list item. Choice C is incorrect for the same reason as Choice B—it places the semicolon too early, splitting \"Audible\" from \"in 2008\" within the same item, while also being inconsistent by using a comma instead of a semicolon later in the list.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q21",
+          "type": "multiple-choice",
+          "number": 21,
+          "choices": [
+            "A) In comparison,",
+            "B) What's more,",
+            "C) Similarly,",
+            "D) In addition,"
+          ],
+          "question": "Scientists have used common materials, including aluminum, sulfur, and salt, to create a new type of battery. Lithium-ion batteries were the most popular battery in the past, but they are becoming harder and more expensive to make due to a shortage of lithium. ________ the new battery provides many benefits: it is low-cost, it is able to resist failures and fires, and it charges faster than typical batteries do.\n\nWhich choice completes the text with the most logical transition?",
+          "explanation": "Choice A is the best answer because the previous sentence describes a problem with lithium-ion batteries (they are becoming \"harder and more expensive to make\"), while the sentence with the blank describes the advantages of the new battery (low-cost, safe, fast-charging). \"In comparison\" correctly signals that the new battery is being contrasted with the previously mentioned lithium-ion batteries. Choice B is incorrect because \"What's more\" signals an additional point in the same direction as the previous sentence, but the previous sentence described a negative (a shortage-driven problem), while this sentence describes positives—these are not simply additive points. Choice C is incorrect because \"Similarly\" signals that the new information is alike to what preceded it, but the new battery's benefits are being contrasted with, not compared favorably to, the drawbacks of lithium-ion batteries. Choice D is incorrect for the same reason as Choice B—\"In addition\" implies simply adding a similar point rather than drawing the necessary contrast between the problems of one battery type and the benefits of another.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q22",
+          "type": "multiple-choice",
+          "number": 22,
+          "choices": [
+            "A) The viola is a string instrument, and the flute is a woodwind instrument.",
+            "B) The concertos, or musical compositions for a soloist and an ensemble, were both written by Stamitz in the late 1700s.",
+            "C) Stamitz wrote numerous concertos, including one for viola and one for flute.",
+            "D) While both were written by Stamitz, the 1774 concerto is for viola, and the 1780 concerto is for flute."
+          ],
+          "question": "While researching a topic, a student has taken the following notes:\n• Anton Stamitz was a composer.\n• He wrote symphonies, string quartets, and concertos.\n• A concerto is a musical composition for a soloist and an ensemble.\n• Stamitz wrote a concerto for viola, a string instrument, in 1774.\n• He wrote a concerto for flute, a woodwind instrument, in 1780.\n\nThe student wants to emphasize a difference between the two concertos. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "explanation": "Choice D is the best answer because it directly sets up a contrast between the two specific concertos, using \"while\" to acknowledge their shared authorship before highlighting their differing instruments and years (\"the 1774 concerto is for viola, and the 1780 concerto is for flute\"), which directly accomplishes the goal of emphasizing a difference. Choice A is incorrect because it only states general facts about instrument categories without tying them back to the two specific concertos or Stamitz, failing to frame this as a difference between his two works. Choice B is incorrect because it emphasizes a similarity (both written by Stamitz in the late 1700s) rather than a difference between the concertos. Choice C is incorrect because it simply lists that Stamitz wrote concertos including ones for viola and flute, without explicitly contrasting the two works or framing this as a notable difference.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q23",
+          "type": "multiple-choice",
+          "number": 23,
+          "choices": [
+            "A) Both the Pyramid of Menkaure, which is located in Egypt, and the Pyramid of the Sun, which is located in what is now Mexico, are examples of ancient pyramids.",
+            "B) Some of the world's pyramids, including one that is thought to have been built around 200 CE by the ancient Teotihuacanos, are taller than 200 feet.",
+            "C) The Pyramid of Menkaure is 213 feet tall, while the slightly taller Pyramid of the Sun is 216 feet tall.",
+            "D) The Pyramid of Menkaure, which is 213 feet tall, is thought to have been built in the 26th century BCE by the ancient Egyptians."
+          ],
+          "question": "While researching a topic, a student has taken the following notes:\n• The Pyramid of Menkaure is a pyramid in Egypt.\n• It is thought to have been built in the 26th century BCE by the ancient Egyptians.\n• It is 213 feet tall.\n• The Pyramid of the Sun is a pyramid in what is now Mexico.\n• It is thought to have been built around 200 CE by the ancient Teotihuacanos.\n• It is 216 feet tall.\n\nThe student wants to compare the heights of the two pyramids. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "explanation": "Choice C is the best answer because it directly states the height of each pyramid (213 feet and 216 feet) and explicitly compares them using \"while the slightly taller,\" fulfilling the goal of comparing the two pyramids' heights. Choice A is incorrect because it discusses the pyramids' locations, not their heights, and does not accomplish the stated goal. Choice B is incorrect because it only mentions that some pyramids, including the Pyramid of the Sun, are taller than 200 feet, without directly comparing its height to the Pyramid of Menkaure's specific height. Choice D is incorrect because it only provides the height of the Pyramid of Menkaure and mentions its construction date, without mentioning or comparing it to the height of the Pyramid of the Sun at all.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q24",
+          "type": "multiple-choice",
+          "number": 24,
+          "choices": [
+            "A) When the ocean's pH levels decrease, there is decreased net calcification.",
+            "B) Coral reefs are held together by net calcification, which has decreased in some places.",
+            "C) Net calcification holds coral reefs together, and carbon dioxide emissions have reduced the ocean's pH levels.",
+            "D) Net calcification has decreased in some coral reefs as a result of a decrease in the ocean's pH levels."
+          ],
+          "question": "While researching a topic, a student has taken the following notes:\n• Coral reefs are ocean ecosystems that are held together by a process called net calcification.\n• Some coral reefs have exhibited decreased net calcification.\n• Carbon dioxide emissions cause the ocean's pH levels to decrease.\n• A decrease in the ocean's pH levels results in decreased net calcification.\n\nThe student wants to specify the reason that some coral reefs have changed. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "explanation": "Choice D is the best answer because it directly and explicitly states the cause-and-effect relationship the student wants to highlight: net calcification in some coral reefs has decreased \"as a result of\" a decrease in ocean pH levels, specifying the exact reason for the coral reefs' change. Choice A is incorrect because it states a general relationship between pH and calcification without connecting it specifically to the change in coral reefs mentioned in the notes. Choice B is incorrect because it notes that net calcification has decreased in some places but does not specify the reason (the pH decrease) behind that change. Choice C is incorrect because, although it mentions both net calcification and the pH-lowering effect of carbon dioxide, it does not explicitly connect these two facts as cause and effect for the change in coral reefs—it merely lists them as separate statements.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q25",
+          "type": "multiple-choice",
+          "number": 25,
+          "choices": [
+            "A) It has been assumed that insects migrate in a random fashion, so researchers from the Max Planck Institute of Animal Behavior studied the migratory habits of hawkmoths.",
+            "B) Researchers from the Max Planck Institute of Animal Behavior tagged and monitored hawkmoths, which, like mosquitos, butterflies, bees, and locusts, are migratory animals.",
+            "C) Trillions of animals migrate through the air each year; recently, one such animal was tagged and monitored.",
+            "D) The study's surprising results demonstrated that rather than migrating in a random fashion, as was previously assumed, hawkmoths exhibit sophisticated flight strategies."
+          ],
+          "question": "While researching a topic, a student has taken the following notes:\n• Each year, trillions of animals migrate by flying through the air.\n• Insects, such as mosquitos, butterflies, bees, locusts, and moths, are among the most common migratory animals.\n• It has been assumed that insects migrate in a random fashion, being heavily impacted by the changing winds.\n• Researchers from the Max Planck Institute of Animal Behavior led a study in which hawkmoths were tagged and monitored as they migrated from Germany to the Alps.\n• The study's surprising results demonstrated that the hawkmoths have more sophisticated flight strategies than previously thought.\n\nThe student wants to emphasize the study's significance. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "explanation": "Choice D is the best answer because it directly states that the study's results were \"surprising\" and explicitly contrasts the prior assumption (random migration driven by wind) with the actual finding (sophisticated flight strategies), which is exactly what conveys the significance of the study's findings. Choice A is incorrect because it only explains the assumption that motivated the study and the fact that the study occurred, without ever mentioning the results or why they mattered. Choice B is incorrect because it simply describes the study's methodology (tagging and monitoring) and lists other migratory insects, without addressing the results or their significance. Choice C is incorrect because it offers only a generic statement about animal migration and vaguely mentions that \"one such animal\" was studied, without specifying any results or their importance.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q26",
+          "type": "multiple-choice",
+          "number": 26,
+          "choices": [
+            "A) Krishnamurthy's novel is set in India during the Chola Dynasty, while Proust's is set in early 20th-century France.",
+            "B) Krishnamurthy, an Indian author, published his novel in the 1950s; Proust, a French author, published his between 1913 and 1927.",
+            "C) Although both Krishnamurthy's and Proust's novels tell the life stories of two men, the settings of the two novels are quite different.",
+            "D) Krishnamurthy's and Proust's novels are both epic at 2,210 pages and 4,215 pages, respectively."
+          ],
+          "question": "While researching a topic, a student has taken the following notes:\n• In the 1950s, Indian author Kalki Krishnamurthy published The Son of Ponni.\n• His epic novel (2,210 pages) tells the story of Prince Arulmozhivarman, an emperor of the Chola Dynasty in India.\n• Between 1913 and 1927, French author Marcel Proust published In Search of Lost Time.\n• In Proust's epic novel (4,215 pages), a narrator reflects on his memories.\n• The novel explores the transformation of early 20th-century French society.\n\nThe student wants to emphasize a similarity between the two novels. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "explanation": "Choice D is the best answer because it directly states the shared trait that both novels are \"epic,\" or extremely long, giving their respective page counts (2,210 and 4,215) as supporting detail, which clearly emphasizes a similarity between the two works. Choice A is incorrect because it highlights a difference in setting between the two novels, not a similarity. Choice B is incorrect because it simply lists separate facts about each author's nationality and publication dates without connecting them as a similarity; the parallel structure describes two different things (different countries, different date ranges) rather than a shared trait. Choice C is incorrect because, although it briefly mentions a similarity (life stories of two men), its main emphasis is on a difference (\"the settings of the two novels are quite different\"), which works against the goal of emphasizing similarity.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q27",
+          "type": "multiple-choice",
+          "number": 27,
+          "choices": [
+            "A) Persuaded by sensationalist journalism, Americans came to favor war with Spain, and then the United States declared war.",
+            "B) The newspaper publishers Joseph Pulitzer and William Randolph Hearst competed with each other using sensationalist coverage.",
+            "C) The newspapers run by Joseph Pulitzer and William Randolph Hearst were highly critical of Spain.",
+            "D) In 1898, the United States declared war on Spain, which had been blamed for the sinking of a US battleship."
+          ],
+          "question": "While researching a topic, a student has taken the following notes:\n• In the 1890s, newspaper publishers Joseph Pulitzer and William Randolph Hearst were competitors.\n• Their newspapers used sensationalist coverage to drive sales.\n• One issue that was sensationally covered was the tyrannical manner in which Spain ruled its then colony of Cuba.\n• Another issue was the sinking of a US battleship near Cuba, which the newspapers blamed on Spain without evidence.\n• The newspapers' coverage persuaded Americans to favor war, and in 1898, the United States declared war on Spain.\n\nThe student wants to emphasize the role that journalism played in a declaration of war. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+          "explanation": "Choice A is the best answer because it directly and explicitly connects sensationalist journalism to the outcome of a declared war, tracing the causal chain from being \"persuaded by sensationalist journalism\" to Americans favoring war to the United States actually declaring war—this precisely emphasizes journalism's role in the declaration of war. Choice B is incorrect because it only describes the competition between the two publishers and their use of sensationalist coverage, without connecting this to the declaration of war at all. Choice C is incorrect because it only states that the newspapers were critical of Spain, without linking this coverage to Americans' opinions or to the actual declaration of war. Choice D is incorrect because it focuses on the declaration of war and the blame placed on Spain for the battleship's sinking, but never mentions journalism, newspapers, or the media's role in shaping public opinion.",
+          "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "mod2",
+      "name": "Reading and Writing Module 2",
+      "timeLimit": 2340,
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "number": 1,
+          "question": "As the first two people to build a functioning plane, Orville and Wilbur Wright had a ________ impact on the aviation field. With the first successful flight (1903), the Wright brothers’ determination and motivation took the aviation era from experimental to more advanced, eventually leading to commercialized flights.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            "A) powerful",
+            "B) moderate",
+            "C) complicated",
+            "D) questionable"
+          ],
+          "explanation": "Choice A is the best answer because the text describes the Wright brothers as the first to build a functioning plane whose determination moved aviation \"from experimental to more advanced, eventually leading to commercialized flights.\" This describes a major, transformative effect, which is best captured by \"powerful.\"\n\nChoice B is incorrect because \"moderate\" suggests a limited or average effect, but the text describes a sweeping transformation of an entire field, not a modest one.\nChoice C is incorrect because \"complicated\" describes something difficult to understand or intricate, not the scale or strength of an effect; nothing in the text suggests the impact itself was confusing.\nChoice D is incorrect because \"questionable\" implies doubt about whether the impact was legitimate or real, but the text presents the Wright brothers' achievement and its consequences as established historical fact, not something in doubt.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "number": 2,
+          "question": "American researcher Percy Julian’s ________ his fields of interest—chemistry and entrepreneurship—led him to develop groundbreaking methods for synthesizing important medications and to establish a successful chemical manufacturing company.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            "A) questions about",
+            "B) anxiety toward",
+            "C) dedication to",
+            "D) bewilderment at"
+          ],
+          "explanation": "Choice C is the best answer because the sentence describes Julian achieving major positive outcomes—developing groundbreaking synthesis methods and founding a successful company—as a result of his relationship to chemistry and entrepreneurship. Only a strongly positive, committed relationship to these fields, such as \"dedication to\" them, logically explains such significant accomplishments.\n\nChoice A is incorrect because merely having \"questions about\" his fields of interest would suggest uncertainty or curiosity without the sustained commitment needed to explain his groundbreaking achievements.\nChoice B is incorrect because \"anxiety toward\" implies fear or worry, which would not logically drive someone to found a successful company and pioneer new medical synthesis methods.\nChoice D is incorrect because \"bewilderment at\" implies confusion, which contradicts the confident mastery required to develop groundbreaking scientific methods and build a business.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q3",
+          "type": "multiple-choice",
+          "number": 3,
+          "question": "Discovering and distinguishing prehistoric bones is an essential part of gaining insight into past organisms, but this process can be challenging due to a lack of sufficient data and proper funding. Paleontologist Mary Anning and her team were able to ________ these challenges and, after many years of hard work, made the groundbreaking discovery of the first complete plesiosaur.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            "A) conquer",
+            "B) criticize",
+            "C) visualize",
+            "D) demonstrate"
+          ],
+          "explanation": "Choice A is the best answer because the text sets up \"challenges\" (lack of data and funding) that Anning's team had to deal with before achieving a groundbreaking discovery \"after many years of hard work.\" \"Conquer\" precisely captures the idea of successfully overcoming those obstacles.\n\nChoice B is incorrect because \"criticize\" means to express disapproval of something, which does not logically connect to overcoming obstacles in order to make a discovery.\nChoice C is incorrect because \"visualize\" means to imagine or picture something mentally, which does not describe actually overcoming real-world challenges like insufficient data and funding.\nChoice D is incorrect because \"demonstrate\" means to show or prove something, which does not fit the idea of dealing with and getting past obstacles; one does not \"demonstrate\" a challenge.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q4",
+          "type": "multiple-choice",
+          "number": 4,
+          "question": "According to American microbiologist Jonas Salk, the appropriate approach to medicine is to take advantage of the processes through which the body ________ itself; while few joined him in this belief at the time, Salk was convinced that injecting an inert virus into the body would cause the body to attack the introduced illness and protect itself against future infections.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            "A) dismantles",
+            "B) rehabilitates",
+            "C) establishes",
+            "D) outgrows"
+          ],
+          "explanation": "Choice B is the best answer because the rest of the sentence explains that the body, once exposed to an inert virus, will \"attack the introduced illness and protect itself against future infections\"—that is, heal and strengthen itself. \"Rehabilitates\" precisely captures this self-healing, self-restoring process.\n\nChoice A is incorrect because \"dismantles\" means to take apart or destroy, which contradicts the idea of the body protecting and healing itself.\nChoice C is incorrect because \"establishes\" does not capture the specific medical meaning of the body healing or defending itself; it is too vague and does not fit the context of fighting off illness.\nChoice D is incorrect because \"outgrows\" suggests becoming too large or mature for something, which has no logical connection to the body's process of fighting infection and healing itself.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q5",
+          "type": "multiple-choice",
+          "number": 5,
+          "question": "Research conducted by engineer Nils Bohlin suggested that a three-point seatbelt could protect both the upper and lower halves of the torso during a collision. This made it superior to the two-point seat belt, which only covered the bottom portion of the torso and often failed to ________ internal damage when in a collision.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            "A) disrupt",
+            "B) analyze",
+            "C) prevent",
+            "D) benefit"
+          ],
+          "explanation": "Choice C is the best answer because the two-point belt is described as inferior because it only covered the lower torso, leaving the upper body unprotected. Logically, this means it often failed to \"prevent\" internal damage in a collision, since it could not protect the whole torso.\n\nChoice A is incorrect because \"disrupt\" internal damage does not make logical sense; a seatbelt's purpose would be to stop or prevent damage, not to \"disrupt\" it.\nChoice B is incorrect because \"analyze\" means to examine something carefully, which is not a function a seatbelt performs; seatbelts protect against damage rather than assess it.\nChoice D is incorrect because \"benefit\" internal damage is illogical; a seatbelt would not be described as failing to help damage occur, since damage is a negative outcome the belt is meant to avoid.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q6",
+          "type": "multiple-choice",
+          "number": 6,
+          "question": "Microbiologist Maurice Hilleman used samples of the mumps virus collected from his daughter to create the mumps vaccine. He used the same method of weakening the virus before injecting it into a patient as was used to design the measles vaccine, making it ________ other vaccines of the time in its ability to assist the immune system in recognizing the target virus and therefore prevent future outbreaks of the disease.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            "A) reliant on",
+            "B) distinct from",
+            "C) superior to",
+            "D) similar to"
+          ],
+          "explanation": "Choice D is the best answer because the text explains that Hilleman used \"the same method\" to create the mumps vaccine as was used for the measles vaccine. Since the method was the same, the resulting vaccine's ability to help the immune system would logically be \"similar to\" that of other vaccines of the time, not different or superior.\n\nChoice A is incorrect because \"reliant on\" would suggest the mumps vaccine depended on other vaccines to function, which is not supported by the text; it simply used a comparable method.\nChoice B is incorrect because \"distinct from\" contradicts the text's statement that the same method was used, which implies similarity rather than difference.\nChoice C is incorrect because \"superior to\" is not supported by the text; using \"the same method\" as other vaccines implies an equivalent, not a superior, ability to fight disease.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q7",
+          "type": "multiple-choice",
+          "number": 7,
+          "question": "Joseph Lister received the nickname “The Father of Antiseptic Treatment” for his work in solving the issue of infections in wounds by encouraging surgeons to clean their hands and utilize carbolic acid to clean medical equipment before surgeries. Many skeptical surgeons argued that these practices would be ________ since sanitizing prior to medical procedures had traditionally been thought of as unhelpful.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+          "choices": [
+            "A) futile",
+            "B) redundant",
+            "C) beneficial",
+            "D) mandatory"
+          ],
+          "explanation": "Choice A is the best answer because the sentence explains that skeptical surgeons doubted Lister's practices \"since sanitizing... had traditionally been thought of as unhelpful.\" Since sanitizing was believed to be unhelpful, the skeptics would logically think these new sanitizing practices would be \"futile,\" or pointless/ineffective.\n\nChoice B is incorrect because \"redundant\" means unnecessarily repetitive, which does not match the skeptics' belief that sanitizing was simply unhelpful, not that it duplicated some other effective practice.\nChoice C is incorrect because \"beneficial\" is the opposite of what skeptical surgeons who thought sanitizing was unhelpful would believe; the sentence describes their doubt, not their approval.\nChoice D is incorrect because \"mandatory\" describes something required, which contradicts the skeptics' dismissive attitude toward sanitizing as being unhelpful and unnecessary.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q8",
+          "type": "multiple-choice",
+          "number": 8,
+          "question": "Text 1\n\nIn 1861, Johann Andreas Wagner discovered fossils of the archaeopteryx, the earliest known bird, in Germany. The archaeopteryx had feathers and several bird-like features while also having teeth and a long bony tail like a dinosaur; additionally, the archaeopteryx had a large brain similar to that of a bird. Thus, the discovery of the fossils established a link between birds and dinosaurs.\n\nText 2\n\nA British team of researchers challenged the link between birds and dinosaurs by questioning the conclusion from the archaeopteryx fossils that the brain of that dinosaur correlates with that of a bird based on size. The team, led by Dr. David Hone, has discovered that bats also have brains similar in size to the archaeopteryx, further questioning if the archaeopteryx was truly a bird or some other flying species. Thus, the archaeopteryx cannot be conclusively determined to be a bird based on the fossils.\n\nBased on the texts, how would the author of Text 2 most likely respond to the underlined claim in Text 1?",
+          "choices": [
+            "A) By noting that while there is support for the claim, the findings of Hone’s team provide less conclusive evidence for it than the discovery made by Wagner does.",
+            "B) By challenging the claim for being based on a theory that before the development of feathers and bird-like features, the archaeopteryx looked more like a dinosaur.",
+            "C) By largely agreeing with the claim but arguing that the link between brain size and species classification it assumes is contradictory to the discovery made by Wagner.",
+            "D) By criticizing the claim for assuming that other species besides birds could not also possess large-sized brains."
+          ],
+          "explanation": "Choice A is the best answer because Text 1's claim that the fossils \"established a link between birds and dinosaurs\" was based on multiple features (feathers, bird-like traits, a large brain similar to a bird's), not brain size alone. Text 2 specifically challenges only the brain-size evidence, showing that bats also share a similar brain size, which makes that particular piece of evidence \"less conclusive.\" Text 2 does not reject the overall link outright (based on all the fossil evidence Wagner found) but shows that Hone's findings weaken one part of the case, which matches choice A's description of support existing but being less conclusive than Wagner's original discovery.\n\nChoice B is incorrect because Text 2 never discusses a theory about the archaeopteryx's appearance before it developed feathers or bird-like features; its critique is centered entirely on brain size, not on developmental appearance.\nChoice C is incorrect because Text 2 does not describe the brain-size/species-classification link as \"contradictory to the discovery made by Wagner\"; rather, it says the brain-size evidence for the link is inconclusive because another animal (a bat) shares that trait, not that it directly conflicts with Wagner's findings.\nChoice D is incorrect because Text 2 is not concerned with whether other species could have large brains in general; it specifically notes that bats have a similar-sized brain to challenge the assumption that brain size alone indicates bird classification, not that large brains are impossible in other species.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q9",
+          "type": "multiple-choice",
+          "number": 9,
+          "question": "The following text is adapted from Carolyn Wells’s 1905 novel Patty in the City.\n\nThe dining-room, too, excited Ethelyn’s admiration. The soft thick carpets, and daintily laid tables, each with its vase of flowers, seemed suddenly to her far more desirable than the well-appointed dining-room in her own home at Villa Rosa.\n\nEthelyn was of an envious disposition, and though she was indulged and petted by her parents, she always wanted the belongings of someone else. She determined right then and there to coax her father to close up Villa Rosa and come to New York for the winter, though she had little hope that he would do so.\n\nAccording to the text, what is true about Ethelyn?",
+          "choices": [
+            "A) She aspires to be more like her parents.",
+            "B) She desires the possessions and belongings of others.",
+            "C) Traveling to places is her preferred pastime.",
+            "D) Winter is her preferred time of year."
+          ],
+          "explanation": "Choice B is the best answer because the text directly states that Ethelyn \"was of an envious disposition\" and \"always wanted the belongings of someone else.\" This is reinforced by her admiring the dining room's carpets and tables as \"far more desirable\" than her own home's, showing she covets what others have.\n\nChoice A is incorrect because the text says Ethelyn was \"indulged and petted by her parents,\" but nothing suggests she aspires to be like them; her defining trait described is envy of others' belongings, not admiration of her parents.\nChoice C is incorrect because while Ethelyn wants to persuade her father to travel to New York, this desire stems from her envy of the dining room she saw, not from a general love of travel as a pastime.\nChoice D is incorrect because Ethelyn's wish to go to New York \"for the winter\" is not because winter is her preferred season; it reflects her envious wish to have what she admired, unrelated to any stated preference for the season itself.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q10",
+          "type": "multiple-choice",
+          "number": 10,
+          "question": "There are a number of ways insect parasites overtake their hosts. Biologists had believed that parasites attack when their hosts are most vulnerable, during the egg stage. However, Dr. Edward Assmuss and his team believed that many parasites may wait until the insect host is further developed or grown, therefore providing more potential nourishment to the parasite. To prove this hypothesis, the team placed members of a group of parasitic flies known as Phora in an enclosure with honeybees at different stages of life. Some of the honeybees were still in the egg stage, while others were in the larval stage of development, which occurs after the hatching of the egg.\n\nWhich detail, if true, would most directly support the team’s hypothesis?",
+          "choices": [
+            "A) The Phora attacked all honeybees in the enclosure regardless of developmental stage.",
+            "B) The Phora appeared to locate the egg stage honeybees more easily than they did the larval stage honeybees.",
+            "C) In general, the Phora attacked the honeybees in the larval stage with much greater frequency than those in the egg stage.",
+            "D) In general, the Phora attacked the honeybees in the egg stage much more quickly than those in the larval stage."
+          ],
+          "explanation": "Choice C is the best answer because Assmuss's hypothesis was that parasites wait until a host is \"further developed or grown\" (the larval stage occurs after the egg stage) to gain \"more potential nourishment.\" If the Phora attacked larval-stage honeybees much more frequently than egg-stage honeybees, this would directly demonstrate the parasites' preference for more developed hosts, supporting the hypothesis.\n\nChoice A is incorrect because attacking all honeybees regardless of developmental stage would show no preference for more developed hosts, which does not support the specific hypothesis that parasites prefer waiting for further development.\nChoice B is incorrect because this suggests the Phora were better at finding egg-stage honeybees, which would actually undercut the hypothesis that they prefer to target more developed, larval-stage hosts.\nChoice D is incorrect because attacking egg-stage honeybees more quickly than larval-stage ones suggests a preference for the earlier, less developed stage, which directly contradicts the hypothesis that parasites wait for hosts to develop further.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q11",
+          "type": "multiple-choice",
+          "number": 11,
+          "question": "Carrots are a part of the Apiaceace family. They are biennial, which means they grow their taproot, or main root, the first year and then flower and go to seed the second year. Because the carrot’s taproot is essential to healthy carrot growth, this area needs great attention during the growing process. Carrots that are grown in compact soil often struggle and do not produce a robust taproot. Darian and her colleagues are researching the proper medium for growing carrots and grow two varieties, the Bolero and the Nantes, in both sand and clay. They hypothesize that carrots grown in sand, which is non-compact, will be longer than those that are grown in clay.\n\n<div style='text-align: center;'><img src='images/test13/rw2e_q11_fig.png' alt='Bar graph titled Carrot Growth in Clay and Sandy Soil, showing carrot length in inches for Bolero and Nantes varieties grown in clay versus sand'/></div>\n\nWhich choice best describes data from the graph that support Darian and her colleagues’ hypothesis?",
+          "choices": [
+            "A) The Nantes carrots grew more in clay than did the Bolero carrots, but the Bolero carrots grew more in sand than did the Nantes carrots.",
+            "B) The carrots grown in sand reached longer lengths for both the Bolero and Nantes varieties than did the carrots grown in clay.",
+            "C) Nantes carrots reached lengths of approximately five inches in clay but only lengths of approximately three inches in sand.",
+            "D) Both types of soils failed to produce either Bolero or Nantes carrots exceeding a length of six inches."
+          ],
+          "explanation": "Choice B is the best answer because the hypothesis was that carrots grown in sand (non-compact) would be longer than those grown in clay. According to the graph, Bolero carrots grew from about 2 inches in clay to about 6 inches in sand, and Nantes carrots grew from about 3 inches in clay to about 5 inches in sand—both varieties were longer in sand than in clay, directly supporting the hypothesis.\n\nChoice A is incorrect because, while accurate as a comparison between varieties, it does not directly address the hypothesis about soil type (clay versus sand); it compares Nantes to Bolero rather than showing that sand produced greater length than clay for each variety.\nChoice C is incorrect because it reverses the actual data: Nantes carrots reached approximately 3 inches in clay and approximately 5 inches in sand, not 5 inches in clay and 3 inches in sand as this choice states.\nChoice D is incorrect because Bolero carrots reached approximately 6 inches in sand, which does not exceed 6 inches, but this choice's framing about carrots failing to exceed a length of six inches does not describe a hypothesis-supporting comparison between clay and sand; it doesn't show sand outperforming clay, which is what the hypothesis requires.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q12",
+          "type": "multiple-choice",
+          "number": 12,
+          "question": "“Let America Be America Again” is a poem written in 1939 by Langston Hughes, who is recognized as one of the most famous Black poets, playwrights, novelists, and social activists. This poem conveys Hughes’s conflicting viewpoints on what is promised by the American Dream and what American life really is.\n\nWhich quotation from “Let America Be America Again” most effectively illustrates the claim?",
+          "choices": [
+            "A) “Let America be the dream the dreamers dreamed— / Let it be that great strong land of love / Where never kings connive nor tyrants scheme.”",
+            "B) “Tangled in that ancient endless chain / Of profit, power, gain, of grab the land! / Of grab the gold! Of grab the ways of satisfying need!”",
+            "C) “I am the farmer, bondsman to the soil. / I am the worker sold to the machine. / I am the Negro, servant to you all. / I am the people, humble, hungry, mean.”",
+            "D) “The land that never has been yet— / And yet must be—the land where every man is free. / The land that’s mine—the poor man’s, Indian’s, Negro’s, ME.”"
+          ],
+          "explanation": "Choice D is the best answer because it directly captures the poem's \"conflicting viewpoints\": it acknowledges that the free land promised by the American Dream \"never has been yet,\" reflecting the disappointing reality, while also insisting it \"must be\" and claiming it as belonging to marginalized people (\"the poor man's, Indian's, Negro's, ME\"), reflecting the aspirational promise. This single quotation captures both the unmet promise and the persistent hope, illustrating the tension the claim describes.\n\nChoice A is incorrect because it describes only the idealized dream of America (\"the dream the dreamers dreamed\") without any acknowledgment of the disappointing reality, so it does not show the \"conflicting\" nature of the viewpoints.\nChoice B is incorrect because it describes only the negative reality of greed and exploitation (\"grab the land... grab the gold\") without referencing the promised ideal of the American Dream, so it captures only one side of the conflict.\nChoice C is incorrect because it describes only the harsh, oppressed reality experienced by various groups of people, without referencing the promise or dream of America, so it also captures only one side of the claimed conflict rather than both.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q13",
+          "type": "multiple-choice",
+          "number": 13,
+          "question": "Born in the Dominican Republic and fleeing from that country at a young age, writer Julia Alvarez focuses much of her writing on her experience as an immigrant, her bicultural identity, and the role of women in public life. Her novels explore the apathy revolving around the lack of accessible health care in countries with a high rate of poverty, helping readers to become aware of this inequality and seek change to correct it. In an essay, a student states that specific aspects of Alvarez’s work help to introduce this inequality to readers in an accessible way.\n\nWhich quotation from a scholarly review of Alvarez’s work best supports the student’s claim?",
+          "choices": [
+            "A) “In Alvarez’s most recent novel, she focuses on a family living in the Dominican Republic who rely on a volunteer organization for health care.”",
+            "B) “Alvarez’s novels explore life in the Dominican Republic, namely, how a group of sisters work together to help the citizens escape the rule of the country’s dictator.”",
+            "C) “When Alvarez moved to the United States, she was forced to learn a new language and become familiar with new and unfamiliar customs in order to fit in with her community.”",
+            "D) “Alvarez’s husband is a doctor who has traveled to many impoverished countries, where he has assisted with the medical treatment of many citizens.”"
+          ],
+          "explanation": "Choice A is the best answer because the student's claim is specifically about Alvarez's work introducing the inequality of \"lack of accessible health care in countries with a high rate of poverty.\" This quotation directly illustrates that theme by describing a novel in which a family in the Dominican Republic must rely on a volunteer organization for health care, showing inaccessible health care in a concrete, relatable way.\n\nChoice B is incorrect because it discusses resistance to a dictator, which relates to political oppression, not the specific issue of inaccessible health care that the student's claim addresses.\nChoice C is incorrect because it describes Alvarez's personal experience adjusting to life in the United States (language and customs), which relates to her immigrant/bicultural identity theme, not to health care inequality.\nChoice D is incorrect because it describes Alvarez's husband's real-life profession and travels, not content from her novels that introduces health care inequality to readers through her writing.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q14",
+          "type": "multiple-choice",
+          "number": 14,
+          "question": "The soil is made up of organic compounds, such as nitrogen, carbon, potassium, and magnesium, which are released by decaying vegetable and organic matter and by fertilizers added to the soil. As plants grow, they require these nutrients to prevent disease and pest infestation. Free nitrogen in the soil is inaccessible to plants, as it is an insoluble compound—but organisms such as denitrifying bacteria existing in soil can break down free nitrogen molecules so they can be combined into elements that plants can absorb. Therefore, researchers suggest that to improve plant growth, it would be helpful to ________\n\nWhich choice most logically completes the text?",
+          "choices": [
+            "A) ascertain the exact percentage of nitrogen that can be broken down by bacteria in the soil.",
+            "B) create new processes for denitrifying the soil to assist plant life.",
+            "C) introduce organisms similar to denitrifying bacteria that would convert free nitrogen into soluble elements.",
+            "D) reduce the percentages of other elements in the soil so that plants are able to absorb the free nitrogen."
+          ],
+          "explanation": "Choice C is the best answer because the passage explains that free nitrogen is inaccessible to plants unless organisms like denitrifying bacteria break it down into soluble, absorbable elements. Since this process already helps plants access nitrogen, the logical suggestion for improving plant growth is to introduce more such organisms to increase this beneficial conversion process.\n\nChoice A is incorrect because simply determining the exact percentage of nitrogen broken down by bacteria is a measurement, not an action that would directly improve plant growth.\nChoice B is incorrect because the text already describes a natural process (denitrifying bacteria) that accomplishes this; \"creating new processes\" is an unsupported and unnecessarily vague solution when introducing existing beneficial organisms is more directly supported by the text.\nChoice D is incorrect because the text states that free nitrogen is inaccessible because it is insoluble, not because other elements are blocking its absorption; reducing other elements would not solve the solubility problem described.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q15",
+          "type": "multiple-choice",
+          "number": 15,
+          "question": "Rote memorization of poetry, or learning a poem through repetition, is a valuable academic exercise because it deepens students’ knowledge of the language and structure of a poem. In a survey of high school teachers, most said it was important for their students to study poetry in literature class. However, only about 10% of the teachers were in favor of asking students to utilize rote memorization on a poem. This result suggests that ________\n\nWhich choice most logically completes the text?",
+          "choices": [
+            "A) rote memorization of poetry may be more valuable than many teachers believe it to be.",
+            "B) rote memorization of poetry can benefit students more than it can benefit teachers.",
+            "C) many teachers may not know how to incorporate rote memorization in their classrooms.",
+            "D) many teachers assume that rote memorization is only for academics who study poetry as a profession."
+          ],
+          "explanation": "Choice A is the best answer because the passage establishes that rote memorization \"deepens students' knowledge of the language and structure of a poem\" and is thus valuable, and that most teachers value poetry study in general. Yet only about 10% favored rote memorization specifically, revealing a gap between the demonstrated value of the technique and teachers' actual opinions of it—suggesting teachers underestimate its value.\n\nChoice B is incorrect because the passage never compares benefits to students versus benefits to teachers; the discussion is about student learning and teacher opinion, not any benefit specifically to teachers themselves.\nChoice C is incorrect because the low approval percentage reflects teachers' beliefs about rote memorization's value, not a lack of knowledge about how to implement or incorporate the technique in class.\nChoice D is incorrect because the passage gives no indication that teachers view rote memorization as reserved for professional poetry academics; this is an unsupported assumption not found anywhere in the text.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q16",
+          "type": "multiple-choice",
+          "number": 16,
+          "question": "Artist Frances Stark employs carbon paper tracings instead of handwritten text ________ her works of art, often incorporating repetition and visual or mixed-media motifs to represent an emotion or mood in her pieces.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            "A) to create",
+            "B) creates",
+            "C) created",
+            "D) is creating"
+          ],
+          "explanation": "Choice A is the best answer because the sentence needs an infinitive phrase expressing purpose: Stark uses carbon paper tracings \"to create\" her works of art. The infinitive \"to create\" logically explains the purpose behind her use of carbon paper tracings, which is grammatically correct and fits the sentence's structure, whose main verb is already \"employs.\"\n\nChoice B is incorrect because \"creates\" is a finite verb, and the sentence already has a main verb (\"employs\"); using a second finite verb without a coordinating conjunction or proper punctuation creates an ungrammatical run-on structure.\nChoice C is incorrect because \"created\" is a past-tense finite verb, which similarly creates an ungrammatical sentence by introducing a second main verb without appropriate connecting punctuation or conjunction, and it does not express the purpose relationship needed.\nChoice D is incorrect because \"is creating\" is also a finite verb form and creates the same run-on problem as options B and C, improperly pairing two independent verb phrases without correct punctuation.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q17",
+          "type": "multiple-choice",
+          "number": 17,
+          "question": "Endemic to Antarctica, Scottnema lindsayae, a nematode worm species, eats yeast, algae, and bacteria. This species is uniquely adapted to survive in the freezing and arid conditions of the McCurdo Dry Valleys, ________ to persist through the cold winters and complete its 218-day life cycle.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            "A) hibernated",
+            "B) hibernates",
+            "C) to hibernate",
+            "D) hibernating"
+          ],
+          "explanation": "Choice D is the best answer because the sentence already contains a complete independent clause (\"This species is uniquely adapted to survive...\"), so the material after the comma must be a modifying phrase rather than another finite verb clause. The present participle \"hibernating\" correctly forms a participial phrase (\"hibernating to persist through the cold winters and complete its 218-day life cycle\") that describes how the species survives, modifying the subject without creating a grammar error.\n\nChoice A is incorrect because \"hibernated\" is a finite past-tense verb, and adding it after the comma without a conjunction would create a comma splice/run-on sentence, improperly joining two independent clauses.\nChoice B is incorrect because \"hibernates\" is also a finite verb, and using it here would similarly create a run-on sentence by joining two complete clauses with only a comma.\nChoice C is incorrect because \"to hibernate\" would create an awkward and illogical redundancy with the following \"to persist,\" producing a phrase like \"to hibernate to persist through the cold winters,\" which does not fit the intended meaning as smoothly or grammatically as the participial phrase.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q18",
+          "type": "multiple-choice",
+          "number": 18,
+          "question": "The dwarf planet 90377 Sedna, composed primarily of water, methane, and nitrogen, orbits the Sun in one of the largest paths in the entire Solar System, such that it ________ a maximum distance greater than 31 times Neptune’s maximum distance from the Sun.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            "A) is attaining",
+            "B) will attain",
+            "C) attains",
+            "D) had attained"
+          ],
+          "explanation": "Choice C is the best answer because the sentence describes an ongoing, general scientific fact about Sedna's orbit, paralleling the present-tense verb \"orbits\" earlier in the sentence. The simple present tense \"attains\" is consistent with describing this general, ongoing truth about the planet's orbit.\n\nChoice A is incorrect because \"is attaining\" (present progressive) incorrectly suggests a temporary, currently-in-progress action rather than the general, continuous fact being described about Sedna's orbital path.\nChoice B is incorrect because \"will attain\" (future tense) incorrectly implies this is something that has not yet happened but will happen later, when the sentence describes an established, ongoing characteristic of Sedna's orbit.\nChoice D is incorrect because \"had attained\" (past perfect) incorrectly places the action in the past relative to another past event, which does not fit the general, ongoing present-tense fact being described alongside \"orbits.\"",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q19",
+          "type": "multiple-choice",
+          "number": 19,
+          "question": "Artist and filmmaker Wu Tsang explored the ambiguity between life and death in her film You’re Dead to Me (2013), in which a mourning mother processes the loss of her daughter the night before the holiday Día de los Muertos. Tsang’s other work ________ on the stories of marginalized people and the process of performing.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            "A) are",
+            "B) were",
+            "C) have focused",
+            "D) has focused"
+          ],
+          "explanation": "Choice D is the best answer because the subject of the verb is \"Tsang's other work,\" which is singular (referring to her body of work as a single collective whole), so it requires a singular verb form. \"Has focused\" (present perfect singular) correctly agrees with the singular subject and appropriately conveys an ongoing characteristic true up to the present.\n\nChoice A is incorrect because \"are\" is a plural verb form, which does not agree with the singular subject \"work.\"\nChoice B is incorrect because \"were\" is both a plural verb form, which fails to agree with the singular subject \"work,\" and a past-tense form, which incorrectly implies the focus is no longer ongoing.\nChoice C is incorrect because \"have focused\" is a plural present-perfect verb form, which does not agree with the singular subject \"work.\"",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q20",
+          "type": "multiple-choice",
+          "number": 20,
+          "question": "The Alaska Permanent Fund, established in 1976, consists of over 64 billion dollars generated from profits from the Trans-Alaska Pipeline System, allowing ________ to receive dividends from the oil that may run out for future generations.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            "A) people’s descendant’s",
+            "B) people’s descendants",
+            "C) peoples descendant’s",
+            "D) peoples descendants"
+          ],
+          "explanation": "Choice B is the best answer because \"people's\" is the correct possessive form showing that the descendants belong to (are descended from) the people, and \"descendants\" is the correct plural noun serving as the subject of the infinitive \"to receive\"—it does not require an apostrophe because it is not itself showing possession of anything in this sentence.\n\nChoice A is incorrect because it incorrectly adds an apostrophe to \"descendant's,\" as if descendants possessed something, but \"descendants\" here is simply a plural noun (the ones receiving dividends), not a possessive noun.\nChoice C is incorrect because it omits the necessary apostrophe in \"peoples,\" failing to show the possessive relationship (the descendants belonging to the people), and it also incorrectly adds an apostrophe to \"descendant's.\"\nChoice D is incorrect because it omits the necessary possessive apostrophe on \"peoples,\" leaving no grammatical indication that the descendants belong to or come from \"the people.\"",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q21",
+          "type": "multiple-choice",
+          "number": 21,
+          "question": "A symbol of Latvian liberation that ________ in the city of Riga, the Freedom Monument was built in 1935 to honor soldiers who lost their lives during the Latvian War of Independence.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            "A) stand",
+            "B) have stood",
+            "C) were standing",
+            "D) stands"
+          ],
+          "explanation": "Choice D is the best answer because the relative pronoun \"that\" refers back to \"the Freedom Monument,\" a singular subject, so the verb in this modifying clause must be a singular, present-tense verb to describe the monument's current, ongoing location. \"Stands\" correctly agrees in number and appropriately conveys a general, ongoing present fact (the monument's location in Riga).\n\nChoice A is incorrect because \"stand\" is a plural verb form, which does not agree with the singular subject \"the Freedom Monument\" (referred to by \"that\").\nChoice B is incorrect because \"have stood\" is a plural present-perfect verb form, both failing subject-verb agreement with the singular \"monument\" and using an unnecessary perfect tense.\nChoice C is incorrect because \"were standing\" is a past-tense form that incorrectly implies the monument no longer stands in Riga, contradicting the fact that it currently exists there as a historical landmark.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q22",
+          "type": "multiple-choice",
+          "number": 22,
+          "question": "Polk C. Brockman, a furniture store owner, was working for Okeh Records when he traveled to New York City on a business trip and saw video footage of Fiddlin’ John Carson performing in Virginia. Brockman ________ Okeh Records to issue a recording of Carson, which sold out immediately.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            "A) was persuading",
+            "B) persuaded",
+            "C) persuades",
+            "D) had persuaded"
+          ],
+          "explanation": "Choice B is the best answer because the passage is narrating a sequence of completed past events (traveling, seeing footage, and then a subsequent action). The simple past tense \"persuaded\" correctly and consistently describes this single completed past action, matching the established past-tense narrative (\"was working,\" \"traveled,\" \"saw\").\n\nChoice A is incorrect because \"was persuading\" (past progressive) incorrectly suggests an ongoing, unfinished action, when the sentence describes a single, completed act of persuasion that led to a definite result (\"which sold out immediately\").\nChoice C is incorrect because \"persuades\" is present tense, which does not match the established past-tense context of the surrounding narrative describing historical events.\nChoice D is incorrect because \"had persuaded\" (past perfect) would imply the persuasion happened before another past event already mentioned, but there is no such earlier past event for it to precede; the persuasion is simply the next event in the sequence.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q23",
+          "type": "multiple-choice",
+          "number": 23,
+          "question": "The Krakelingen “kringle throw” celebrates the cycle of life in the town of Geraardsbergen, Belgium. This event has historically involved a local official drinking a small fish. By the time animal rights organizations began protesting the practice in 1997, the habit ________ practiced for over 400 years and was considered too important to the festival to eliminate.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+          "choices": [
+            "A) will be",
+            "B) has been",
+            "C) had been",
+            "D) is"
+          ],
+          "explanation": "Choice C is the best answer because the sentence describes an action (the habit being practiced) that had already been ongoing for over 400 years before another past event occurred (\"animal rights organizations began protesting... in 1997\"). The past perfect tense \"had been\" correctly indicates that the practice was already established prior to this specific past point in time.\n\nChoice A is incorrect because \"will be\" is future tense, which incorrectly suggests the practice had not yet happened, when the sentence is entirely describing past events.\nChoice B is incorrect because \"has been\" (present perfect) implies the action continues into the present without clear reference to the specific past point (1997) that the sentence establishes as the relevant reference time.\nChoice D is incorrect because \"is\" is present tense, which does not fit the past-tense narrative describing events that occurred by 1997.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q24",
+          "type": "multiple-choice",
+          "number": 24,
+          "question": "Berenice Alice Abbott was a photographer from the US who captured a wide variety of subjects with her camera. ________ she photographed cultural figures, architectural structures, and scientific discoveries throughout her career. Some of her photos were used in physics textbooks and helped to improve high school physics classes.\n\nWhich choice completes the text with the most logical transition?",
+          "choices": [
+            "A) Otherwise,",
+            "B) By contrast,",
+            "C) For example,",
+            "D) For these reasons,"
+          ],
+          "explanation": "Choice C is the best answer because the second sentence provides specific instances (cultural figures, architectural structures, scientific discoveries) that illustrate the general claim in the first sentence that Abbott \"captured a wide variety of subjects.\" \"For example,\" correctly signals that the following sentence offers concrete illustrations of the preceding general statement.\n\nChoice A is incorrect because \"Otherwise,\" signals a contrasting alternative or consequence that would occur if something did not happen, which does not fit the relationship between a general statement and its supporting examples.\nChoice B is incorrect because \"By contrast,\" signals an opposing or differing idea, but the second sentence supports and elaborates on the first sentence rather than contradicting it.\nChoice D is incorrect because \"For these reasons,\" signals that a conclusion follows from previously stated reasons, but the second sentence is not a conclusion drawn from reasons—it is a specific illustration of the general claim just made.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q25",
+          "type": "multiple-choice",
+          "number": 25,
+          "question": "Named after a commander of the ZANLA guerrilla army in South Africa, Tongo Eisen-Martin is an activist and poet of African American descent. Eisen-Martin first published an award-winning book of poems in 2017. ________ he published a book in 2020 that was named a Best Poetry Book of 2021 by The New York Times.\n\nWhich choice completes the text with the most logical transition?",
+          "choices": [
+            "A) Then,",
+            "B) Despite this,",
+            "C) Hence,",
+            "D) In comparison,"
+          ],
+          "explanation": "Choice A is the best answer because the passage describes a chronological sequence of events in Eisen-Martin's career: he published a book in 2017, and afterward, he published another book in 2020. \"Then,\" correctly signals this straightforward temporal progression from one event to the next.\n\nChoice B is incorrect because \"Despite this,\" signals a contrast or contradiction, but there is no contradiction between publishing a book in 2017 and later publishing another acclaimed book in 2020; the second event does not conflict with the first.\nChoice C is incorrect because \"Hence,\" signals a causal or logical conclusion, but the 2020 publication is not presented as a result or consequence caused by the 2017 publication; it is simply a later event in his timeline.\nChoice D is incorrect because \"In comparison,\" signals that the following sentence will draw a comparison between two things, but the sentence about the 2020 book does not compare it to the 2017 book; it simply reports the next event.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q26",
+          "type": "multiple-choice",
+          "number": 26,
+          "question": "In 1799, naturalist and explorer Alexander von Humboldt noticed that a star in the night sky seemed to be moving. ________ the star wasn’t actually moving. Humboldt was experiencing the autokinetic effect, a visual phenomenon that occurs when a small, stationary point of light in a dark environment, such as a star in the night sky, appears to move.\n\nWhich choice completes the text with the most logical transition?",
+          "choices": [
+            "A) For example,",
+            "B) Likewise,",
+            "C) On the other hand,",
+            "D) However,"
+          ],
+          "explanation": "Choice D is the best answer because the first sentence states that the star \"seemed to be moving,\" while the second sentence reveals the actual truth: \"the star wasn't actually moving.\" This is a direct contrast between appearance and reality, which \"However,\" correctly signals.\n\nChoice A is incorrect because \"For example,\" would signal that the second sentence illustrates or exemplifies the first sentence's claim, but the second sentence actually contradicts the first sentence's claim rather than providing an example of it.\nChoice B is incorrect because \"Likewise,\" signals similarity or agreement between ideas, but the two sentences present contradictory ideas (the star appearing to move versus not actually moving), not similar ones.\nChoice C is incorrect because although \"On the other hand,\" also signals contrast, it is typically used to introduce an alternative viewpoint or option being weighed against another, which is less precise here than \"However,\" for correcting/contradicting a stated perception with the actual fact; more importantly, the intended contrast is a direct correction of a misconception, which \"However\" captures as the standard and most logical choice for this kind of clarification.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q27",
+          "type": "multiple-choice",
+          "number": 27,
+          "question": "Nellie Bly was an American investigative journalist well-known for an exposé she wrote after spending 10 days undercover in a mental institution. ________ she set a record for traveling around the world in 72 days, a journey based on the work of Jules Verne.\n\nWhich choice completes the text with the most logical transition?",
+          "choices": [
+            "A) As a result,",
+            "B) Likewise,",
+            "C) Thus,",
+            "D) Additionally,"
+          ],
+          "explanation": "Choice D is the best answer because the passage lists two separate, unrelated achievements of Nellie Bly: her exposé from going undercover in a mental institution, and her separate feat of traveling around the world in 72 days. \"Additionally,\" correctly signals that the second sentence adds another distinct accomplishment rather than deriving from the first.\n\nChoice A is incorrect because \"As a result,\" signals a causal relationship, implying the round-the-world trip happened because of the exposé, but the text gives no indication that one event caused the other; they are simply two separate accomplishments.\nChoice B is incorrect because \"Likewise,\" signals similarity between two things being compared, but writing an exposé and traveling around the world are not being compared as similar actions; they are simply two different achievements in Bly's career.\nChoice C is incorrect because \"Thus,\" like \"As a result,\" signals a cause-and-effect or concluding relationship, but there is no logical or causal connection established between the exposé and the round-the-world journey.",
+          "correctAnswer": "D"
+        }
+      ]
+    },
+    {
+      "id": "mod3",
+      "name": "Math Module 1",
+      "timeLimit": 2580,
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "number": 1,
+          "question": "<div style='text-align: center;'><img src='images/test13/math1_q1_fig.png' alt='transversal s crossing parallel lines p and q'/></div>\n\nIn the figure, line $ s $ intersects parallel lines $ p $ and $ q $. What is the value of $ a $?",
+          "choices": [
+            "A) 35",
+            "B) 55",
+            "C) 125",
+            "D) 145"
+          ],
+          "correctAnswer": "B",
+          "explanation": "Choice B is correct. When a transversal intersects two parallel lines, angles in the same relative position at each intersection point (corresponding angles) are congruent. In the figure, the angle labeled $ a° $ and the angle labeled $ 55° $ occupy corresponding positions at the two intersection points formed by transversal $ s $ with parallel lines $ p $ and $ q $. Therefore $ a = 55 $.\n\nChoice A is incorrect because 35 is not related to 55 by any valid angle relationship for parallel lines cut by a transversal (35 + 55 = 90, not 180, so this isn't even a supplementary pairing). Choice C is incorrect; 125 is the measure of the angle supplementary to 55° (180 − 55 = 125), which would be the value of a if $ a° $ and $ 55° $ were same-side interior (co-interior) angles rather than corresponding angles. Choice D is incorrect; 145 does not correspond to any standard angle pair formed by this transversal and the given 55° angle."
+        },
+        {
+          "id": "q2",
+          "type": "grid-in",
+          "number": 2,
+          "question": "The wait time for each passenger in a group of passengers waiting to board a train is given in the list of numbers shown.\n$$ 9, 12, 8, 3, 9, 13, 11, 15 $$\nWhat was the mean wait time, in minutes, for the group of passengers?",
+          "choices": [],
+          "correctAnswer": "10",
+          "explanation": "The correct answer is 10. The mean of a list of numbers is the sum of the values divided by the number of values. Adding the eight wait times: $ 9+12+8+3+9+13+11+15 = 80 $. There are 8 values in the list, so the mean is $ 80 \\div 8 = 10 $ minutes."
+        },
+        {
+          "id": "q3",
+          "type": "multiple-choice",
+          "number": 3,
+          "question": "Which equation has the same solution as the equation $ 2x - 5 = -15 $?",
+          "choices": [
+            "A) 2x = -20",
+            "B) 2x = -10",
+            "C) 2x = 3",
+            "D) 2x = 75"
+          ],
+          "correctAnswer": "B",
+          "explanation": "Choice B is correct. Starting with $ 2x - 5 = -15 $, add 5 to both sides to isolate the term with $ x $: $ 2x = -15 + 5 = -10 $. This directly matches choice B, so the two equations have the same solution ($ x = -5 $).\n\nChoice A is incorrect; it results from subtracting 5 from −15 instead of adding it ($ -15 - 5 = -20 $). Choice C is incorrect; it does not correspond to any natural manipulation of the original equation and produces a different solution ($ x = 1.5 $). Choice D is incorrect; it results from a sign error such as computing $ -15 + (-5)\\cdot(-... )$-type mistakes and gives a different value of $ x $ (37.5), not the same solution as the original equation."
+        },
+        {
+          "id": "q4",
+          "type": "multiple-choice",
+          "number": 4,
+          "question": "A rectangular prism has side lengths of 52 centimeters, 52 centimeters, and 45 centimeters. What is the volume, in cubic centimeters, of the rectangular prism?",
+          "choices": [
+            "A) 149",
+            "B) 14,768",
+            "C) 22,210",
+            "D) 121,680"
+          ],
+          "correctAnswer": "D",
+          "explanation": "Choice D is correct. The volume of a rectangular prism is the product of its three side lengths: $ V = \\ell \\cdot w \\cdot h $. Here, $ V = 52 \\times 52 \\times 45 $. First, $ 52 \\times 52 = 2{,}704 $. Then, $ 2{,}704 \\times 45 = 121{,}680 $. So the volume is 121,680 cubic centimeters.\n\nChoice A is incorrect; 149 is close to the sum of the three side lengths ($ 52+52+45=149 $), not their product. Choice B is incorrect; it results from a multiplication error (such as using only two of the dimensions incorrectly or miscalculating a partial product). Choice C is incorrect; it also results from an arithmetic error in multiplying the three dimensions, giving a value too small to be the correct volume."
+        },
+        {
+          "id": "q5",
+          "type": "grid-in",
+          "number": 5,
+          "question": "What is the value of $ n $ if 60% of $ n $ is 27?",
+          "choices": [],
+          "correctAnswer": "45",
+          "explanation": "The correct answer is 45. \"60% of $ n $ is 27\" translates to the equation $ 0.60n = 27 $. Dividing both sides by 0.60 gives $ n = 27 \\div 0.60 = 45 $."
+        },
+        {
+          "id": "q6",
+          "type": "multiple-choice",
+          "number": 6,
+          "question": "The equation $ 0.75s + 2.25l = 33 $ models the relationship between the number of short tours, $ s $, and the number of long tours, $ l $, that the members of a museum staff lead on a single day. If the members of the museum staff lead 5 short tours on a single day, what is the maximum number of long tours they can lead on that day?",
+          "choices": [
+            "A) 2.25",
+            "B) 13",
+            "C) 29",
+            "D) 33"
+          ],
+          "correctAnswer": "B",
+          "explanation": "Choice B is correct. Substitute $ s = 5 $ into the equation: $ 0.75(5) + 2.25l = 33 $, which gives $ 3.75 + 2.25l = 33 $. Subtracting 3.75 from both sides gives $ 2.25l = 29.25 $. Dividing both sides by 2.25 gives $ l = 13 $.\n\nChoice A is incorrect; 2.25 is the coefficient of $ l $ in the equation, not the solution for $ l $. Choice C is incorrect; it results from forgetting to subtract the value of $ 0.75s $ before dividing (i.e., incorrectly computing $ 33 \\div 2.25 \\approx 14.67$, or a similar arithmetic slip near 29). Choice D is incorrect; it is simply the constant from the right-hand side of the equation, not the value of $ l $ after accounting for the 5 short tours."
+        },
+        {
+          "id": "q7",
+          "type": "multiple-choice",
+          "number": 7,
+          "question": "What is the negative solution to the equation $ 5x^{2} - 12 = -4x $?",
+          "choices": [
+            "A) -4",
+            "B) $ -\\dfrac{12}{5} $",
+            "C) -2",
+            "D) $ -\\dfrac{6}{5} $"
+          ],
+          "correctAnswer": "C",
+          "explanation": "Choice C is correct. Rewrite the equation in standard form by adding $ 4x $ to both sides: $ 5x^{2} + 4x - 12 = 0 $. Using the quadratic formula with $ a=5, b=4, c=-12 $: $$ x = \\frac{-4 \\pm \\sqrt{4^{2} - 4(5)(-12)}}{2(5)} = \\frac{-4 \\pm \\sqrt{16+240}}{10} = \\frac{-4 \\pm \\sqrt{256}}{10} = \\frac{-4 \\pm 16}{10} $$ This gives $ x = \\frac{12}{10} = \\frac{6}{5} $ or $ x = \\frac{-20}{10} = -2 $. The negative solution is $ x = -2 $.\n\nChoice A is incorrect; −4 is not a root of the equation (substituting gives $5(16)-12=68 \\ne -4(-4)=16$). Choice B is incorrect; $-\\frac{12}{5}$ results from mishandling the constant term $-12$ in the quadratic formula rather than correctly simplifying $\\sqrt{256}=16$. Choice D is incorrect; $-\\frac{6}{5}$ is the negative of the positive solution $\\frac{6}{5}$, resulting from a sign error when applying the quadratic formula."
+        },
+        {
+          "id": "q8",
+          "type": "multiple-choice",
+          "number": 8,
+          "question": "<div style='text-align: center;'><img src='images/test13/math1_q8_fig.png' alt='dot plots for Branch F and Branch G'/></div>\n\nThe dot plots summarize the number of new employees hired at two branches of a company, branch F and branch G, each year for the past 15 years. Which of the following statements correctly compares the standard deviations of the numbers of new employees hired by the two branches?",
+          "choices": [
+            "A) The standard deviation of the number of new employees hired at branch F is equal to the standard deviation of the number of new employees hired at branch G.",
+            "B) The standard deviation of the number of new employees hired at branch F is less than the standard deviation of the number of new employees hired at branch G.",
+            "C) The standard deviation of the number of new employees hired at branch F is greater than the standard deviation of the number of new employees hired at branch G.",
+            "D) There is not enough information to compare the standard deviations of the numbers of employees hired at the two branches."
+          ],
+          "correctAnswer": "A",
+          "explanation": "Choice A is correct. Standard deviation measures how spread out a data set is relative to its own mean; it depends only on the shape/pattern of the distribution (how far values are from the mean), not on the actual location (center) of the values on the number line. Both dot plots span the same range of 8 units (branch F runs from 30 to 38, and branch G runs from 10 to 18), and the pattern of dot frequencies above each relative position is the same in both plots — branch G's distribution is essentially branch F's distribution shifted to lower values. Because shifting every data value by the same amount (here, subtracting 20 from every value of F to get the corresponding value of G) does not change how spread out the values are from their mean, the two data sets have the same standard deviation.\n\nChoice B is incorrect because it assumes branch G's data is less spread out than branch F's, but the two distributions actually have identical shapes (just centered at different values), so neither has a smaller standard deviation than the other. Choice C is incorrect for the same reason — it assumes branch F is more spread out, but shifting a data set's location does not change its spread. Choice D is incorrect because the dot plots provide the exact data needed to compare the spread of each distribution directly, which is sufficient to determine that the standard deviations are equal."
+        },
+        {
+          "id": "q9",
+          "type": "multiple-choice",
+          "number": 9,
+          "question": "The value of a laptop computer, purchased for $429, will decrease for the first three years at an annual rate of 25% of the previous year's value. If $ y \\leq 3 $, which of the following equations models the value, $ v $, in dollars, of the laptop $ y $ years after it is purchased?",
+          "choices": [
+            "A) $ v = 0.75(429)^{y} $",
+            "B) $ v = 1.25(429)^{y} $",
+            "C) $ v = 429(0.75)^{y} $",
+            "D) $ v = 429(1.25)^{y} $"
+          ],
+          "correctAnswer": "C",
+          "explanation": "Choice C is correct. A quantity that decreases by 25% each year retains 100% − 25% = 75%, or 0.75, of its value from the previous year. This is exponential decay, modeled by $ v = (\\text{initial value})(\\text{decay factor})^{y} $, where the initial value is $429 and the decay factor is 0.75. This gives $ v = 429(0.75)^{y} $.\n\nChoice A is incorrect because it places the decay factor as the base being raised to a power and the initial value as a coefficient, reversing the roles of the two constants — this would model a completely different scenario. Choice B is incorrect for the same structural reason as A, and it additionally uses 1.25, which represents a 25% increase rather than a 25% decrease. Choice D is incorrect because it correctly places 429 as the coefficient but uses growth factor 1.25 (a 25% increase) instead of the decay factor 0.75 (a 25% decrease)."
+        },
+        {
+          "id": "q10",
+          "type": "grid-in",
+          "number": 10,
+          "question": "$$ f(x) = 8c^{x} $$\nThe given equation defines exponential function $ f $, where $ c $ is a positive constant. If $ f(2) = 1{,}152 $, what is the value of $ f(3) $?",
+          "choices": [],
+          "correctAnswer": "13824",
+          "explanation": "The correct answer is 13,824. Substituting $ x = 2 $ into the function gives $ f(2) = 8c^{2} = 1{,}152 $. Dividing both sides by 8 gives $ c^{2} = 144 $, so $ c = 12 $ (taking the positive root, since $ c $ is given to be a positive constant). Now find $ f(3) $ using $ c = 12 $: $$ f(3) = 8c^{3} = 8(12)^{3} = 8(1{,}728) = 13{,}824 $$"
+        },
+        {
+          "id": "q11",
+          "type": "multiple-choice",
+          "number": 11,
+          "question": "$$ y = 4x + 36 $$\n$$ y = -(x+9)(x+5) $$\nWhat is the solution $ (x, y) $ to the given system of equations?",
+          "choices": [
+            "A) (-9, 0)",
+            "B) (-5, -9)",
+            "C) (-9, -5)",
+            "D) (0, -9)"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Choice A is correct. Since both expressions equal $ y $, set them equal to each other: $$ 4x + 36 = -(x+9)(x+5) $$ Expanding the right side: $ -(x+9)(x+5) = -(x^{2} + 14x + 45) = -x^{2} - 14x - 45 $. So: $$ 4x + 36 = -x^{2} - 14x - 45 $$ Adding $ x^{2} + 14x + 45 $ to both sides: $$ x^{2} + 18x + 81 = 0 $$ This factors as $ (x+9)^{2} = 0 $, so $ x = -9 $ is the only solution. Substituting into $ y = 4x + 36 $: $ y = 4(-9) + 36 = -36 + 36 = 0 $. The solution is $ (-9, 0) $.\n\nChoice B is incorrect; $-5$ and $-9$ are the two roots of the factored quadratic expression $(x+9)(x+5)$ taken separately, not the correct $(x,y)$ pair for this system. Choice C is incorrect for a similar reason — it mixes up the constants from the factors $(x+9)(x+5)$ rather than solving the system. Choice D is incorrect; it swaps the correct $x$- and $y$-values found above."
+        },
+        {
+          "id": "q12",
+          "type": "multiple-choice",
+          "number": 12,
+          "question": "<div style='text-align: center;'><img src='images/test13/math1_q12_fig.png' alt='cubic graph touching x-axis at -1 and crossing at 3'/></div>\n\nFor the cubic polynomial function $ g $, the graph of $ y = g(x) $ is shown in the xy-plane. How many distinct values of $ x $ satisfy the equation $ g(x) = 0 $?",
+          "choices": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4"
+          ],
+          "correctAnswer": "B",
+          "explanation": "Choice B is correct. The solutions to $ g(x) = 0 $ are the $ x $-intercepts of the graph of $ y = g(x) $ — the values of $ x $ where the curve touches or crosses the $ x $-axis. Reading the graph, the curve touches the $ x $-axis at $ x = -1 $ (turning back without crossing, indicating a repeated root there) and crosses the $ x $-axis at one other, separate point, $ x = 3 $. Although the polynomial has three roots when counted with multiplicity (two of them equal, from the repeated root at $ x=-1 $), there are only 2 distinct $ x $-values where $ g(x) = 0 $.\n\nChoice A is incorrect because the graph touches or crosses the x-axis at two different x-values, not just one. Choice C is incorrect; it would be the count of total roots including multiplicity, but the question asks for the number of distinct $x$-values, and two of the three roots coincide at the same $x$-value. Choice D is incorrect; a cubic function can have at most 3 real roots (counting multiplicity), so 4 distinct real solutions is not possible."
+        },
+        {
+          "id": "q13",
+          "type": "grid-in",
+          "number": 13,
+          "question": "The population of a town can be represented by the function $ p(y) = 29{,}400(3)^{\\frac{y}{60}} $, where $ y $ is the number of years after 2020. Based on the function, how many years will it take for the population of the town to triple?",
+          "choices": [],
+          "correctAnswer": "60",
+          "explanation": "The correct answer is 60. The population triples when $ p(y) = 3 \\times 29{,}400 $. Setting up the equation: $$ 29{,}400(3)^{\\frac{y}{60}} = 3 \\times 29{,}400 $$ Dividing both sides by 29,400: $$ 3^{\\frac{y}{60}} = 3^{1} $$ Since the bases are equal, the exponents must be equal: $ \\frac{y}{60} = 1 $, so $ y = 60 $. It will take 60 years for the population to triple."
+        },
+        {
+          "id": "q14",
+          "type": "multiple-choice",
+          "number": 14,
+          "question": "$$ \\dfrac{w}{n} = 5t - 3 $$\nThe given equation relates the positive numbers $ w $, $ n $, and $ t $. Which equation correctly expresses $ n $ in terms of $ w $ and $ t $?",
+          "choices": [
+            "A) $ n = w - (5t-3) $",
+            "B) $ n = \\dfrac{5t-3}{w} $",
+            "C) $ n = w(5t-3) $",
+            "D) $ n = \\dfrac{w}{5t-3} $"
+          ],
+          "correctAnswer": "D",
+          "explanation": "Choice D is correct. Starting with $ \\dfrac{w}{n} = 5t - 3 $, multiply both sides by $ n $: $ w = n(5t-3) $. Then divide both sides by $ (5t-3) $ to isolate $ n $: $$ n = \\frac{w}{5t-3} $$\n\nChoice A is incorrect; it results from incorrectly treating the equation as if it were $ w - n = 5t-3 $ rather than $ \\dfrac{w}{n} = 5t-3 $. Choice B is incorrect; it inverts the correct expression, mistakenly placing $ w $ in the denominator instead of the numerator. Choice C is incorrect; it results from multiplying by $ (5t-3) $ instead of dividing by it when isolating $ n $."
+        },
+        {
+          "id": "q15",
+          "type": "multiple-choice",
+          "number": 15,
+          "question": "In similar triangles $ QRS $ and $ TUV $, angles $ Q $ and $ T $ each measure $ 90° $ and angle $ R $ corresponds to angle $ U $. The value of $ \\cos(U) $ is $ \\dfrac{93}{485} $. What is the value of $ \\cos(R) $?",
+          "choices": [
+            "A) $ \\dfrac{93}{485} $",
+            "B) $ \\dfrac{476}{485} $",
+            "C) $ \\dfrac{485}{476} $",
+            "D) $ \\dfrac{485}{93} $"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Choice A is correct. When two triangles are similar, their corresponding angles are congruent (equal in measure) — this is part of the definition of similarity, independent of the triangles' actual side lengths. Since angle $ R $ is stated to correspond to angle $ U $, angle $ R $ and angle $ U $ have the exact same measure. Therefore $ \\cos(R) = \\cos(U) = \\dfrac{93}{485} $.\n\nChoice B is incorrect; $ \\dfrac{476}{485} $ is the value of $ \\sin(U) $ (found from the Pythagorean triple $93$-$476$-$485$, since $ 93^{2} + 476^{2} = 485^{2} $), which a student might mistakenly compute for $\\cos(R)$ by wrongly assuming $ R $ and $ U $ are complementary angles rather than congruent corresponding angles. Choice C is incorrect; it is the reciprocal of choice B. Choice D is incorrect; it is the reciprocal of the correct answer, which would represent $ \\dfrac{1}{\\cos(U)} $, not $ \\cos(R) $."
+        },
+        {
+          "id": "q16",
+          "type": "grid-in",
+          "number": 16,
+          "question": "A circle has center point $ P $. The measure of central angle $ LPM $ in the circle is $ 65° $, and the measure of associated minor arc $ LM $ is $ a° $. What is the value of $ a $?",
+          "choices": [],
+          "correctAnswer": "65",
+          "explanation": "The correct answer is 65. The measure of an arc is defined to be equal to the measure of its associated central angle. Since central angle $ LPM $ measures $ 65° $, the associated minor arc $ LM $ also measures $ 65° $. Therefore, $ a = 65 $."
+        },
+        {
+          "id": "q17",
+          "type": "multiple-choice",
+          "number": 17,
+          "question": "<div style='text-align: center;'><img src='images/test13/math1_q17_fig.png' alt='quartic graph crossing at -1 and 4, touching at 1'/></div>\n\nWhich equation could represent the graph shown in the xy-plane?",
+          "choices": [
+            "A) $ y = \\dfrac{1}{4}(x-1)(x+1)(x+4) $",
+            "B) $ y = \\dfrac{1}{4}(x+1)^{2}(x-1)(x-4) $",
+            "C) $ y = \\dfrac{1}{4}(x-1)(x-1)(x+4) $",
+            "D) $ y = \\dfrac{1}{4}(x+1)(x-1)^{2}(x-4) $"
+          ],
+          "correctAnswer": "D",
+          "explanation": "Choice D is correct. The graph crosses the x-axis (a sign change) at $ x = -1 $ and at $ x = 4 $, and touches but does not cross the x-axis (no sign change, indicating a repeated/even-multiplicity root) at $ x = 1 $. The function $ y = \\dfrac{1}{4}(x+1)(x-1)^{2}(x-4) $ has a single (odd-multiplicity) root at $ x = -1 $, a repeated (even-multiplicity, squared) root at $ x = 1 $ where the graph bounces off the axis, and a single root at $x=4$. This is a degree-4 polynomial with a positive leading coefficient ($\\frac{1}{4}$), so both ends of the graph rise toward positive infinity, matching the shape shown.\n\nChoice A is incorrect; it is only a degree-3 polynomial (all single roots), so it would cross straight through the x-axis at every root and one end of the graph would fall rather than both ends rising. Choice B is incorrect; it places the squared (bounce) factor at $ x=-1 $ instead of $ x=1$, and would have a root at $x=-4$ rather than $x=4$, not matching the graph's intercepts. Choice C is incorrect; it is only degree 3 and places both linear factors at $x=1$, giving a bounce at $x=1$ and a single root at $x=-4$, with only one end of the graph rising, which contradicts the graph's shape."
+        },
+        {
+          "id": "q18",
+          "type": "grid-in",
+          "number": 18,
+          "question": "Line $ m $ is perpendicular to line $ k $, and the equation of line $ k $ in the xy-plane is $ 3y - 9x = 12 $. What is the slope of line $ m $?",
+          "choices": [],
+          "correctAnswer": "either -1/3 or -0.3333",
+          "explanation": "The correct answer is $ -\\dfrac{1}{3} $ (equivalent to -0.333 or -.334). First, find the slope of line $ k $ by rewriting its equation in slope-intercept form. Starting with $ 3y - 9x = 12 $, add $ 9x $ to both sides: $ 3y = 9x + 12 $. Divide both sides by 3: $ y = 3x + 4 $. So line $ k $ has a slope of 3. Since line $ m $ is perpendicular to line $ k $, its slope is the negative reciprocal of 3, which is $ -\\dfrac{1}{3} $. Note that $-1/3$, $-.333$, and $-0.334$ are examples of ways to enter a correct answer."
+        },
+        {
+          "id": "q19",
+          "type": "multiple-choice",
+          "number": 19,
+          "question": "The function $ g $ is defined by $ g(x) = -3x^{2} + 36x - 104 $. The function $ f $ is defined by $ f(x) = g(x-2) $. At which value of $ x $ does $ f(x) $ reach its maximum value?",
+          "choices": [
+            "A) 2",
+            "B) 4",
+            "C) 6",
+            "D) 8"
+          ],
+          "correctAnswer": "D",
+          "explanation": "Choice D is correct. Since $ g(x) $ is a downward-opening parabola (negative leading coefficient), it attains its maximum value at its vertex. The $ x $-coordinate of the vertex of $ g(x) = -3x^{2}+36x-104 $ is $ x = -\\dfrac{b}{2a} = -\\dfrac{36}{2(-3)} = 6 $. So $ g(x) $ reaches its maximum at $ x = 6 $. The function $ f(x) = g(x-2) $ is the graph of $ g $ shifted 2 units to the right. Therefore $ f(x) $ reaches its maximum where $ x - 2 = 6 $, that is, $ x = 8 $.\n\nChoice A is incorrect; it results from shifting the vertex of $g$ left by 2 (subtracting instead of adding) rather than shifting the graph of $g(x-2)$ right by 2. Choice B is incorrect; it does not correctly account for the horizontal shift at all in a way consistent with the transformation. Choice C is incorrect; 6 is the $x$-value where $ g(x) $ (not $f(x)$) reaches its maximum — it fails to apply the horizontal shift caused by replacing $x$ with $x-2$."
+        },
+        {
+          "id": "q20",
+          "type": "multiple-choice",
+          "number": 20,
+          "question": "<table border=\"1\"><tr><th colspan=\"2\">Survey Results</th></tr><tr><td>Art museum</td><td>441</td></tr><tr><td>Planetarium</td><td>189</td></tr></table>\n\nA total of 630 students at a high school were surveyed at random to see if they preferred going to the art museum or the planetarium for a field trip. The table shows the results of the survey. Based on this sample, if the school has a total of 2,520 students, how many more students can be expected to prefer going to the art museum than going to the planetarium?",
+          "choices": [
+            "A) 252",
+            "B) 756",
+            "C) 1,008",
+            "D) 1,764"
+          ],
+          "correctAnswer": "C",
+          "explanation": "Choice C is correct. The sample of 630 students is scaled up to the full school of 2,520 students by the scale factor $ \\dfrac{2{,}520}{630} = 4 $. Applying this scale factor to the survey results: expected number preferring the art museum $ = 441 \\times 4 = 1{,}764 $, and expected number preferring the planetarium $ = 189 \\times 4 = 756 $. The difference is $ 1{,}764 - 756 = 1{,}008 $.\n\nChoice A is incorrect; 252 is the difference in the original sample ($441-189=252$), not scaled up to the full school population as the question requires. Choice B is incorrect; 756 is the scaled-up expected number of students preferring the planetarium, not the difference between the two groups. Choice D is incorrect; 1,764 is the scaled-up expected number of students preferring the art museum, not the difference between the two groups."
+        },
+        {
+          "id": "q21",
+          "type": "multiple-choice",
+          "number": 21,
+          "question": "The function $ g $ is defined as $ g(x) $ equals $ x\\% $ of $ -53 $, when $ x > 0 $. Which of the following describes this function?",
+          "choices": [
+            "A) Decreasing exponential",
+            "B) Decreasing linear",
+            "C) Increasing exponential",
+            "D) Increasing linear"
+          ],
+          "correctAnswer": "B",
+          "explanation": "Choice B is correct. \"$ x\\% $ of $ -53 $\" translates to the equation $ g(x) = \\dfrac{x}{100} \\times (-53) = -0.53x $. This is a linear function of $ x $ (of the form $ g(x) = mx $) with slope $ m = -0.53 $. Since the slope is negative, the function is decreasing as $ x $ increases. Therefore, $ g $ is a decreasing linear function.\n\nChoice A is incorrect; the function has no variable exponent, so it is linear, not exponential. Choice C is incorrect for the same reason (it is not exponential), and additionally the function is decreasing, not increasing. Choice D is incorrect; although the function is linear, its slope is negative, so it is decreasing, not increasing, as $ x $ increases."
+        },
+        {
+          "id": "q22",
+          "type": "multiple-choice",
+          "number": 22,
+          "question": "$$ y = 7x - k $$\n$$ y = 3x^{2} + 37x + 84 $$\nWhen graphed in the xy-plane, the given system of equations has exactly one real solution at $ (x, y) $. If $ k $ is a constant, what is the value of $ x $?",
+          "choices": [
+            "A) -9",
+            "B) -5",
+            "C) 5",
+            "D) 9"
+          ],
+          "correctAnswer": "B",
+          "explanation": "Choice B is correct. Setting the two expressions for $ y $ equal to each other: $$ 7x - k = 3x^{2} + 37x + 84 $$ Rearranging into standard quadratic form: $$ 0 = 3x^{2} + 37x - 7x + 84 + k = 3x^{2} + 30x + (84+k) $$ For the system to have exactly one real solution, this quadratic must have exactly one solution, which occurs when its discriminant equals 0: $$ b^{2} - 4ac = 0 \\implies 30^{2} - 4(3)(84+k) = 0 $$ $$ 900 - 12(84+k) = 0 \\implies 900 - 1{,}008 - 12k = 0 \\implies -108 = 12k \\implies k = -9 $$ When the discriminant is 0, the single solution to the quadratic $ 3x^{2}+30x+(84+k)=0 $ is $ x = -\\dfrac{b}{2a} = -\\dfrac{30}{2(3)} = -5 $.\n\nChoice A is incorrect; $-9$ is the value of the constant $k$, not the value of $x$ at the solution point. Choice C is incorrect; it is the positive of the correct value and does not satisfy the condition of a single intersection point. Choice D is incorrect; it does not correspond to any meaningful value in this system and does not yield a repeated root."
+        }
+      ]
+    },
+    {
+      "id": "mod4",
+      "name": "Math Module 2",
+      "timeLimit": 2580,
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple-choice",
+          "choices": [
+            "A) (–4, –4)",
+            "B) (–4, 0)",
+            "C) (0, –4)",
+            "D) (0, 0)"
+          ],
+          "number": 1,
+          "question": "<div style='text-align: center;'><img src='images/test13/math2e_q1_fig.png' alt='curve crossing y-axis at (0,-4)'/></div>\n\nFor the graph shown, what is the $ y $-intercept?",
+          "explanation": "The correct answer is C. The $ y $-intercept of a graph is the point where the graph crosses the $ y $-axis, which occurs where $ x = 0 $. Reading the graph, the curve crosses the $ y $-axis at $ y = -4 $, so the $ y $-intercept is the point $ (0, -4) $.\n\nChoice A is incorrect because the point $ (-4, -4) $ does not have an $ x $-coordinate of 0, so it cannot be the $ y $-intercept. Choice B is incorrect because $ (-4, 0) $ is actually where a graph would cross the $ x $-axis (an $ x $-intercept), not the $ y $-axis; this choice results from confusing which axis is being asked about. Choice D is incorrect because it assumes the graph passes through the origin, which is not what the graph shows.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q2",
+          "type": "multiple-choice",
+          "choices": [
+            "A) 27",
+            "B) 494",
+            "C) 532",
+            "D) 9,747"
+          ],
+          "number": 2,
+          "question": "What is the solution to the equation $ w - 19 = 513 $?",
+          "explanation": "The correct answer is C. To solve $ w - 19 = 513 $ for $ w $, add 19 to both sides of the equation: $ w - 19 + 19 = 513 + 19 $, which gives $ w = 532 $.\n\nChoice A is incorrect and may result from dividing 513 by 19 rather than solving the equation correctly. Choice B is incorrect and results from subtracting 19 from 513 instead of adding it. Choice D is incorrect and results from multiplying 513 by 19 instead of adding.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q3",
+          "type": "multiple-choice",
+          "choices": [
+            "A) February",
+            "B) March",
+            "C) August",
+            "D) December"
+          ],
+          "number": 3,
+          "question": "<div style='text-align: center;'><img src='images/test13/math2e_q3_fig.png' alt='line graph of visitors by month'/></div>\n\nAn island's tourism office records the number of visitors each month. The line graph shows the number of visitors, in thousands, each month for the past year. Which month of the year had the least number of visitors?",
+          "explanation": "The correct answer is A. The question asks for the month with the least (lowest) number of visitors on the line graph. Scanning the graph from left to right, the lowest point occurs in February, at approximately 7 thousand visitors, which is lower than the value for every other month shown.\n\nChoice B is incorrect because March shows one of the higher values on the graph (about 15 thousand), not the lowest. Choice C is incorrect because August shows the highest value on the graph (about 16 thousand). Choice D is incorrect because, although December is a relatively low point (about 9 thousand), it is still higher than the value shown for February.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q4",
+          "type": "grid-in",
+          "choices": [],
+          "number": 4,
+          "question": "$$ n = 7m - 2 $$\nIn the given equation, what is the value of $ n $ when the value of $ m $ is 6?",
+          "explanation": "Substitute $ m = 6 $ into the equation $ n = 7m - 2 $: $ n = 7(6) - 2 = 42 - 2 = 40 $. The correct answer is 40.",
+          "correctAnswer": "40"
+        },
+        {
+          "id": "q5",
+          "type": "multiple-choice",
+          "choices": [
+            "A) 0.028",
+            "B) 0.28",
+            "C) 2,800",
+            "D) 28,000"
+          ],
+          "number": 5,
+          "question": "What is an equivalent distance, in meters, to a distance of 28 kilometers? (1 kilometer = 1,000 meters)",
+          "explanation": "The correct answer is D. Since 1 kilometer equals 1,000 meters, multiply 28 kilometers by 1,000 meters per kilometer: $ 28 \\times 1{,}000 = 28{,}000 $ meters.\n\nChoice A is incorrect and results from dividing 28 by 1,000 instead of multiplying. Choice B is incorrect and also results from dividing (in this case by 100) rather than multiplying by 1,000. Choice C is incorrect and results from multiplying 28 by 100 instead of by 1,000, effectively misplacing a decimal point.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q6",
+          "type": "grid-in",
+          "choices": [],
+          "number": 6,
+          "question": "If the measure of angle $ W $ is $ \\dfrac{9\\pi}{20} $ radians, what is the measure of angle $ W $ in degrees?",
+          "explanation": "To convert from radians to degrees, multiply by $ \\dfrac{180^{\\circ}}{\\pi} $: $$ \\frac{9\\pi}{20} \\times \\frac{180^{\\circ}}{\\pi} = \\frac{9 \\times 180^{\\circ}}{20} = \\frac{1620^{\\circ}}{20} = 81^{\\circ} $$ The correct answer is 81.",
+          "correctAnswer": "81"
+        },
+        {
+          "id": "q7",
+          "type": "grid-in",
+          "choices": [],
+          "number": 7,
+          "question": "If $ |y + 3| = 15 $, what is one possible value of $ y $?",
+          "explanation": "The absolute value equation $ |y + 3| = 15 $ means the quantity $ y + 3 $ is 15 units from 0 on the number line, so $ y + 3 = 15 $ or $ y + 3 = -15 $. Solving the first equation: $ y = 15 - 3 = 12 $. Solving the second equation: $ y = -15 - 3 = -18 $. Either value is a correct answer to this question. Note that 12 and -18 are both correct answers to this question.",
+          "correctAnswer": "either 12 or -18"
+        },
+        {
+          "id": "q8",
+          "type": "multiple-choice",
+          "choices": [
+            "A) w(t) = t – 4.6",
+            "B) w(t) = t + 4.6",
+            "C) w(t) = t/4.6",
+            "D) w(t) = 4.6t"
+          ],
+          "number": 8,
+          "question": "Giovanni makes homemade candles in tins with an average weight of 4.6 ounces of candle wax per tin. Given this average weight, which of the following functions can Giovanni use to estimate the number of ounces of candle wax, $ w $, that are in $ t $ tins?",
+          "explanation": "The correct answer is D. Since each tin contains an average of 4.6 ounces of candle wax, the total number of ounces of wax in $ t $ tins is found by multiplying the number of tins by the average weight per tin: $ w(t) = 4.6t $.\n\nChoice A is incorrect because it subtracts 4.6 from $ t $ rather than multiplying, which does not represent a per-tin average weight. Choice B is incorrect for a similar reason: it adds 4.6 to $ t $ instead of multiplying. Choice C is incorrect because dividing $ t $ by 4.6 would give a much smaller value than the actual weight of wax, and does not represent scaling the weight by the number of tins.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q9",
+          "type": "grid-in",
+          "choices": [],
+          "number": 9,
+          "question": "A local organization rents a classroom for 5 hours at an hourly rate. The organization also pays a one-time booking fee of $5 in addition to the hourly rate. The total cost of renting the classroom is $65. What is the rate, in dollars, for renting the classroom for 1 hour?",
+          "explanation": "Let $ r $ be the hourly rate in dollars. The total cost is the hourly rate times 5 hours, plus the $5 booking fee: $$ 5r + 5 = 65 $$ Subtract 5 from both sides: $ 5r = 60 $. Divide both sides by 5: $ r = 12 $. The correct answer is 12.",
+          "correctAnswer": "12"
+        },
+        {
+          "id": "q10",
+          "type": "multiple-choice",
+          "choices": [
+            "A) 4a² – 6a – 3",
+            "B) 4a² – 5a – 3",
+            "C) 8a² – 6a + 5",
+            "D) 8a² – 5a – 3"
+          ],
+          "number": 10,
+          "question": "$$ (6a^{2} - 5a + 1) + (-2a^{2} - a - 4) $$\nWhich expression is equivalent to the given expression?",
+          "explanation": "The correct answer is A. Combine like terms: for the $ a^2 $ terms, $ 6a^2 + (-2a^2) = 4a^2 $; for the $ a $ terms, $ -5a + (-a) = -6a $; for the constants, $ 1 + (-4) = -3 $. Adding these together gives $ 4a^2 - 6a - 3 $.\n\nChoice B is incorrect because it results from an error combining the $ a $ terms (treating $ -5a - a $ as $ -5a $ instead of $ -6a $). Choice C is incorrect because it results from adding the $ a^2 $ coefficients incorrectly as if both were positive ($ 6 + 2 = 8 $) and making a sign error on the constant term. Choice D is incorrect for the same reason regarding the $ a^2 $ terms (getting $ 8a^2 $ instead of $ 4a^2 $) combined with the $ a $-term error from choice B.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q11",
+          "type": "multiple-choice",
+          "choices": [
+            "A) (2)(–6)z = –15",
+            "B) 2z = –15 – 6",
+            "C) 2z – 6 = –15",
+            "D) 6z – 2 = –15"
+          ],
+          "number": 11,
+          "question": "6 less than 2 times a number $ z $ equals –15. Which equation represents this situation?",
+          "explanation": "The correct answer is C. \"2 times a number $ z $\" translates to $ 2z $. \"6 less than\" that quantity means 6 is subtracted from $ 2z $, giving $ 2z - 6 $. Setting this equal to $ -15 $ gives $ 2z - 6 = -15 $.\n\nChoice A is incorrect because it multiplies $ z $ by both 2 and –6, which does not represent the phrase \"6 less than 2 times a number.\" Choice B is incorrect because it incorrectly moves the 6 to the other side of the equation with the wrong sign relationship, rather than subtracting 6 directly from $ 2z $. Choice D is incorrect because it swaps the roles of 6 and 2, multiplying $ z $ by 6 and subtracting 2, which reverses the given relationship.",
+          "correctAnswer": "C"
+        },
+        {
+          "id": "q12",
+          "type": "multiple-choice",
+          "choices": [
+            "A) b(10 – 7b)",
+            "B) 7b(10 – b)",
+            "C) 10b(7 – 7b)",
+            "D) b²(10 – 7b)"
+          ],
+          "number": 12,
+          "question": "$$ 70b - 7b^{2} $$\nWhich expression is equivalent to the given expression?",
+          "explanation": "The correct answer is B. Both terms in $ 70b - 7b^2 $ share a common factor of $ 7b $. Factoring out $ 7b $ gives $ 7b(10 - b) $, since $ 7b \\times 10 = 70b $ and $ 7b \\times b = 7b^2 $.\n\nChoice A is incorrect because factoring out only $ b $ from $ 70b $ should leave $ 70 $, not $ 10 $, inside the parentheses; expanding $ b(10-7b) $ gives $ 10b - 7b^2 $, which is not equivalent to the original expression. Choice C is incorrect because expanding $ 10b(7-7b) $ gives $ 70b - 70b^2 $, which does not match the original expression's second term. Choice D is incorrect because expanding $ b^2(10-7b) $ gives $ 10b^2 - 7b^3 $, a completely different, higher-degree expression.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q13",
+          "type": "multiple-choice",
+          "choices": [
+            "A) √(12² – 5²)",
+            "B) √(12 – 5)",
+            "C) 12 – 5",
+            "D) √(12/5)"
+          ],
+          "number": 13,
+          "question": "<div style='text-align: center;'><img src='images/test13/math2e_q13_fig.png' alt='right triangle with legs x, y and hypotenuse z'/></div>\n\nIf $ x = 5 $ and $ z = 12 $ in the right triangle shown, which expression is equivalent to $ y $?",
+          "explanation": "The correct answer is A. Since the right angle is between the sides labeled $ x $ and $ y $, these are the two legs of the right triangle, and $ z $ is the hypotenuse. By the Pythagorean theorem, $ x^2 + y^2 = z^2 $. Solving for $ y $: $$ y^2 = z^2 - x^2 \\implies y = \\sqrt{z^2 - x^2} $$ Substituting $ x = 5 $ and $ z = 12 $ gives $ y = \\sqrt{12^2 - 5^2} $.\n\nChoice B is incorrect because it takes the square root of the difference of $ x $ and $ z $ directly, rather than the difference of their squares. Choice C is incorrect because it simply subtracts $ x $ from $ z $ without applying the Pythagorean relationship at all. Choice D is incorrect because it incorrectly places $ x $ and $ z $ in a ratio under a square root rather than using the correct Pythagorean relationship.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q14",
+          "type": "multiple-choice",
+          "choices": [
+            "A) (–20, –8)",
+            "B) (–18, –6)",
+            "C) (–16, –4)",
+            "D) (–14, –2)"
+          ],
+          "number": 14,
+          "question": "$$ -12 = x - y $$\n$$ 3y = x $$\nWhich point $ (x, y) $ is the solution to the given system of equations in the $ xy $-plane?",
+          "explanation": "The correct answer is B. From the second equation, $ x = 3y $. Substitute this into the first equation: $$ -12 = 3y - y = 2y $$ Divide both sides by 2: $ y = -6 $. Then substitute back: $ x = 3y = 3(-6) = -18 $. So the solution is $ (-18, -6) $.\n\nChoice A is incorrect: substituting $ x = -20 $ and $ y = -8 $ into $ x - y $ gives $ -20 - (-8) = -12 $, which satisfies the first equation, but $ x = 3y $ gives $ 3(-8) = -24 \\neq -20 $, so it fails the second equation. Choice C is incorrect: $ x - y = -16 - (-4) = -12 $ satisfies the first equation, but $ 3(-4) = -12 \\neq -16 $, so it fails the second equation. Choice D is incorrect: $ x - y = -14 - (-2) = -12 $ satisfies the first equation, but $ 3(-2) = -6 \\neq -14 $, so it fails the second equation. Only choice B satisfies both equations simultaneously.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q15",
+          "type": "multiple-choice",
+          "choices": [
+            "A) g(x) = x + 33",
+            "B) g(x) = 2x + 15",
+            "C) g(x) = 21x + 15",
+            "D) g(x) = 33x + 27"
+          ],
+          "number": 15,
+          "question": "<table border=\"1\"><tr><th>x</th><th>g(x)</th></tr><tr><td>0</td><td>15</td></tr><tr><td>3</td><td>21</td></tr><tr><td>6</td><td>27</td></tr><tr><td>9</td><td>33</td></tr></table>\n\nThe table shows the relationship between corresponding values of $ x $ and $ g(x) $ for linear function $ g $. Which of the following equations defines $ g(x) $?",
+          "explanation": "The correct answer is B. Since $ g $ is linear, it has the form $ g(x) = mx + b $, where $ m $ is the slope and $ b $ is the $ g(x) $-intercept (the value of $ g(x) $ when $ x = 0 $). From the table, when $ x = 0 $, $ g(x) = 15 $, so $ b = 15 $. Using the points $ (0, 15) $ and $ (3, 21) $, the slope is $$ m = \\frac{21 - 15}{3 - 0} = \\frac{6}{3} = 2 $$ So $ g(x) = 2x + 15 $. Checking with $ x = 9 $: $ g(9) = 2(9) + 15 = 18 + 15 = 33 $, which matches the table.\n\nChoice A is incorrect because it does not fit the given data; for example, $ g(3) $ would be $ 3 + 33 = 36 $, not 21. Choice C is incorrect because it uses the value 21 (from the table) as the slope instead of correctly calculating the slope from two points. Choice D is incorrect because it uses the value 33 (a $ g(x) $ value from the table) as the slope and an incorrect constant term.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q16",
+          "type": "multiple-choice",
+          "choices": [
+            "A) 1/4",
+            "B) 12",
+            "C) 72",
+            "D) 144"
+          ],
+          "number": 16,
+          "question": "The function $ f $ is defined by $ f(x) = \\dfrac{1}{4}x^{2} $. When $ f(x) $ equals 36, what is the positive value of $ x $?",
+          "explanation": "The correct answer is B. Set $ f(x) = 36 $: $$ \\frac{1}{4}x^{2} = 36 $$ Multiply both sides by 4: $ x^2 = 144 $. Take the square root of both sides: $ x = \\pm 12 $. Since the question asks for the positive value of $ x $, the answer is 12.\n\nChoice A is incorrect and does not result from solving the equation correctly. Choice C is incorrect and results from dividing 144 by 2 rather than taking the square root. Choice D is incorrect because it is the value of $ x^2 $, not $ x $ itself — this is a common error of stopping one step too early.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q17",
+          "type": "grid-in",
+          "choices": [],
+          "number": 17,
+          "question": "Rectangle A has a length of 45 inches (in) and a width of 57 in. What is the perimeter, in inches, of rectangle A?",
+          "explanation": "The perimeter of a rectangle is given by $ P = 2(\\ell + w) $, where $ \\ell $ is the length and $ w $ is the width. Substituting the given values: $$ P = 2(45 + 57) = 2(102) = 204 $$ The correct answer is 204.",
+          "correctAnswer": "204"
+        },
+        {
+          "id": "q18",
+          "type": "multiple-choice",
+          "choices": [
+            "A) y = (1/2)x – 4",
+            "B) y = 2x + 4",
+            "C) y = (1/2)x + 4",
+            "D) y = 2x – 4"
+          ],
+          "number": 18,
+          "question": "<div style='text-align: center;'><img src='images/test13/math2e_q18_fig.png' alt='line graph crossing y-axis at (0,-4)'/></div>\n\nWhich equation could represent the graph shown in the $ xy $-plane?",
+          "explanation": "The correct answer is D. From the graph, the line crosses the $ y $-axis at $ (0, -4) $, so the $ y $-intercept, $ b $, is $ -4 $. The line is steep and rises from left to right (positive slope) more quickly than it moves horizontally; using two points on the line such as $ (0, -4) $ and $ (2, 0) $, the slope is $$ m = \\frac{0 - (-4)}{2 - 0} = \\frac{4}{2} = 2 $$ So the equation of the line is $ y = 2x - 4 $.\n\nChoice A is incorrect because a slope of $ \\frac{1}{2} $ would make the line much less steep than the one shown. Choice B is incorrect because although the slope of 2 matches, the $ y $-intercept of $ +4 $ does not match the graph, which crosses the $ y $-axis below the origin. Choice C is incorrect because it has both an incorrect (too small) slope and an incorrect (positive) $ y $-intercept.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q19",
+          "type": "multiple-choice",
+          "choices": [
+            "A) 42",
+            "B) 43",
+            "C) 44",
+            "D) 46"
+          ],
+          "number": 19,
+          "question": "An elevator has a maximum weight restriction of 700 kilograms. What is the maximum number of packages that can be transferred on the elevator in a cart if the weight of the cart is 50 kilograms and the weight of each package is 15 kilograms?",
+          "explanation": "The correct answer is B. Let $ n $ be the number of packages. The total weight of the cart plus packages must not exceed 700 kilograms: $$ 50 + 15n \\leq 700 $$ Subtract 50 from both sides: $ 15n \\leq 650 $. Divide both sides by 15: $$ n \\leq \\frac{650}{15} \\approx 43.33 $$ Since $ n $ must be a whole number of packages, the maximum value of $ n $ that satisfies this inequality is 43.\n\nChoice A is incorrect because 42 is not the maximum possible whole number of packages; 43 packages also satisfies the weight restriction. Choice C is incorrect because 44 packages would require a total weight of $ 50 + 15(44) = 710 $ kilograms, which exceeds the 700-kilogram limit. Choice D is incorrect for the same reason: 46 packages would far exceed the weight restriction.",
+          "correctAnswer": "B"
+        },
+        {
+          "id": "q20",
+          "type": "multiple-choice",
+          "choices": [
+            "A) –14",
+            "B) –9",
+            "C) 9",
+            "D) 14"
+          ],
+          "number": 20,
+          "question": "The function $ g(x) = 9x + 126 $ is graphed in the $ xy $-plane. What is the $ x $-coordinate of the $ x $-intercept of the graph of $ y = g(x) $?",
+          "explanation": "The correct answer is A. The $ x $-intercept of a graph occurs where $ y = 0 $. Setting $ g(x) = 0 $: $$ 9x + 126 = 0 $$ Subtract 126 from both sides: $ 9x = -126 $. Divide both sides by 9: $ x = -14 $.\n\nChoice B is incorrect and results from an arithmetic error dividing 126 by 9 incorrectly (or dividing by 14 instead). Choice C is incorrect because it is the positive counterpart of the correct answer, likely from a sign error. Choice D is incorrect because it is also a sign error, giving a positive value where the correct $ x $-coordinate is negative.",
+          "correctAnswer": "A"
+        },
+        {
+          "id": "q21",
+          "type": "multiple-choice",
+          "choices": [
+            "A) The lengths of sides PQ and MN",
+            "B) The measure of angle L",
+            "C) The length of side LM",
+            "D) No additional information is necessary."
+          ],
+          "number": 21,
+          "question": "In triangle $ PQR $, angle $ P $ measures 35° and angle $ Q $ measures 43°. In triangle $ LMN $, angle $ M $ measures 43° and angle $ N $ measures 35°. Which additional piece of information is necessary to determine whether triangle $ PQR $ and triangle $ LMN $ are similar?",
+          "explanation": "The correct answer is D. In triangle $ PQR $, the third angle, angle $ R $, must measure $ 180° - 35° - 43° = 102° $. In triangle $ LMN $, the third angle, angle $ L $, must measure $ 180° - 43° - 35° = 102° $. So triangle $ PQR $ has angles of $ 35°, 43°, 102° $ (at $ P $, $ Q $, $ R $ respectively) and triangle $ LMN $ has angles of $ 102°, 43°, 35° $ (at $ L $, $ M $, $ N $ respectively). Since both triangles have the same three angle measures, they are similar by the Angle-Angle (AA) Similarity Postulate — no additional information is needed.\n\nChoice A is incorrect because side lengths are not needed to establish similarity once two pairs of corresponding angles are known to be congruent; similarity depends only on angle measures, not on specific side lengths (which would instead be relevant for proving congruence or finding a scale factor). Choice B is incorrect because the measure of angle $ L $ can already be calculated (it must be 102°) from the angles given, so this information is not actually needed. Choice C is incorrect for the same reason as choice A: side lengths are unnecessary for determining similarity when the angle measures already establish it.",
+          "correctAnswer": "D"
+        },
+        {
+          "id": "q22",
+          "type": "multiple-choice",
+          "choices": [
+            "A) 40",
+            "B) 102",
+            "C) 132",
+            "D) 792"
+          ],
+          "number": 22,
+          "question": "A chef separates 160 liters of oil into two containers. The first container holds $ q $ liters of oil, and the second container holds $ r $ liters of oil, which is 8 less than 5 times $ q $. What is the value of $ r $?",
+          "explanation": "The correct answer is C. Since the two containers together hold all 160 liters of oil: $$ q + r = 160 $$ Since $ r $ is 8 less than 5 times $ q $: $$ r = 5q - 8 $$ Substitute this expression for $ r $ into the first equation: $$ q + (5q - 8) = 160 $$ $$ 6q - 8 = 160 $$ $$ 6q = 168 $$ $$ q = 28 $$ Substitute $ q = 28 $ back into $ r = 5q - 8 $: $$ r = 5(28) - 8 = 140 - 8 = 132 $$\n\nChoice A is incorrect because 40 is not consistent with both equations; it does not represent a valid value of $ r $ given the constraints. Choice B is incorrect and results from an arithmetic error, such as miscalculating $ q $ before substituting. Choice D is incorrect because it results from computing $ 5q - 8 $ using an incorrect value of $ q $ (for example, treating $ q $ as 160 instead of solving the system correctly, giving $ 5(160) - 8 = 792 $).",
+          "correctAnswer": "C"
+        }
+      ]
+    }
+  ]
+}
