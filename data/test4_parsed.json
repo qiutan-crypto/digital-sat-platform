@@ -1097,7 +1097,7 @@
             "C) y=-x-8",
             "D) y=2x-8"
           ],
-          "question": "<div style='text-align: center;'><img src='images/test4/crop_2_1777239323930.png' alt='OCR图片'/></div>\n\nWhat is an equation of the graph shown?",
+          "question": "<div style='text-align: center;'><img src='images/test4/q12_mod3_linegraph.png' alt='line graph crossing x-axis at -8 and y-axis at -8'/></div>\n\nWhat is an equation of the graph shown?",
           "explanation": "Choice C is correct. An equation of a line can be written in the form $ y=mx+b $ where m is the slope of the line and $ \\left(0, b\\right) $ is the y-intercept of the line. The line shown passes through the point $ \\left(0,-8\\right) $ , so $ b=-8 $ . The line shown also passes through the point $ \\left(-8,0\\right) $ . The slope, m, of a line passing through two points $ \\left(x_{1}, y_{1}\\right) $ and $ \\left(x_{2}, y_{2}\\right) $ can be calculated using the equation $ m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}} $ . For the points $ \\left(0,-8\\right) $ and $ \\left(-8,0\\right) $ , this gives $ m=\\frac{\\left(-8\\right)-0}{0-\\left(-8\\right)} $ , or $ m=-1 $ . Substituting -8 for b and -1 for m in $ y=mx+b $ yields $ y=\\left(-1\\right)x+\\left(-8\\right) $ , or $ y=-x-8 $ . Therefore, an equation of the graph shown is $ y=-x-8. $\n\nChoice A is incorrect. This is an equation of a line with a slope of-2, not-1. Choice B is incorrect. This is an equation of a line with a slope of 1, not-1. Choice D is incorrect. This is an equation of a line with a slope of 2, not-1.",
           "correctAnswer": "C"
         },
