@@ -1317,7 +1317,7 @@
             "C) 4",
             "D) 1"
           ],
-          "question": "To study the characteristics of sea stars in a group of tide pools, researchers measured the diameter of the sea stars within the tide pools. The dot plot gives the diameter, to the nearest inch, of each of the sea stars in these tide pools.\n\n<div style='text-align: center;'><img src='images/test11/crop_1_1778649517057.png' alt='OCR图片'/></div>\n\nBased on the dot plot, how many sea stars had a diameter, to the nearest inch, of 16 inches?",
+          "question": "To study the characteristics of sea stars in a group of tide pools, researchers measured the diameter of the sea stars within the tide pools. The dot plot gives the diameter, to the nearest inch, of each of the sea stars in these tide pools.\n\n<div style='text-align: center;'><img src='images/test11/q2_mod4_dotplot.png' alt='OCR图片'/></div>\n\nBased on the dot plot, how many sea stars had a diameter, to the nearest inch, of 16 inches?",
           "explanation": "Choice B is correct. The dot plot gives the diameter, to the nearest inch, of each sea star in a group of tide pools. The number of dots above a given diameter represents the number of sea stars with that diameter, to the nearest inch. There are 6 dots above 16 inches. Therefore, 6 sea stars had a diameter, to the nearest inch, of 16 inches.\n\nChoice A is incorrect and may result from calculation or conceptual errors. Choice C is incorrect. This is the number of sea stars with a diameter, to the nearest inch, of 17 inches, not 16 inches. Choice D is incorrect. This is the number of sea stars with a diameter, to the nearest inch, of 18 inches, not 16 inches.",
           "correctAnswer": "B"
         },
