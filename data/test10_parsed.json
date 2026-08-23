@@ -1555,7 +1555,7 @@
           "choices": [],
           "question": "Line $ \\ell $ is defined by $ 3 y+12 x=5 $ . Line n is perpendicular to line $ \\ell $ in the xy-plane. What is the slope of line n?",
           "explanation": "The correct answer is $ \\frac{1}{4} $ . For an equation in slope-intercept form y=mx+b, m represents the slope of the line in the xy-plane defined by this equation. It's given that line $ \\ell $ is defined by $ 3y+12x=5 $ . Subtracting 12x from both sides of this equation yields $ 3y=-12x+5 $ . Dividing both sides of this equation by 3 yields $ y=-\\frac{12}{3} x+\\frac{5}{3} $ , or $ y=-4 x+\\frac{5}{3} $ . Thus, the slope of line $ \\ell $ in the xy-plane is-4. Since line n is perpendicular to line $ \\ell $ in the xy-plane, the slope of line n is the negative reciprocal of the slope of line $ \\ell $ . The negative reciprocal of -4 is $ -\\frac{1}{(-4)}=\\frac{1}{4} $ . Note that 1/4 and .25 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{1}{4} $"
+          "correctAnswer": "1/4"
         },
         {
           "id": "q22",

@@ -1546,7 +1546,7 @@
           "choices": [],
           "question": "$$\n\\sqrt [ 3 ]{p ^ {2}} = t ^ {\\frac {9}{7}}\n$$\n\nIn the given equation, p>1 and t>1. If $ t=p^{3 n-1} $ , where n is a constant, what is the value of n?",
           "explanation": "The correct answer is $ \\frac{41}{81} $ . An expression of the form $ \\sqrt[n]{a^{m}} $ , where m and n are integers greater than 1 and a $ \\geq0 $ , is equivalent to $ a^{\\frac{m}{n}} $ . Therefore, the expression on the left-hand side of the given equation is equivalent to $ p^{\\frac{2}{3}} $ ; thus, $ p^{\\frac{2}{3}}=t^{\\frac{9}{7}} $ . If $ t=p^{3 n-1} $ , where n is a constant, then substituting $ p^{3 n-1} $ for t in the equation yields $ p^{\\frac{2}{3}}=p^{\\frac{9}{7}(3 n-1)} $ . It's given that $ p>1 $ ; therefore, $ \\frac{2}{3}=\\frac{9}{7}(3 n-1) $ . Multiplying each side of this equation by 21 yields 14=27(3n-1). Distributing multiplication over subtraction yields 14=81n-27. Adding 27 to each side of this equation yields 41=81n. Dividing each side of this equation by 81 yields $ \\frac{41}{81}=n $ . Therefore, if $ t=p^{3 n-1} $ , where n is a constant, the value of n is $ \\frac{41}{81} $ . Note that 41/81,.5061, .5062, and 0.506 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{41}{81} $"
+          "correctAnswer": "41/81"
         },
         {
           "id": "q21",

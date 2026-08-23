@@ -1108,7 +1108,7 @@
           "choices": [],
           "question": "If $ \\frac{x}{8}=5 $ , what is the value of $ \\frac{8}{x} $ ?",
           "explanation": "The correct answer is $ \\frac{1}{5} $ . Since the number 5 can also be written as $ \\frac{5}{1} $ , the given equation can also be written as $ \\frac{x}{8}=\\frac{5}{1} $ . This equation is equivalent to $ \\frac{8}{x}=\\frac{1}{5} $ Therefore, the value of $ \\frac{8}{x} $ is $ \\frac{1}{5} $ . Note that 1/5 and .2 are examples of ways to enter a correct answer.\n\nAlternate approach: Multiplying both sides of the equation $ \\frac{x}{8}=5 $ by 8 yields $ x=40 $ . Substituting 40 for x into the expression $ \\frac{8}{x} $ yields $ \\frac{8}{40} $ , or $ \\frac{1}{5}. $",
-          "correctAnswer": "$ \\frac{1}{5} $"
+          "correctAnswer": "1/5"
         },
         {
           "id": "q14",
@@ -1205,7 +1205,7 @@
           "choices": [],
           "question": "The expression $ 6\\sqrt[5]{3^{5}x^{45}}\\cdot \\sqrt[8]{2^{8}x} $ is equivalent to $ ax^{b} $ where a and b are positive constants and $ x > 1. $ What is the value of a+b?",
           "explanation": "The correct answer is $ \\frac{361}{8}. $ The rational exponent property is $ \\sqrt[n]{y^{m}}=y^{\\frac{m}{n}} $ , where y>0, m and n are integers, and n>0. This property can be applied to rewrite the given expression $ 6\\sqrt[5]{3^{5}x^{45}}\\cdot\\sqrt[8]{2^{8}x} $ as $ 6\\left(3^{\\frac{5}{5}}\\right)\\left(x^{\\frac{45}{5}}\\right)\\left(2^{\\frac{8}{8}}\\right)\\left(x^{\\frac{1}{8}}\\right) $ or $ 6\\left(3\\right)\\left(x^{9}\\right)\\left(2\\right)\\left(x^{\\frac{1}{8}}\\right). $ This expression can be rewritten by multiplying the constants, which gives $ 36\\left(x^{9}\\right)\\left(x^{\\frac{1}{8}}\\right). $ The multiplication exponent property is $ y^{n}\\cdot y^{m}=y^{n+m} $ , where y>0. This property can be applied to rewrite the expression $ 36\\left(x^{9}\\right)\\left(x^{\\frac{1}{8}}\\right) $ as $ 36x^{9+\\frac{1}{8}} $ , or $ 36x^{\\frac{73}{8}}. $ Therefore, $ 6\\sqrt[5]{3^{5}x^{45}}\\cdot\\sqrt[8]{2^{8}x}=36x^{\\frac{73}{8}}. $ It's given that $ 6\\sqrt[5]{3^{5}x^{45}}\\cdot\\sqrt[8]{2^{8}x} $ is equivalent to $ ax^{b}; $ therefore, a=36 and b $ =\\frac{73}{8}. $ It follows that a+b=36+ $ \\frac{73}{8}. $ Finding a common denominator on the right-hand side of this equation gives $ a+b=\\frac{288}{8}+\\frac{73}{8}, $ or $ a+b=\\frac{361}{8}. $ Note that 361/8, 45.12, and 45.13 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{361}{8} $"
+          "correctAnswer": "361/8"
         },
         {
           "id": "q22",
@@ -1458,7 +1458,7 @@
           "choices": [],
           "question": "The table summarizes the distribution of color and shape for 100 tiles of equal area.\n\n<table border=\"1\"><tr><td></td><td>Red</td><td>Blue</td><td>Yellow</td><td>Total</td></tr><tr><td>Square</td><td>10</td><td>20</td><td>25</td><td>55</td></tr><tr><td>Pentagon</td><td>20</td><td>10</td><td>15</td><td>45</td></tr><tr><td>Total</td><td>30</td><td>30</td><td>40</td><td>100</td></tr></table>\n\nIf one of these tiles is selected at random, what is the probability of selecting a red tile? (Express your answer as a decimal or fraction, not as a percent.)",
           "explanation": "The correct answer is $ \\frac{3}{10} $ . It's given that there are a total of 100 tiles of equal area, which is the total number of possible outcomes. According to the table, there are a total of 30 red tiles. The probability of an event occurring is the ratio of the number of favorable outcomes to the total number of possible outcomes. By definition, the probability of selecting a red tile is given by $ \\frac{30}{100} $ , or $ \\frac{3}{10} $ . Note that 3/10 and .3 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{3}{10} $"
+          "correctAnswer": "3/10"
         },
         {
           "id": "q14",
@@ -1546,7 +1546,7 @@
           "choices": [],
           "question": "In triangle JKL, $ \\cos(K)=\\frac{24}{51} $ and angle J is a right angle. What is the value of $ \\cos(L) $ ?",
           "explanation": "The correct answer is $ \\frac{15}{17} $ . It's given that angle J is the right angle in triangle JKL. Therefore, the acute angles of triangle JKL are angle K and angle L. The hypotenuse of a right triangle is the side opposite its right angle. Therefore, the hypotenuse of triangle JKL is side KL. The cosine of an acute angle in a right triangle is the ratio of the length of the side adjacent to the angle to the length of the hypotenuse. It's given that $ \\cos(K)=\\frac{24}{51} $ . This can be written as $ \\cos(K)=\\frac{8}{17}. $ Since the cosine of angle K is a ratio, it follows that the length of the side adjacent to angle K is 8n and the length of the hypotenuse is 17n, where n is a constant. Therefore, JK=8n and KL=17n. The Pythagorean theorem states that in a right triangle, the square of the length of the hypotenuse is equal to the sum of the squares of the lengths of the other two sides. For triangle JKL, it follows that $ \\left(JK\\right)^{2}+\\left(JL\\right)^{2}=\\left(KL\\right)^{2}. $ Substituting 8n for JK and 17n for KL yields $ \\left(8n\\right)^{2}+\\left(JL\\right)^{2}=\\left(17n\\right)^{2}. $ This is equivalent to $ 64n^{2}+\\left(JL\\right)^{2}=289n^{2}. $ Subtracting $ 64n^{2} $ from each side of this equation yields $ \\left(JL\\right)^{2}=225n^{2}. $ Taking the square root of each side of this equation yields JL=15n. Since $ \\cos(L)=\\frac{JL}{KL}, $ it follows that $ \\cos(L)=\\frac{15n}{17n}, $ which can be rewritten as $ \\cos(L)=\\frac{15}{17}. $ Note that 15/17, .8824, .8823, and 0.882 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{15}{17} $"
+          "correctAnswer": "15/17"
         },
         {
           "id": "q21",

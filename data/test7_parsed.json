@@ -1284,7 +1284,7 @@
           "choices": [],
           "question": "$$\nf (x) = (x - 2) (x + 15)\n$$\n\nThe function f is defined by the given equation. For what value of x does f(x) reach its minimum?",
           "explanation": "The correct answer is $ -\\frac{13}{2} $ . The value of x for which f(x) reaches its minimum can be found by rewriting the given equation in the form $ f(x)=\\left(x-h\\right)^{2}+k $ , where f(x) reaches its minimum, k, when the value of x is h. The given equation, $ f(x)=\\left(x-2\\right)\\left(x+15\\right) $ , can be rewritten as $ f(x)=x^{2}+13 x-30 $ . By completing the square, this equation can be rewritten as $ f(x)=\\left(x^{2}+13 x+\\left(\\frac{13}{2}\\right)^{2}\\right)-30-\\left(\\frac{13}{2}\\right)^{2}, $ which is equivalent to $ f(x)=\\left(x+\\frac{13}{2}\\right)^{2}-\\frac{289}{4} $ , or $ f(x)=\\left(x-\\left(-\\frac{13}{2}\\right)\\right)^{2}-\\frac{289}{4} $ . Therefore, f(x) reaches its minimum when the value of x is $ -\\frac{13}{2} $ . Note that -13/2 and -6.5 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ -\\frac{13}{2} $"
+          "correctAnswer": "-13/2"
         }
       ],
       "timeLimit": 2580
@@ -1379,7 +1379,7 @@
           "choices": [],
           "question": "The function f is defined by $ f ( x )=5 \\left( \\frac{1}{4}-x\\right)^{2}+\\frac{11}{4}. $ What is the value of $ f \\left( \\frac{1}{4} \\right) $ ?",
           "explanation": "The correct answer is $ \\frac{11}{4} $ . It's given that the function f is defined by $ f\\left(x\\right)=5\\left(\\frac{1}{4}-x\\right)^{2}+\\frac{11}{4}. $ Substituting $ \\frac{1}{4} $ for x in this equation yields $ f\\left(\\frac{1}{4}\\right)=5\\left(\\frac{1}{4}-\\frac{1}{4}\\right)^{2}+\\frac{11}{4}, $ which is equivalent $ f\\left(\\frac{1}{4}\\right)=5(0)^{2}+\\frac{11}{4}, $ or $ f\\left(\\frac{1}{4}\\right)=\\frac{11}{4}. $ Therefore, the value of $ f\\left(\\frac{1}{4}\\right) $ is $ \\frac{11}{4}. $ Note that 11/4 or 2.75 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{11}{4} $"
+          "correctAnswer": "11/4"
         },
         {
           "id": "q8",

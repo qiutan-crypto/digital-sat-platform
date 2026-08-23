@@ -1108,7 +1108,7 @@
           "choices": [],
           "question": "The function h is defined by $ h(x)=\\frac{8}{5 x+6}. $ What is the value of h(2)?",
           "explanation": "The correct answer is $ \\frac{1}{2} $ . The value of h(2) is the value of h(x) when x=2 Substituting 2 for x in the given equation yields $ h(2)=\\frac{8}{5(2)+6} $ , which is equivalent to $ h(2)=\\frac{8}{16} $ , or $ h(2)=\\frac{1}{2} $ . Therefore, the value of h(2) is $ \\frac{1}{2} $ . Note that 1/2 and .5 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{1}{2} $"
+          "correctAnswer": "1/2"
         },
         {
           "id": "q14",
@@ -1117,7 +1117,7 @@
           "choices": [],
           "question": "<div style='text-align: center;'><img src='images/test6/crop_1_1777772889319.png' alt='OCR图片'/></div>\n\nNote: Figure not drawn to scale.\n\nThe figure shows the lengths, in inches, of two sides of a right triangle. What is the area of the triangle, in square inches?",
           "explanation": "The correct answer is $ \\frac{15}{2} $ . The area, A, of a triangle is given by the formula $ A=\\frac{1}{2} b h $ , where b is the length of the base of the triangle and h is the height of the triangle. In the right triangle shown, the length of the base of the triangle is 5 inches, and the height is 3 inches. It follows that b=5 and h=3. Substituting 5 for b and 3 for h in the formula $ A=\\frac{1}{2} b h $ yields $ A=\\frac{1}{2}(5)(3) $ , which is equivalent to $ A=\\frac{1}{2}(15) $ , or $ A=\\frac{15}{2} $ . Therefore, the area of the triangle, in square inches, is $ \\frac{15}{2} $ Note that 15/2 and 7.5 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{15}{2} $"
+          "correctAnswer": "15/2"
         },
         {
           "id": "q15",
@@ -1196,7 +1196,7 @@
           "choices": [],
           "question": "What is the y-coordinate of the y-intercept of the graph of $ \\frac{3 x}{7}=-\\frac{5 y}{9}+21 $ in the xy-plane?",
           "explanation": "The correct answer is $ \\frac{189}{5} $ . A y-intercept of a graph in the xy-plane is a point where the graph intersects the y-axis, which is a point with an x-coordinate of 0. Substituting 0 for x in the given equation yields $ \\frac{3(0)}{7}=-\\frac{5y}{9}+21 $ or $ 0=-\\frac{5y}{9}+21. $ Subtracting 21 from both sides of this equation yields $ -21=-\\frac{5y}{9}. $ Multiplying both sides of this equation by $ -9 $ yields 189=5y. Dividing both sides of this equation by 5 yields $ \\frac{189}{5}=y. $ Therefore, the y-coordinate of the y-intercept of the graph of the given equation in the xy-plane is $ \\frac{189}{5}. $ Note that 189/5 and 37.8 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{189}{5} $"
+          "correctAnswer": "189/5"
         },
         {
           "id": "q21",
@@ -1546,7 +1546,7 @@
           "choices": [],
           "question": "If $ 4^{8 c}=\\sqrt[3]{4^{7}} $ , what is the value of c ?",
           "explanation": "The correct answer is $ \\frac{7}{24} $ . An expression of the form $ \\sqrt[n]{a^{m}} $ , where m and n are integers greater than 1 and a $ \\geq0 $ , is equivalent to $ a^{\\frac{m}{n}} $ . Therefore, the expression on the right-hand side of the given equation, $ \\sqrt[3]{4^{7}} $ , is equivalent to $ 4^{\\frac{7}{3}} $ . Thus, $ 4^{8c}=4^{\\frac{7}{3}} $ It follows that $ 8c=\\frac{7}{3} $ . Dividing both sides of this equation by 8 yields $ c=\\frac{7}{24} $ . Note that 7/24, .2916, .2917, 0.219, and 0.292 are examples of ways to enter a correct answer.",
-          "correctAnswer": "$ \\frac{7}{24} $"
+          "correctAnswer": "7/24"
         },
         {
           "id": "q21",
@@ -1634,7 +1634,7 @@
           "choices": [],
           "question": "$$\n48 x - 64 y = 48 y + 24\n$$\n\n$$\nr y = \\frac {1}{8} - 12 x\n$$\n\nIn the given system of equations, r is a constant. If the system has no solution, what is the value of r?",
           "explanation": "The correct answer is $ - 28 $ . A system of two linear equations in two variables, x and y, has no solution if the lines represented by the equations in the xy-plane are distinct and parallel. The graphs of two lines in the xy-plane represented by equations in the form $ A x+B y=C $ , where A, B, and C are constants, are parallel if the coefficients for x and y in one equation are proportional to the corresponding coefficients for x and y in the other equation. The first equation in the given system, $ 48 x-64 y=48 y+24 $ , can be written in the form $ A x+B y=C $ by subtracting 48y from both sides of the equation to yield $ 48 x-112 y=24 $ . The second equation in the given system, $ r y=\\frac{1}{8}-12 x $ , can be written in the form $ A x+B y=C $ by adding 12x to both sides of the equation to yield $ 12 x+r y=\\frac{1}{8} $ . The coefficient of x in the second equation is $ \\frac{1}{4} $ times the coefficient of x in the first equation. That is, $ 48 \\left( \\frac{1}{4} \\right)=12 $ . For the lines to be parallel, the coefficient of y in the second equation must also be $ \\frac{1}{4} $ times the coefficient of y in the first equation. Therefore, $ - 112 \\left( \\frac{1}{4} \\right)=r $ , or $ - 28=r $ . Thus, if the given system has no solution, the value of r is $ - 28 $ .",
-          "correctAnswer": "$ - 28 $"
+          "correctAnswer": "-28"
         }
       ],
       "timeLimit": 2580
