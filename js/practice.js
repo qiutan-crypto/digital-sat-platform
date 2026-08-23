@@ -135,8 +135,21 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreDisplay: document.getElementById('drill-score-display'),
         percentDisplay: document.getElementById('drill-percent-display'),
         summaryReviewBtn: document.getElementById('summary-review-btn'),
-        summaryDashboardBtn: document.getElementById('summary-dashboard-btn')
+        summaryDashboardBtn: document.getElementById('summary-dashboard-btn'),
+
+        questionBody: document.getElementById('question-body'),
+        reviewToolbar: document.getElementById('review-toolbar'),
+        reviewScoreLabel: document.getElementById('review-score-label'),
+        reviewFilterAllBtn: document.getElementById('review-filter-all-btn'),
+        reviewFilterIncorrectBtn: document.getElementById('review-filter-incorrect-btn'),
+        reviewEmptyState: document.getElementById('review-empty-state')
     };
+
+    // Review mode: filter for a completed drill's question view ('all' | 'incorrect')
+    let reviewFilter = 'all';
+    // Cache of previously-submitted drill answers, keyed by drillKey, so revisiting
+    // a completed drill from the sidebar shows the review instead of a blank attempt
+    let drillAnswerCache = {};
 
     // Initialize
     async function init() {
@@ -211,6 +224,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             const correct = row.total_score;
                             const total = row.raw_details.questions_count || 5;
                             drillResults[drillKey] = `${correct}/${total}`;
+                            if (row.raw_details.answers) {
+                                drillAnswerCache[drillKey] = row.raw_details.answers;
+                            }
                         }
                     });
                 }
@@ -437,12 +453,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const DRILL_SIZE = 5;
         const allQuestions = module.questions || [];
         activeQuestions = allQuestions.slice(drillIdx * DRILL_SIZE, (drillIdx + 1) * DRILL_SIZE);
-        
-        // Reset answers & UI state
-        activeAnswers = {};
+
+        // If this drill was already completed, reopen it in review mode with the
+        // saved answers instead of resetting to a blank attempt
+        const drillKey = `${testId}_${moduleId}_drill${drillIdx}`;
+        const cachedAnswers = drillAnswerCache[drillKey];
         currentQuestionIndex = 0;
-        isCurrentAttemptSubmitted = false;
-        
+        reviewFilter = 'all';
+        if (cachedAnswers) {
+            activeAnswers = { ...cachedAnswers };
+            isCurrentAttemptSubmitted = true;
+        } else {
+            activeAnswers = {};
+            isCurrentAttemptSubmitted = false;
+        }
+
         // Update header & badges
         elements.testTitle.textContent = testTitle;
         elements.drillBadge.textContent = `${moduleName} - Drill ${drillIdx + 1}`;
@@ -499,12 +524,20 @@ document.addEventListener('DOMContentLoaded', () => {
             dots[currentQuestionIndex].classList.add('current');
         }
         
-        // Navigation Buttons
-        elements.prevBtn.disabled = currentQuestionIndex === 0;
-        elements.nextBtn.disabled = currentQuestionIndex === activeQuestions.length - 1;
-        
+        // Navigation Buttons (respect the "Incorrect Only" review filter, if active)
+        if (isCurrentAttemptSubmitted && reviewFilter === 'incorrect') {
+            const incorrectIdx = getIncorrectIndices();
+            const pos = incorrectIdx.indexOf(currentQuestionIndex);
+            elements.prevBtn.disabled = pos <= 0;
+            elements.nextBtn.disabled = pos === -1 || pos === incorrectIdx.length - 1;
+        } else {
+            elements.prevBtn.disabled = currentQuestionIndex === 0;
+            elements.nextBtn.disabled = currentQuestionIndex === activeQuestions.length - 1;
+        }
+
         // Check if drill finished button should show
         checkDrillFinishedStatus();
+        updateReviewToolbar();
 
         // Passage Display
         if (q.passage) {
@@ -644,6 +677,71 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- Drill Review ---
+
+    function isQuestionCorrect(q) {
+        const ans = activeAnswers[q.id] != null ? String(activeAnswers[q.id]) : '';
+        const corr = q.correctAnswer != null ? String(q.correctAnswer) : '';
+        return ans.toLowerCase().trim() === corr.toLowerCase().trim();
+    }
+
+    function getIncorrectIndices() {
+        const result = [];
+        activeQuestions.forEach((q, idx) => {
+            if (!isQuestionCorrect(q)) result.push(idx);
+        });
+        return result;
+    }
+
+    // Prev/Next navigation that skips over correct questions when the
+    // "Incorrect Only" filter is active
+    function reviewNavigate(direction) {
+        const indices = reviewFilter === 'incorrect'
+            ? getIncorrectIndices()
+            : activeQuestions.map((_, i) => i);
+        const pos = indices.indexOf(currentQuestionIndex);
+        const nextPos = pos + direction;
+        if (nextPos >= 0 && nextPos < indices.length) {
+            navigateTo(indices[nextPos]);
+        }
+    }
+
+    function setReviewFilter(filter) {
+        reviewFilter = filter;
+        if (filter === 'incorrect') {
+            const incorrectIdx = getIncorrectIndices();
+            if (incorrectIdx.length > 0 && !incorrectIdx.includes(currentQuestionIndex)) {
+                currentQuestionIndex = incorrectIdx[0];
+            }
+        }
+        renderQuestion();
+    }
+
+    // Show/hide the review toolbar and "all correct" empty state for a
+    // completed drill; called from renderQuestion() on every render
+    function updateReviewToolbar() {
+        if (!isCurrentAttemptSubmitted || activeQuestions.length === 0) {
+            elements.reviewToolbar.classList.add('hidden');
+            elements.reviewEmptyState.classList.add('hidden');
+            elements.questionBody.style.display = '';
+            return;
+        }
+
+        const incorrectIdx = getIncorrectIndices();
+        const total = activeQuestions.length;
+        const correct = total - incorrectIdx.length;
+
+        elements.reviewToolbar.classList.remove('hidden');
+        elements.reviewScoreLabel.textContent = `Score: ${correct} / ${total}`;
+        elements.reviewFilterAllBtn.classList.toggle('active', reviewFilter === 'all');
+        elements.reviewFilterIncorrectBtn.classList.toggle('active', reviewFilter === 'incorrect');
+        elements.reviewFilterIncorrectBtn.textContent = `Incorrect Only (${incorrectIdx.length})`;
+
+        const showEmpty = reviewFilter === 'incorrect' && incorrectIdx.length === 0;
+        elements.reviewEmptyState.classList.toggle('hidden', !showEmpty);
+        elements.questionBody.style.display = showEmpty ? 'none' : '';
+    }
+
     // Check if user answered all 5 questions in the current drill
     function checkDrillFinishedStatus() {
         let allAnswered = true;
@@ -741,11 +839,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             localStorage.setItem('sat_drill_history', JSON.stringify(historyList));
             
-            // Cache score immediately
+            // Cache score and answers immediately so review mode works without a reload
             drillResults[drillKey] = `${correctCount}/${totalQ}`;
-            
+            drillAnswerCache[drillKey] = { ...activeAnswers };
+
             // Mark current attempt as submitted
             isCurrentAttemptSubmitted = true;
+            reviewFilter = 'all';
             clearDrillState();
             
             // Hide the finish button since it's now completed
@@ -876,18 +976,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Footer Prev/Next
         elements.prevBtn.addEventListener('click', () => {
-            navigateTo(currentQuestionIndex - 1);
+            if (isCurrentAttemptSubmitted && reviewFilter === 'incorrect') {
+                reviewNavigate(-1);
+            } else {
+                navigateTo(currentQuestionIndex - 1);
+            }
         });
-        
+
         elements.nextBtn.addEventListener('click', () => {
-            navigateTo(currentQuestionIndex + 1);
+            if (isCurrentAttemptSubmitted && reviewFilter === 'incorrect') {
+                reviewNavigate(1);
+            } else {
+                navigateTo(currentQuestionIndex + 1);
+            }
         });
 
         elements.finishDrillBtn.addEventListener('click', finishDrill);
 
+        // Review filter toggle
+        elements.reviewFilterAllBtn.addEventListener('click', () => setReviewFilter('all'));
+        elements.reviewFilterIncorrectBtn.addEventListener('click', () => setReviewFilter('incorrect'));
+
         // Modal Action Items
         elements.summaryReviewBtn.addEventListener('click', () => {
             elements.summaryModal.classList.add('hidden');
+            reviewFilter = 'all';
+            renderQuestion();
         });
 
         elements.summaryDashboardBtn.addEventListener('click', () => {

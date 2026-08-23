@@ -481,6 +481,72 @@ main {
     border-style: dashed;
 }
 
+/* Drill Review Toolbar */
+.review-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-panel-light);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+}
+
+.review-score-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.review-filter-group {
+    display: flex;
+    gap: 6px;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px;
+}
+
+.review-filter-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.review-filter-btn:hover {
+    color: var(--text-main);
+}
+
+.review-filter-btn.active {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.review-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.review-empty-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.review-empty-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
 /* Footer Navigation */
 footer {
     min-height: 70px;

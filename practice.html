@@ -95,46 +95,63 @@
                     
                     <!-- Right Panel: Question & Answers -->
                     <div id="question-panel" class="panel right-panel" style="overflow-y: auto;">
-                        <div class="question-header">
-                            <span class="question-number-badge" id="q-num-badge">1</span>
+                        <!-- Review Toolbar (shown once a drill has been completed) -->
+                        <div id="review-toolbar" class="review-toolbar hidden">
+                            <span id="review-score-label" class="review-score-label"></span>
+                            <div class="review-filter-group">
+                                <button type="button" id="review-filter-all-btn" class="review-filter-btn active">All Questions</button>
+                                <button type="button" id="review-filter-incorrect-btn" class="review-filter-btn">Incorrect Only</button>
+                            </div>
                         </div>
-                        
-                        <div class="question-content" id="question-text"></div>
-                        
-                        <!-- AI Translation of Question -->
-                        <div class="translation-actions">
-                            <button type="button" id="translate-question-btn" class="btn-icon translate-btn">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg>
-                                AI 翻译
-                            </button>
+
+                        <!-- Shown instead of the question when "Incorrect Only" has nothing to show -->
+                        <div id="review-empty-state" class="review-empty-state hidden">
+                            <div class="review-empty-icon">🎉</div>
+                            <div class="review-empty-text">Perfect score! No incorrect questions to review.</div>
                         </div>
-                        <div id="question-translation" class="translation-content hidden"></div>
-                        
-                        <!-- Choices (Multiple Choice) -->
-                        <div class="choices-container" id="choices-container">
-                            <!-- Radio options injected here -->
-                        </div>
-                        
-                        <!-- Grid-in (Student Produced) -->
-                        <div class="grid-in-container hidden" id="grid-in-container">
-                            <input type="text" id="grid-in-input" placeholder="Enter your answer" maxlength="8" style="margin-bottom: 10px;">
-                            <button type="button" id="check-answer-btn" class="btn-primary check-answer-btn">Submit Answer</button>
-                            <div id="grid-in-feedback" class="grid-in-feedback hidden"></div>
-                        </div>
-                        
-                        <!-- Explanation Panel (Revealed immediately on answer) -->
-                        <div id="explanation-container" class="explanation-container hidden" style="margin-top: 25px; border-top: 1px solid var(--border); padding-top: 20px;">
-                            <h4 style="color: var(--primary); margin-bottom: 8px;">Explanation</h4>
-                            <p id="explanation-text" style="font-size: 0.95rem; line-height: 1.6;"></p>
-                            
-                            <!-- AI Translation of Explanation -->
-                            <div class="translation-actions" style="margin-top: 15px;">
-                                <button type="button" id="translate-explanation-btn" class="btn-icon translate-btn">
+
+                        <div id="question-body">
+                            <div class="question-header">
+                                <span class="question-number-badge" id="q-num-badge">1</span>
+                            </div>
+
+                            <div class="question-content" id="question-text"></div>
+
+                            <!-- AI Translation of Question -->
+                            <div class="translation-actions">
+                                <button type="button" id="translate-question-btn" class="btn-icon translate-btn">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg>
                                     AI 翻译
                                 </button>
                             </div>
-                            <div id="explanation-translation" class="translation-content hidden"></div>
+                            <div id="question-translation" class="translation-content hidden"></div>
+
+                            <!-- Choices (Multiple Choice) -->
+                            <div class="choices-container" id="choices-container">
+                                <!-- Radio options injected here -->
+                            </div>
+
+                            <!-- Grid-in (Student Produced) -->
+                            <div class="grid-in-container hidden" id="grid-in-container">
+                                <input type="text" id="grid-in-input" placeholder="Enter your answer" maxlength="8" style="margin-bottom: 10px;">
+                                <button type="button" id="check-answer-btn" class="btn-primary check-answer-btn">Submit Answer</button>
+                                <div id="grid-in-feedback" class="grid-in-feedback hidden"></div>
+                            </div>
+
+                            <!-- Explanation Panel (Revealed immediately on answer) -->
+                            <div id="explanation-container" class="explanation-container hidden" style="margin-top: 25px; border-top: 1px solid var(--border); padding-top: 20px;">
+                                <h4 style="color: var(--primary); margin-bottom: 8px;">Explanation</h4>
+                                <p id="explanation-text" style="font-size: 0.95rem; line-height: 1.6;"></p>
+
+                                <!-- AI Translation of Explanation -->
+                                <div class="translation-actions" style="margin-top: 15px;">
+                                    <button type="button" id="translate-explanation-btn" class="btn-icon translate-btn">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"></path></svg>
+                                        AI 翻译
+                                    </button>
+                                </div>
+                                <div id="explanation-translation" class="translation-content hidden"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -177,6 +194,6 @@
     <!-- App Scripts -->
     <script src="js/supabase-config.js"></script>
     <script src="js/storage.js"></script>
-    <script src="js/practice.js?v=8"></script>
+    <script src="js/practice.js?v=9"></script>
 </body>
 </html>
