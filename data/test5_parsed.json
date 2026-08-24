@@ -1181,7 +1181,7 @@
           "number": 19,
           "choices": [
             "A) $ -\\sqrt{3} $",
-            "B)\n\n$$\n- \\frac {\\sqrt {3}}{3}\n$$",
+            "B)\n\n$$ - \\frac {\\sqrt {3}}{3} $$",
             "C)\n\n$$\n\\frac {\\sqrt {3}}{3}\n$$",
             "D) $ \\sqrt{3} $"
           ],
@@ -1544,7 +1544,7 @@
           "type": "grid-in",
           "number": 20,
           "choices": [],
-          "question": "$$\n5 y = 10 x + 11\n$$\n\n$$\n- 5 y = 5 x - 21\n$$\n\nThe solution to the given system of equations is (x, y). What is the value of 30x?",
+          "question": "$$\n5 y = 10 x + 11\n$$\n\n$$ - 5 y = 5 x - 21 $$\n\nThe solution to the given system of equations is (x, y). What is the value of 30x?",
           "explanation": "The correct answer is 20. Adding the first equation to the second equation in the given system yields 5y-5y=10x+5x+11-21, or 0=15x-10. Adding 10 to both sides of this equation yields 10=15x. Multiplying both sides of this equation by 2 yields 20=30x. Therefore, the value of 30x is 20.",
           "correctAnswer": "20"
         },

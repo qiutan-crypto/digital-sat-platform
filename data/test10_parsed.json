@@ -1595,7 +1595,7 @@
             "C) -25",
             "D) -53"
           ],
-          "question": "$$\n- 9 x ^ {2} + 30 x + c = 0\n$$\n\nIn the given equation, c is a constant. The equation has exactly one solution. What is the value of c?",
+          "question": "$$ - 9 x ^ {2} + 30 x + c = 0 $$\n\nIn the given equation, c is a constant. The equation has exactly one solution. What is the value of c?",
           "explanation": "Choice C is correct. It's given that the equation $ - 9 x^{2}+30 x+c=0 $ has exactly one solution. A quadratic equation of the form $ a x^{2}+b x+c=0 $ has exactly one solution if and only if its discriminant, $ - 4 a c+b^{2} $ , is equal to zero. It follows that for the given equation, a=-9 and b=30. Substituting-9 for a and 30 for b into $ b^{2}-4 a c $ yields $ 30^{2}-4(-9)(c) $ , or $ 900+36 c $ . Since the discriminant must equal zero, $ 900+36 c=0 $ . Subtracting 36c from both sides of this equation yields $ 900=-36 c $ . Dividing each side of this equation by $ - 36 $ yields $ - 25=c $ Therefore, the value of c is-25.\n\nChoice A is incorrect. If the value of c is 3, this would yield a discriminant that is greater than zero. Therefore, the given equation would have two solutions, rather than exactly one solution. Choice B is incorrect. If the value of c is 0, this would yield a discriminant that is greater than zero. Therefore, the given equation would have two solutions, rather than exactly one solution. Choice D is incorrect. If the value of c is -53, this would yield a discriminant that is less than zero. Therefore, the given equation would have no real solutions, rather than exactly one solution.",
           "correctAnswer": "C"
         },

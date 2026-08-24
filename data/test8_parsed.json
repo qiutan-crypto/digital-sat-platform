@@ -1619,9 +1619,9 @@
           "number": 26,
           "choices": [
             "A) -c",
-            "B)\n\n$$\n- c^{2}-39^{2}\n$$",
-            "C)\n\n$$\n- \\sqrt {39 ^ {2} - c ^ {2}}\n$$",
-            "D)\n\n$$\n- \\sqrt {c ^ {2} + 39 ^ {2}}\n$$"
+            "B)\n\n$$ - c^{2}-39^{2} $$",
+            "C)\n\n$$ - \\sqrt {39 ^ {2} - c ^ {2}} $$",
+            "D)\n\n$$ - \\sqrt {c ^ {2} + 39 ^ {2}} $$"
           ],
           "question": "$$\n\\frac {x ^ {2}}{\\sqrt {x ^ {2} - c ^ {2}}} = \\frac {c ^ {2}}{\\sqrt {x ^ {2} - c ^ {2}}} + 39\n$$\n\nIn the given equation, c is a positive constant. Which of the following is one of the solutions to the given equation?",
           "explanation": "Choice D is correct. If $ x^{2}-c^{2}\\leq0 $ , then neither side of the given equation is defined and there can be no solution. Therefore, $ x^{2}-c^{2}>0 $ . Subtracting $ \\frac{c^{2}}{\\sqrt{x^{2}-c^{2}}} $ from both sides of the given equation yields $ \\frac{x^{2}}{\\sqrt{x^{2}-c^{2}}}-\\frac{c^{2}}{\\sqrt{x^{2}-c^{2}}}=39 $ , or $ \\frac{x^{2}-c^{2}}{\\sqrt{x^{2}-c^{2}}}=39. $ Squaring both sides of this equation yields $ \\left(\\frac{x^{2}-c^{2}}{\\sqrt{x^{2}-c^{2}}}\\right)^{2}=39^{2} $ , or $ \\frac{(x^{2}-c^{2})(x^{2}-c^{2})}{x^{2}-c^{2}}=39^{2}. $ Since $ x^{2}-c^{2} $ is positive and, therefore, nonzero, the expression $ \\frac{x^{2}-c^{2}}{x^{2}-c^{2}} $ is defined and equivalent to 1. It follows that the equation $ \\frac{(x^{2}-c^{2})(x^{2}-c^{2})}{x^{2}-c^{2}}=39^{2} $ can be rewritten as $ \\left(\\frac{x^{2}-c^{2}}{x^{2}-c^{2}}\\right)\\left(x^{2}-c^{2}\\right)=39^{2} $ , or (1) $ (x^{2}-c^{2})=39^{2} $ , which is equivalent to $ x^{2}-c^{2}=39^{2}. $ Adding $ c^{2} $ to both sides of this equation yields $ x^{2}=c^{2}+39^{2} $ . Taking the square root of both sides of this equation yields two solutions: $ x=\\sqrt{c^{2}+39^{2}} $ and $ x=-\\sqrt{c^{2}+39^{2}} $ . Therefore, of the given choices, $ -\\sqrt{c^{2}+39^{2}} $ is one of the solutions to the given equation.\n\nChoice A is incorrect and may result from conceptual or calculation errors.\n\nChoice B is incorrect and may result from conceptual or calculation errors.\n\nChoice C is incorrect and may result from conceptual or calculation errors.",
