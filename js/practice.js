@@ -142,7 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
         reviewScoreLabel: document.getElementById('review-score-label'),
         reviewFilterAllBtn: document.getElementById('review-filter-all-btn'),
         reviewFilterIncorrectBtn: document.getElementById('review-filter-incorrect-btn'),
-        reviewEmptyState: document.getElementById('review-empty-state')
+        reviewEmptyState: document.getElementById('review-empty-state'),
+        reviewRetryBtn: document.getElementById('review-retry-btn')
     };
 
     // Review mode: filter for a completed drill's question view ('all' | 'incorrect')
@@ -679,6 +680,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Drill Review ---
 
+    function getActiveDrillKey() {
+        return `${activeTestId}_${activeModuleId}_drill${activeDrillIndex}`;
+    }
+
+    // Discard the completed attempt and let the student redo the drill from scratch
+    function retryDrill() {
+        if (!confirm('Retry this drill? Your current answers will be cleared for a new attempt.')) return;
+
+        activeAnswers = {};
+        currentQuestionIndex = 0;
+        isCurrentAttemptSubmitted = false;
+        reviewFilter = 'all';
+        delete drillAnswerCache[getActiveDrillKey()];
+
+        persistDrillState();
+        navigateTo(0);
+    }
+
     function isQuestionCorrect(q) {
         const ans = activeAnswers[q.id] != null ? String(activeAnswers[q.id]) : '';
         const corr = q.correctAnswer != null ? String(q.correctAnswer) : '';
@@ -772,7 +791,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.finishDrillBtn.textContent = 'Saving Drill...';
 
         try {
-            const drillKey = `${activeTestId}_${activeModuleId}_drill${activeDrillIndex}`;
+            const drillKey = getActiveDrillKey();
             let correctCount = 0;
             activeQuestions.forEach(q => {
                 const ans = activeAnswers[q.id] != null ? String(activeAnswers[q.id]) : '';
@@ -996,6 +1015,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Review filter toggle
         elements.reviewFilterAllBtn.addEventListener('click', () => setReviewFilter('all'));
         elements.reviewFilterIncorrectBtn.addEventListener('click', () => setReviewFilter('incorrect'));
+        elements.reviewRetryBtn.addEventListener('click', retryDrill);
 
         // Modal Action Items
         elements.summaryReviewBtn.addEventListener('click', () => {

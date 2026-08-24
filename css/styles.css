@@ -501,6 +501,12 @@ main {
     color: var(--text-muted);
 }
 
+.review-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .review-filter-group {
     display: flex;
     gap: 6px;
@@ -508,6 +514,11 @@ main {
     border: 1px solid var(--border);
     border-radius: 999px;
     padding: 3px;
+}
+
+.review-retry-btn {
+    padding: 6px 14px;
+    font-size: 0.85rem;
 }
 
 .review-filter-btn {

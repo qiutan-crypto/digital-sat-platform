@@ -98,9 +98,12 @@
                         <!-- Review Toolbar (shown once a drill has been completed) -->
                         <div id="review-toolbar" class="review-toolbar hidden">
                             <span id="review-score-label" class="review-score-label"></span>
-                            <div class="review-filter-group">
-                                <button type="button" id="review-filter-all-btn" class="review-filter-btn active">All Questions</button>
-                                <button type="button" id="review-filter-incorrect-btn" class="review-filter-btn">Incorrect Only</button>
+                            <div class="review-toolbar-actions">
+                                <div class="review-filter-group">
+                                    <button type="button" id="review-filter-all-btn" class="review-filter-btn active">All Questions</button>
+                                    <button type="button" id="review-filter-incorrect-btn" class="review-filter-btn">Incorrect Only</button>
+                                </div>
+                                <button type="button" id="review-retry-btn" class="btn-secondary review-retry-btn">Retry Drill</button>
                             </div>
                         </div>
 
@@ -194,6 +197,6 @@
     <!-- App Scripts -->
     <script src="js/supabase-config.js"></script>
     <script src="js/storage.js"></script>
-    <script src="js/practice.js?v=9"></script>
+    <script src="js/practice.js?v=10"></script>
 </body>
 </html>
